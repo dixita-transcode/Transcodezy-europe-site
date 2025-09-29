@@ -1,0 +1,169 @@
+<!-- Why choose Transcodezy section start -->
+
+<div class="bg-[#ffffff] py-12">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div>
+      <h5
+        class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center z-10"
+      >
+        Why Choose Transcodezy
+      </h5>
+      <div class="none md:flex justify-between py-5">
+        <h2 class="text-3xl font-medium text-[#132028] w-full md:w-[400px]">
+          Why European Businesses Choose Transcodezy
+        </h2>
+        <div class="flex flex-row gap-6 pt-4 md:pt-0">
+          <button id="prevBtn"
+            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+            aria-label="Previous"
+            title="Previous"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="nextBtn"
+            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+            aria-label="Next"
+            title="Next"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        </div>
+      </div>
+    </div>
+    <div class="overflow-hidden">
+      <div id="slider" class="flex mx-auto transition-transform duration-700">
+        <!-- Card 1 -->
+        <div class="w-full sm:w-1/3 lg:w-1/4 p-2 shrink-0">
+          <div class="bg-white shadow border rounded-lg h-50 p-5">
+             <img
+              src="../../../Assets/Images/proven_exp.png"
+              alt="proven-exp"
+              class="w-[60px] h-[50px] transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer"
+            />
+            <div class="pt-4">
+              <h2 class="text-xl font-medium">Proven Experience</h2>
+              <p class="text-sm text-[#44464A] pt-2">
+                Over a decade of IT excellence in European markets
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="w-full sm:w-1/3 lg:w-1/4 p-2 shrink-0">
+          <div class="bg-white shadow border rounded-lg h-50 p-5">
+             <img
+              src="../../../Assets/Images/GDPR.png"
+              alt="proven-exp"
+              class="w-[50px] h-[50px] transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer"
+            />
+            <div class="pt-4">
+              <h2 class="text-xl font-medium">GDPR & EU Compliance</h2>
+              <p class="text-md text-[#44464A] pt-2">
+                Every solution aligned with European data laws
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="w-full sm:w-1/3 lg:w-1/4 p-2 shrink-0">
+          <div class="bg-white shadow border rounded-lg h-50 p-5">
+            <img
+              src="../../../Assets/Images/industry_knowledge.png"
+              alt="proven-exp"
+              class="w-[50px] h-[50px] transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer"
+            />
+            <div class="pt-4">
+              <h2 class="text-xl font-medium">Industry Knowledge</h2>
+              <p class="text-md text-[#44464A] pt-2">
+                FinTech, Healthcare, Manufacturing, E-commerce, and more
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="w-full sm:w-1/3 lg:w-1/4 p-2 shrink-0">
+          <div class="bg-white shadow border rounded-lg h-50 p-5">
+            <img
+              src="../../../Assets/Images/services.png"
+              alt="proven-exp"
+              class="w-[50px] h-[50px] transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer"
+            />
+            <div class="pt-4">
+              <h2 class="text-xl font-medium">End-to-End Services</h2>
+              <p class="text-md text-[#44464A] pt-2">
+                From consulting to deployment & ongoing support
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="w-full sm:w-1/3 lg:w-1/4 p-2 shrink-0">
+          <div class="bg-white shadow border rounded-lg h-50 p-5">
+            <img
+              src="../../../Assets/Images/proven_exp.png"
+              alt="proven-exp"
+              class="w-[60px] h-[50px] transition-transform duration-700 ease-in-out hover:scale-110 cursor-pointer"
+            />
+            <div class="pt-4">
+              <h2 class="text-xl font-medium">Local Understanding</h2>
+              <p class="text-md text-[#44464A] pt-2">
+                Serving Businesses in UK, Germany, France, Netherlands, Spain &
+                Balkans
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    const slider = document.getElementById("slider");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    let currentIndex = 0;
+
+    function getVisibleCount() {
+      if (window.innerWidth >= 1024) return 4; // desktop
+      if (window.innerWidth >= 640) return 2;  // tablet
+      return 1; // mobile
+    }
+
+    function getMaxIndex() {
+      return 5 - getVisibleCount();
+    }
+
+    function updateSlider() {
+      const cardWidth = slider.querySelector("div").offsetWidth;
+      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= getMaxIndex();
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex < getMaxIndex()) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+      updateSlider();
+    });
+
+    updateSlider();
+  </script>
+

@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --main-bg-color:#0094EE;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+body{
+    margin: 0;
+    font-family: 'Outfit',sans-serif;
+}
+
+/* header css start */
+
+.menu .menu-items li>a {
+    position: relative;
+    display: inline-block;
+}
+
+.menu .menu-items li>a:hover {
+    color: #0094EE;
+    cursor: pointer;
+}
+.menu .menu-items li>a.active{
+    color: #0094EE;
+}
+.mob-menu_wrapper{
+    min-height: 100%;
+    padding: 40px 0 40px;
+}
+.menu .menu-items li>a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color:var(--main-bg-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.menu .menu-items li>a:hover::before,
+.menu .menu-items li>a.active::before,
+.menu .menu-items li>a:focus::before {
+    transform: scaleX(1);
+}
+
+
+/* Hamburger button  mobile menu*/
+#menu-icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    cursor: pointer;
+}
+
+#menu-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 32px;
+    background-color:var(--main-bg-color);
+    right: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-icon span:nth-of-type(1) {
+    top: 17px;
+    width: 32px;
+}
+
+#menu-icon span:nth-of-type(2) {
+
+    width: 22px;
+    bottom: 17px;
+}
+
+#menu-icon.active span:nth-of-type(1) {
+    top: 22.5px;
+    transform: rotate(135deg);
+    width: 32px;
+}
+
+#menu-icon.active span:nth-of-type(2) {
+    top: 22.5px;
+    transform: rotate(-135deg);
+    width: 32px;
+}
+
+.mob-menu {
+    position: absolute;
+    top: -120vh;
+    padding: 10px 5px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    height:100vh;
+    max-height: calc(100vh - 71px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: top 0.40s ease-in-out;
+}
+
+.mob-menu_item_link {
+    position: relative;
+    padding: 20px 40px 20px 0;
+}
+
+.mob-menu.active {
+    top: calc(72px - 1px);
+}
+
+.mob-submenu {
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* submenu css */
+
+.menu .submenu.type-1{
+    padding: 15px 0 24px;
+}
+
+.menu .submenu.type-1.large{
+    max-height: calc(-88px + 100vh);
+}
+
+.menu .submenu.type-1.large .submenu_item:nth-of-type(1){
+    display: block;
+}
+
+.menu .submenu.type-1.large .submenu_item{
+    display: none;
+}
+
+.menu li:hover > .submenu{
+    display: block;
+}
+
+
+
