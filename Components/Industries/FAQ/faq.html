@@ -1,0 +1,145 @@
+<!-- FAQ section start -->
+
+<div class="bg-[#FFFFFF] py-12 mt-5 mb-5">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+      <div>
+        <h5
+          class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center z-10"
+        >
+          FAQ
+        </h5>
+        <div class="pt-4">
+          <h1 class="text-4xl font-medium text-[#132028]">
+            Frequently Asked Questions
+          </h1>
+        </div>
+      </div>
+      <div class="accordion pt-4 lg:pt-0">
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Why should European businesses in E-commerce & Healthcare choose Transcodezy?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+              We deliver GDPR-compliant, scalable, and secure IT solutions tailored 
+              to industries like E-commerce, Healthcare, FinTech, and Manufacturing.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >How do you ensure regulatory compliance in Europe?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+             Our platforms are designed with GDPR and EU standards, 
+             ensuring safe data flow and audit-ready processes.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Do you provide post-launch support?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+               Yes, we offer end-to-end support including maintenance, 
+               updates, and performance monitoring.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Can your solutions scale globally beyond Europe?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="px-2 pt-2 text-sm">
+              Absolutely. While we focus on European enterprises, our systems are designed for global scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion-item");
+  accordions.forEach((item) => {
+    const toggle = item.querySelector(".accordion-toggle");
+    const content = item.querySelector(".accordion-content");
+    const plusIcon = item.querySelector(".plus-icon");
+    const minusIcon = item.querySelector(".minus-icon");
+
+    toggle.addEventListener("click", () => {
+      const isOpen = !content.classList.contains("max-h-0");
+
+      if (isOpen) {
+        // Closing
+        content.classList.add("max-h-0");
+        content.classList.remove("max-h-screen");
+        item.classList.remove("bg-[#0094EE05]");
+
+        plusIcon.classList.remove("hidden");
+        minusIcon.classList.add("hidden");
+      } else {
+        // Opening
+        content.classList.remove("max-h-0");
+        content.classList.add("max-h-screen");
+        item.classList.add("bg-[#0094EE05]");
+
+        plusIcon.classList.add("hidden");
+        minusIcon.classList.remove("hidden");
+      }
+    });
+  });
+</script>

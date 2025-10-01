@@ -24,25 +24,25 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-8">
         <div class="flex-1">
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 divide-x divide-y divide-[#1320281F] bg-[#0094EE05] rounded-xl border border-[#1320281F] overflow-hidden"
+            class="grid grid-cols-2 divide-x divide-y divide-[#1320281F] bg-[#0094EE05] rounded-xl border border-[#1320281F] overflow-hidden"
           >
             <div class="py-7 px-5 text-center">
-              <h2 class="text-3xl font-bold text-[#132028]">3+</h2>
+              <h2 class="counter text-4xl font-bold text-[#132028]" data-target="3">0</h2>
               <p class="mt-2 text-[#44464A] text-sm">Years of Experience</p>
             </div>
 
             <div class="py-7 px-5 text-center">
-              <h2 class="text-3xl font-bold text-[#132028]">40+</h2>
+              <h2 class="counter text-4xl font-bold text-[#132028] " data-target="40">0</h2>
               <p class="mt-2 text-[#44464A] text-sm">Talented IT Professionals</p>
             </div>
 
             <div class="py-7 px-5 text-center">
-              <h2 class="text-3xl font-bold text-[#132028]">100+</h2>
+              <h2 class="counter text-4xl font-bold text-[#132028]" data-target="100">0</h2>
               <p class="mt-2 text-[#44464A] text-sm">Successful Projects</p>
             </div>
 
             <div class="py-7 px-5 text-center">
-              <h2 class="text-3xl font-bold text-[#132028]">15+</h2>
+              <h2 class="counter text-4xl font-bold text-[#132028]" data-target="15">0</h2>
               <p class="mt-2 text-[#44464A] text-sm">
                 Countries Served Across the Globe
               </p>
@@ -68,3 +68,41 @@
     </div>
   </div>
 </div>
+
+
+<script>
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounters = () => {
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = +counter.getAttribute("data-target"); 
+        const count = +counter.innerText;
+        const speed = 100; // smaller = faster
+
+        const increment = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 30); // speed of animation
+        } else {
+          counter.innerText = target + "+"; // add "+" at the end
+        }
+      };
+
+      updateCount();
+    });
+  };
+
+  // Run when the section comes into view
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect(); // run once
+      }
+    });
+  });
+
+  observer.observe(document.querySelector(".grid"));
+</script>

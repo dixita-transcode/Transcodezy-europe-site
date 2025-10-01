@@ -16,40 +16,142 @@
         </h2>
       </div>
       <div class="py-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div>
-            <img src="../../../Assets/Images/fintech_industries.jpg" alt="fintech" class="h-[300px] w-[100%] rounded-2xl object-cover"/>
+        <!-- Images -->
+        <div class="relative" id="industryImages">
+          <div>
+            <img
+              src="../../../Assets/Images/fintech_industries.jpg"
+              alt="fintech"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/manufacturing_industries.jpg"
+              alt="Manufacturing"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/healthcare_ind.jpg"
+              alt="healthcare"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/ecommerce_ind.jpg"
+              alt="ecommerce"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/educatin_tech.jpg"
+              alt="education_tech"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/sports_tech.jpg"
+              alt="sports_tech"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
+          <div class="hidden">
+            <img
+              src="../../../Assets/Images/social_media.jpg"
+              alt="Social media"
+              class="industry-img h-[300px] w-full rounded-2xl object-cover"
+            />
+          </div>
         </div>
-        <div class="w-full">
-            <div class="py-2 border-b border-[#44464A]">
-                <h2 class="text-lg font-medium text-[#132028]">FinTech</h2>
-                <p class="text-sm text-[#44464A]">Secure banking apps, digital wallets, blockchain</p>
-            </div>
-             <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">Manufacturing</h2>
-                <p class="text-sm text-[#44464A]">IoT & smart ERP systems</p>
-            </div>
-             <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">Healthcare</h2>
-                <p class="text-sm text-[#44464A]">GDPR-compliant telemedicine & platforms</p>
-            </div>
-             <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">E-commerce</h2>
-                <p class="text-sm text-[#44464A]">Scalable digital marketplaces</p>
-            </div>
-            <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">Education Tech</h2>
-                <p class="text-sm text-[#44464A]">Learning platforms & LMS solutions</p>
-            </div>
-            <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">Sports Tech</h2>
-                <p class="text-sm text-[#44464A]">Analytics dashboards & fan engagement</p>
-            </div>
-            <div class="py-2 border-b">
-                <h2 class="text-lg font-medium text-[#132028]">Social Media</h2>
-                <p class="text-sm text-[#44464A]">High-performance community platforms</p>
-            </div>
+
+        <!-- Buttons -->
+        <div class="w-full" id="industryButtons">
+          <button
+            class="industry-btn border-b border-[#44464A] w-full text-start py-2"
+            data-index="0"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">FinTech</h2>
+            <p class="text-sm text-[#44464A]">
+              Secure banking apps, digital wallets, blockchain
+            </p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="1"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">Manufacturing</h2>
+            <p class="text-sm text-[#44464A]">IoT & smart ERP systems</p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="2"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">Healthcare</h2>
+            <p class="text-sm text-[#44464A]">
+              GDPR-compliant telemedicine & platforms
+            </p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="3"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">E-commerce</h2>
+            <p class="text-sm text-[#44464A]">Scalable digital marketplaces</p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="4"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">Education Tech</h2>
+            <p class="text-sm text-[#44464A]">
+              Learning platforms & LMS solutions
+            </p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="5"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">Sports Tech</h2>
+            <p class="text-sm text-[#44464A]">
+              Analytics dashboards & fan engagement
+            </p>
+          </button>
+          <button
+            class="industry-btn border-b w-full text-start py-2"
+            data-index="6"
+          >
+            <h2 class="text-lg font-medium text-[#132028]">Social Media</h2>
+            <p class="text-sm text-[#44464A]">
+              High-performance community platforms
+            </p>
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  const buttons = document.querySelectorAll(".industry-btn");
+  const images = document.querySelectorAll(".industry-img");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const index = btn.getAttribute("data-index");
+      // hide all images
+      images.forEach((img) => img.parentElement.classList.add("hidden"));
+
+      // show selected image
+      images[index].parentElement.classList.remove("hidden");
+
+      // optional: highlight active button
+      buttons.forEach((b) => b.classList.remove("text-primary"));
+      btn.classList.add("text-primary");
+    });
+  });
+</script>

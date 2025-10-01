@@ -12,7 +12,7 @@
         <h2 class="text-4xl font-medium text-[#132028] w-full md:w-[450px]">
           Why European Businesses Choose Transcodezy
         </h2>
-        <div class="flex flex-row gap-6 pt-4 md:pt-0">
+        <div class="hidden md:flex flex-row gap-6 pt-4 md:pt-0">
           <button id="prevBtn"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
             aria-label="Previous"
@@ -34,16 +34,16 @@
       <div id="slider" class="flex mx-auto transition-transform duration-700">
         <!-- Card 1 -->
         <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="relative z-0 bg-white shadow border rounded-2xl h-60 py-8 px-6">
+          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
              <img
               src="../../../Assets/Images/proven_exp.png"
               alt="proven-exp"
-              class="w-[60px] h-[50px] "
+              class="w-[60px] h-[50px]  "
             />
             <div class="absolute inset-0 z-10">
               <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
             </div>
-            <div class="pt-4">
+            <div class="cards-content pt-4">
               <h2 class="text-xl font-medium">Proven Experience</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Over a decade of IT excellence in European markets
@@ -53,7 +53,7 @@
         </div>
         <!-- Card 2 -->
         <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="relative z-0 bg-white shadow border rounded-2xl h-60 py-8 px-6">
+          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
              <img
               src="../../../Assets/Images/GDPR.png"
               alt="proven-exp"
@@ -62,7 +62,7 @@
             <div class="absolute inset-0 z-10">
               <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
             </div>
-            <div class="pt-4">
+            <div class="cards-content pt-4">
               <h2 class="text-xl font-medium">GDPR & EU Compliance</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Every solution aligned with European data laws
@@ -72,7 +72,7 @@
         </div>
         <!-- Card 3 -->
         <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="relative z-0 bg-white shadow border rounded-2xl h-60 py-8 px-6">
+          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
             <img
               src="../../../Assets/Images/industry_knowledge.png"
               alt="proven-exp"
@@ -81,7 +81,7 @@
             <div class="absolute inset-0 z-10">
               <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
             </div>
-            <div class="pt-4">
+            <div class="cards-content pt-4">
               <h2 class="text-xl font-medium">Industry Knowledge</h2>
               <p class="text-md text-[#44464A] pt-2">
                 FinTech, Healthcare, Manufacturing, E-commerce, and more
@@ -91,7 +91,7 @@
         </div>
         <!-- Card 4 -->
         <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="relative z-0 bg-white shadow border rounded-2xl h-60 py-8 px-6">
+          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
             <img
               src="../../../Assets/Images/services.png"
               alt="proven-exp"
@@ -100,7 +100,7 @@
             <div class="absolute inset-0 z-10">
               <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
             </div>
-            <div class="pt-4">
+            <div class="cards-content pt-4">
               <h2 class="text-xl font-medium">End-to-End Services</h2>
               <p class="text-md text-[#44464A] pt-2">
                 From consulting to deployment & ongoing support
@@ -110,7 +110,7 @@
         </div>
         <!-- Card 5 -->
         <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="relative z-0 bg-white shadow border rounded-2xl h-60 py-8 px-6">
+          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
             <img
               src="../../../Assets/Images/proven_exp.png"
               alt="proven-exp"
@@ -119,7 +119,7 @@
             <div class="absolute inset-0 z-10">
               <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
             </div>
-            <div class="pt-4">
+            <div class="cards-content pt-4">
               <h2 class="text-xl font-medium">Local Understanding</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Serving Businesses in UK, Germany, France, Netherlands, Spain &
@@ -130,6 +130,22 @@
         </div>
       </div>
     </div>
+    <div class="block md:hidden flex flex-row gap-6 pt-4 md:pt-0 z-10">
+          <button id="prevBtn"
+            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+            aria-label="Previous"
+            title="Previous"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="nextBtn"
+            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+            aria-label="Next"
+            title="Next"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
       </div>
     </div>
   </div>
