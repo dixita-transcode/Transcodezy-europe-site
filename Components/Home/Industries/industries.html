@@ -72,10 +72,10 @@
         <!-- Buttons -->
         <div class="w-full" id="industryButtons">
           <button
-            class="industry-btn border-b border-[#44464A] w-full text-start py-2"
+            class="industry-btn border-b w-full text-start py-2"
             data-index="0"
           >
-            <h2 class="text-lg font-medium text-[#132028]">FinTech</h2>
+            <h2 class="text-lg font-medium text-[#132028] ">FinTech</h2>
             <p class="text-sm text-[#44464A]">
               Secure banking apps, digital wallets, blockchain
             </p>
@@ -143,15 +143,31 @@
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const index = btn.getAttribute("data-index");
+
       // hide all images
       images.forEach((img) => img.parentElement.classList.add("hidden"));
 
       // show selected image
       images[index].parentElement.classList.remove("hidden");
 
-      // optional: highlight active button
-      buttons.forEach((b) => b.classList.remove("text-primary"));
-      btn.classList.add("text-primary");
+      // remove active color from all button titles
+      buttons.forEach((b) => {
+        const title = b.querySelector("h2");
+        const detail= b.querySelector("p");
+        detail.classList.remove("text-primary");
+        detail.classList.add("text-[#44464A]");
+        title.classList.remove("text-primary");
+        title.classList.add("text-[#132028]"); 
+      });
+
+      // add active color to clicked button's title
+      const activeTitle = btn.querySelector("h2");
+      const activeDetail = btn.querySelector("p");
+      activeDetail.classList.remove("text-[#44464A]"); 
+      activeDetail.classList.add("text-primary");
+      activeTitle.classList.remove("text-[#132028]");
+      activeTitle.classList.add("text-primary");
     });
   });
 </script>
+

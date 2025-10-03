@@ -15,9 +15,6 @@ tailwind.config = {
           xxl:"1440px",
         },
       },
-      backgroundImage:{
-        'hero-sec':"url('/')"
-      }
   
     },
   },
