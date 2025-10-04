@@ -30,6 +30,7 @@ body{
 }
 .menu .menu-items li>a.active{
     color: #0094EE;
+    cursor: pointer;
 }
 .mob-menu_wrapper{
     min-height: 100%;
@@ -183,6 +184,11 @@ body{
   box-shadow: 0 10px 15px rgba(0,0,0,0.2); 
   transition-duration: 500ms;
 }
+
+.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
 
 
 

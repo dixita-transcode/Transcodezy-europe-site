@@ -1,7 +1,19 @@
-
-<!-- Testimonials section start -->
-<section class=" relative z-0 py-12">
+<section class="bg-[#0094EE0F] relative z-0 py-12">
     <div class="container mx-auto px-6 lg:px-12 relative z-20">
+       <div class="absolute inset-y-0 top-0 left-0 z-10">
+      <img
+        src="../../../Assets/Images/mission_bg-1.png"
+        alt="mission-background"
+        class="h-[100%] w-[100%] object-cover"
+      />
+    </div>
+    <div class="absolute inset-y-0 top-0 right-0 z-10">
+      <img
+        src="../../../Assets/Images/mission_bg-2.png"
+        alt="mission-background-2"
+        class="h-[100%] w-[100%] object-cover"
+      />
+    </div>
       
       <!-- Title -->
       <h5 class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center">
@@ -9,9 +21,9 @@
       </h5>
 
       <!-- Header with nav -->
-      <div class="flex justify-between py-5 mt-2 items-center">
+      <div class="flex justify-between py-5 mt-2 items-center z-10">
         <h2 class="text-4xl font-medium text-[#132028]">What Our Clients Say</h2>
-        <div class="hidden md:flex gap-6">
+        <div class="hidden md:flex gap-6 z-10">
           <button
             id="prevBtn"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
@@ -28,11 +40,11 @@
       </div>
 
       <!-- Swiper -->
-      <div class="swiper mt-6">
-        <div class="swiper-wrapper">
+      <div class="swiper mt-6 z-10">
+        <div class="swiper-wrapper z-10">
 
           <!-- Card 1 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] py-8 px-5 rounded-2xl hover:border-2 hover:border-primary hover:scale-90 duration-700 cursor-pointer">
+          <div class="swiper-slide bg-white border-2 border-[#1320281F] py-8 px-5 rounded-2xl hover:border-2 hover:border-primary hover:scale-90 duration-700 cursor-pointer ">
             <p class="text-md pr-4">
               Networked has become the backbone of our online community,
               supporting us in bringing more diversity to boards and executive leadership.
@@ -101,7 +113,7 @@
 
         </div>
       </div>
-       <div class="block md:hidden flex gap-6 pt-6">
+       <div class="block md:hidden flex gap-6 pt-6 z-10 relative">
           <button
             id="prevBtn"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
@@ -114,6 +126,7 @@
           >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+        </div>
         </div>
     </div>
   </section>
