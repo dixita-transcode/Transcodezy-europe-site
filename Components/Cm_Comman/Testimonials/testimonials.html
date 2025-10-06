@@ -25,14 +25,12 @@
         <h2 class="text-4xl font-medium text-[#132028]">What Our Clients Say</h2>
         <div class="hidden md:flex gap-6 z-10">
           <button
-            id="prevBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+            class="testi-prev w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
           >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <button
-            id="nextBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+            class="testi-next w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
           >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -115,14 +113,12 @@
       </div>
        <div class="block md:hidden flex gap-6 pt-6 z-10 relative">
           <button
-            id="prevBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+            class="testi-prev w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
           >
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <button
-            id="nextBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+            class="testi-next w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
           >
             <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -131,28 +127,43 @@
     </div>
   </section>
 
+  <script>
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: false,
+    navigation: {
+      nextEl: ".testi-next",
+      prevEl: ".testi-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    on: {
+      slideChange: function () {
+        const prev = document.querySelector(".testi-prev");
+        const next = document.querySelector(".testi-next");
 
+        // Disable prev button at start
+        if (this.isBeginning) {
+          prev.classList.add("swiper-button-disabled");
+        } else {
+          prev.classList.remove("swiper-button-disabled");
+        }
 
-<script>
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        // Disable next button at end
+        if (this.isEnd) {
+          next.classList.add("swiper-button-disabled");
+        } else {
+          next.classList.remove("swiper-button-disabled");
+        }
       },
-      navigation: {
-        nextEl: '#nextBtn',
-        prevEl: '#prevBtn',
-      },
-      on: {
-        slideChange: function () {
-          document.getElementById('prevBtn').disabled = this.isBeginning;
-          document.getElementById('nextBtn').disabled = this.isEnd;
-        },
-      },
-    });
+    },
+  });
 
-    // Initial state
-    document.getElementById('prevBtn').disabled = true;
-  </script>
+  // Initialize disabled state
+  const prev = document.querySelector(".testi-prev");
+  prev.classList.add("swiper-button-disabled");
+</script>

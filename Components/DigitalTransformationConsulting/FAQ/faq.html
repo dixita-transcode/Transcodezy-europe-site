@@ -1,0 +1,141 @@
+<div class="bg-[#FFFFFF] py-12 mt-5 mb-5">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
+      <div>
+        <h5
+          class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center z-10"
+        >
+          FAQ
+        </h5>
+        <div class="pt-4">
+          <h1 class="text-4xl font-medium text-[#132028]">
+            Frequently Asked Questions
+          </h1>
+        </div>
+      </div>
+      <div class="accordion pt-4 lg:pt-0">
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Why choose Transcodezy for digital transformation?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+              We deliver actionable strategies, technology adoption, and scalable transformation for enterprises globally.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >How do you ensure compliance and security?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+             All solutions adhere to GDPR and global standards, including secure cloud adoption and data governance.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Which industries benefit most?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+               Healthcare, FinTech, Manufacturing, E-commerce, Education, Sports, and Social Media.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Do you support implementation?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="px-2 pt-2 text-sm">
+               Yes, we provide end-to-end consulting, deployment guidance, and performance tracking.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion-item");
+  accordions.forEach((item) => {
+    const toggle = item.querySelector(".accordion-toggle");
+    const content = item.querySelector(".accordion-content");
+    const plusIcon = item.querySelector(".plus-icon");
+    const minusIcon = item.querySelector(".minus-icon");
+
+    toggle.addEventListener("click", () => {
+      const isOpen = !content.classList.contains("max-h-0");
+
+      if (isOpen) {
+        // Closing
+        content.classList.add("max-h-0");
+        content.classList.remove("max-h-screen");
+        item.classList.remove("bg-[#0094EE05]");
+
+        plusIcon.classList.remove("hidden");
+        minusIcon.classList.add("hidden");
+      } else {
+        // Opening
+        content.classList.remove("max-h-0");
+        content.classList.add("max-h-screen");
+        item.classList.add("bg-[#0094EE05]");
+
+        plusIcon.classList.add("hidden");
+        minusIcon.classList.remove("hidden");
+      }
+    });
+  });
+</script>
