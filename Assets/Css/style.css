@@ -35,6 +35,8 @@ body{
 .mob-menu_wrapper{
     min-height: 100%;
     padding: 40px 0 40px;
+    flex-direction: column;
+    display: flex;
 }
 .menu .menu-items li>a::before {
     content: "";
@@ -117,7 +119,7 @@ body{
 }
 
 .mob-menu.active {
-    top: calc(72px - 1px);
+    top: calc(100% - 1px);
 }
 
 .mob-submenu {

@@ -1,5 +1,6 @@
 <!-- Why choose Transcodezy section start -->
 
+<!-- Why choose Transcodezy section start -->
 <div class="bg-[#ffffff] py-12">
   <div class="container mx-auto px-6 lg:px-12">
     <div>
@@ -8,42 +9,38 @@
       >
         Why Choose Transcodezy
       </h5>
-      <div class="none md:flex justify-between py-5">
+
+      <!-- Desktop heading + buttons -->
+      <div class="flex justify-between py-5">
         <h2 class="text-4xl font-medium text-[#132028] w-full md:w-[450px]">
           Why European Businesses Choose Transcodezy
         </h2>
         <div class="hidden md:flex flex-row gap-6 pt-4 md:pt-0">
-          <button id="prevBtn"
+          <button id="prevBtnDesktop"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Previous"
-            title="Previous"
-          >
+            aria-label="Previous" title="Previous">
             <i class="fa-solid fa-arrow-left"></i>
           </button>
-          <button id="nextBtn"
+          <button id="nextBtnDesktop"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Next"
-            title="Next"
-          >
+            aria-label="Next" title="Next">
             <i class="fa-solid fa-arrow-right"></i>
-        </button>
+          </button>
         </div>
       </div>
     </div>
+
+    <!-- Slider -->
     <div class="overflow-hidden">
       <div id="slider" class="flex mx-auto transition-transform duration-700">
-        <!-- Card 1 -->
-        <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
-             <img
-              src="../../../Assets/Images/proven_exp.png"
-              alt="proven-exp"
-              class="w-[60px] h-[50px]  "
-            />
+        <!-- 5 Cards -->
+        <div class="w-full sm:w-1/2 lg:w-1/4 p-4 shrink-0">
+          <div class="bg-white shadow border-2 rounded-2xl h-60 py-8 px-6 relative z-0">
+            <img src="../../../Assets/Images/proven_exp.png" alt="proven-exp" class="w-[60px] h-[50px]" />
             <div class="absolute inset-0 z-10">
-              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
+              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="bg" class="h-full w-full object-cover" />
             </div>
-            <div class="cards-content pt-4">
+            <div class="pt-4">
               <h2 class="text-xl font-medium">Proven Experience</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Over a decade of IT excellence in European markets
@@ -51,18 +48,14 @@
             </div>
           </div>
         </div>
-        <!-- Card 2 -->
-        <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
-             <img
-              src="../../../Assets/Images/GDPR.png"
-              alt="proven-exp"
-              class="w-[50px] h-[50px] "
-            />
+
+        <div class="w-full sm:w-1/2 lg:w-1/4 p-4 shrink-0">
+          <div class="bg-white shadow border-2 rounded-2xl h-60 py-8 px-6 relative z-0">
+            <img src="../../../Assets/Images/GDPR.png" alt="GDPR" class="w-[50px] h-[50px]" />
             <div class="absolute inset-0 z-10">
-              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
+              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="bg" class="h-full w-full object-cover" />
             </div>
-            <div class="cards-content pt-4">
+            <div class="pt-4">
               <h2 class="text-xl font-medium">GDPR & EU Compliance</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Every solution aligned with European data laws
@@ -70,18 +63,14 @@
             </div>
           </div>
         </div>
-        <!-- Card 3 -->
-        <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
-            <img
-              src="../../../Assets/Images/industry_knowledge.png"
-              alt="proven-exp"
-              class="w-[50px] h-[50px] "
-            />
+
+        <div class="w-full sm:w-1/2 lg:w-1/4 p-4 shrink-0">
+          <div class="bg-white shadow border-2 rounded-2xl h-60 py-8 px-6 relative z-0">
+            <img src="../../../Assets/Images/industry_knowledge.png" alt="Industry" class="w-[50px] h-[50px]" />
             <div class="absolute inset-0 z-10">
-              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
+              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="bg" class="h-full w-full object-cover" />
             </div>
-            <div class="cards-content pt-4">
+            <div class="pt-4">
               <h2 class="text-xl font-medium">Industry Knowledge</h2>
               <p class="text-md text-[#44464A] pt-2">
                 FinTech, Healthcare, Manufacturing, E-commerce, and more
@@ -89,18 +78,14 @@
             </div>
           </div>
         </div>
-        <!-- Card 4 -->
-        <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
-            <img
-              src="../../../Assets/Images/services.png"
-              alt="proven-exp"
-              class="w-[50px] h-[50px] "
-            />
+
+        <div class="w-full sm:w-1/2 lg:w-1/4 p-4 shrink-0">
+          <div class="bg-white shadow border-2 rounded-2xl h-60 py-8 px-6 relative z-0">
+            <img src="../../../Assets/Images/services.png" alt="Services" class="w-[50px] h-[50px]" />
             <div class="absolute inset-0 z-10">
-              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
+              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="bg" class="h-full w-full object-cover" />
             </div>
-            <div class="cards-content pt-4">
+            <div class="pt-4">
               <h2 class="text-xl font-medium">End-to-End Services</h2>
               <p class="text-md text-[#44464A] pt-2">
                 From consulting to deployment & ongoing support
@@ -108,18 +93,14 @@
             </div>
           </div>
         </div>
-        <!-- Card 5 -->
-        <div class="w-full sm:w-1/3 lg:w-1/4 p-4 shrink-0">
-          <div class="cards relative z-0 bg-white shadow border-2 rounded-2xl h-60 py-8 px-6">
-            <img
-              src="../../../Assets/Images/proven_exp.png"
-              alt="proven-exp"
-              class="w-[60px] h-[50px] "
-            />
+
+        <div class="w-full sm:w-1/2 lg:w-1/4 p-4 shrink-0">
+          <div class="bg-white shadow border-2 rounded-2xl h-60 py-8 px-6 relative z-0">
+            <img src="../../../Assets/Images/proven_exp.png" alt="Local" class="w-[60px] h-[50px]" />
             <div class="absolute inset-0 z-10">
-              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="whychooseusbg" class="h-[100%] w-[100%] object-fit" />
+              <img src="../../../Assets/Images/why_choose_cards-bg.png" alt="bg" class="h-full w-full object-cover" />
             </div>
-            <div class="cards-content pt-4">
+            <div class="pt-4">
               <h2 class="text-xl font-medium">Local Understanding</h2>
               <p class="text-md text-[#44464A] pt-2">
                 Serving Businesses in UK, Germany, France, Netherlands, Spain &
@@ -130,71 +111,66 @@
         </div>
       </div>
     </div>
-    <div class="block md:hidden flex flex-row gap-6 pt-4 md:pt-0 z-10">
-          <button id="prevBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Previous"
-            title="Previous"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button id="nextBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Next"
-            title="Next"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
-      </div>
+
+    <!-- Mobile buttons -->
+    <div class="flex md:hidden justify-start gap-6 pt-6">
+      <button id="prevBtnMobile"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer">
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button id="nextBtnMobile"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer">
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
     </div>
   </div>
 </div>
 
-
 <script>
-    const slider = document.getElementById("slider");
-    const nextBtn = document.getElementById("nextBtn");
-    const prevBtn = document.getElementById("prevBtn");
+  const slider = document.getElementById("slider");
+  const nextBtns = [document.getElementById("nextBtnDesktop"), document.getElementById("nextBtnMobile")];
+  const prevBtns = [document.getElementById("prevBtnDesktop"), document.getElementById("prevBtnMobile")];
 
-    let currentIndex = 0;
+  let currentIndex = 0;
+  const totalCards = slider.children.length;
 
-    function getVisibleCount() {
-      if (window.innerWidth >= 1024) return 4;
-      if (window.innerWidth >= 640) return 2; 
-      return 1; 
-    }
+  function getVisibleCount() {
+    if (window.innerWidth >= 1024) return 4;
+    if (window.innerWidth >= 640) return 2;
+    return 1;
+  }
 
-    function getMaxIndex() {
-      return 5 - getVisibleCount();
-    }
+  function getMaxIndex() {
+    return totalCards - getVisibleCount();
+  }
 
-    function updateSlider() {
-      const cardWidth = slider.querySelector("div").offsetWidth;
-      slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-      prevBtn.disabled = currentIndex === 0;
-      nextBtn.disabled = currentIndex >= getMaxIndex();
-    }
+  function updateSlider() {
+    const cardWidth = slider.querySelector("div").offsetWidth;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    prevBtns.forEach(btn => (btn.disabled = currentIndex === 0));
+    nextBtns.forEach(btn => (btn.disabled = currentIndex >= getMaxIndex()));
+  }
 
-    nextBtn.addEventListener("click", () => {
-      if (currentIndex < getMaxIndex()) {
-        currentIndex++;
-        updateSlider();
-      }
-    });
-
-    prevBtn.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-      }
-    });
-
-    window.addEventListener("resize", () => {
-      if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+  nextBtns.forEach(btn => btn.addEventListener("click", () => {
+    if (currentIndex < getMaxIndex()) {
+      currentIndex++;
       updateSlider();
-    });
+    }
+  }));
 
+  prevBtns.forEach(btn => btn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  }));
+
+  window.addEventListener("resize", () => {
+    if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
     updateSlider();
-  </script>
+  });
+
+  updateSlider();
+</script>
+
 

@@ -1,0 +1,140 @@
+<div class="bg-[#FFFFFF]  py-12 overflow-hidden">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full z-10 py-5">
+      <div>
+        <h5
+          class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center z-10"
+        >
+          FAQ
+        </h5>
+        <div class="pt-4">
+          <h1 class="text-4xl font-medium text-[#132028]">
+            Frequently Asked Questions
+          </h1>
+        </div>
+      </div>
+      <div class="accordion pt-4 lg:pt-0 z-10 overflow-hidden">
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors z-10"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Can you build a custom LMS for our institution?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+              Yes, we create tailored LMS platforms to meet your unique curriculum, branding, and compliance needs.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Do you support multi-language and accessibility standards?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+             Absolutely! Our platforms are inclusive and support global accessibility (WCAG, EU standards).
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Can you integrate AI and analytics into existing systems?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="p-2 text-sm">
+              Yes, we provide seamless integration with AI dashboards, CRM, and other Ed-Tech tools.
+            </p>
+          </div>
+        </div>
+        <div
+          class="accordion-item border-b border-[#1320281F] transition-colors"
+        >
+          <button
+            class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-gray-800 font-medium focus:outline-none"
+          >
+            <span class="text-lg font-medium"
+              >Is your solution GDPR-compliant?</span
+            >
+            <span class="relative w-5 h-5 flex items-center justify-center">
+              <i class="fa-solid fa-plus absolute plus-icon"></i>
+              <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+            </span>
+          </button>
+          <div
+            class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600"
+          >
+            <p class="px-2 pt-2 text-sm">
+             100%. All our systems are built with European data privacy and security protocols.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const accordions = document.querySelectorAll(".accordion-item");
+  accordions.forEach((item) => {
+    const toggle = item.querySelector(".accordion-toggle");
+    const content = item.querySelector(".accordion-content");
+    const plusIcon = item.querySelector(".plus-icon");
+    const minusIcon = item.querySelector(".minus-icon");
+
+    toggle.addEventListener("click", () => {
+      const isOpen = !content.classList.contains("max-h-0");
+
+      if (isOpen) {
+        // Closing
+        content.classList.add("max-h-0");
+        content.classList.remove("max-h-screen");
+        item.classList.remove("bg-[#0094EE05]");
+
+        plusIcon.classList.remove("hidden");
+        minusIcon.classList.add("hidden");
+      } else {
+        // Opening
+        content.classList.remove("max-h-0");
+        content.classList.add("max-h-screen");
+        item.classList.add("bg-[#0094EE05]");
+
+        plusIcon.classList.add("hidden");
+        minusIcon.classList.remove("hidden");
+      }
+    });
+  });
+</script>

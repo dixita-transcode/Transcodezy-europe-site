@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>custom software development Transcodezy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Assets/Css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+     
+    <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+    <link rel="stylesheet" href="Componets/Comman/header.css" />
+  </head>
+  <body>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /*make an HTTP request using the attribute value as the file name:*/
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                  executeScripts(elmnt);
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /*remove the attribute, and call this function once more:*/
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            console.log("object", xhttp);
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /*exit the function:*/
+            return;
+          }
+        }
+      }
+
+      function executeScripts(container) {
+        var scripts = container.getElementsByTagName("script");
+        for (var i = 0; i < scripts.length; i++) {
+          var script = document.createElement("script");
+          script.text = scripts[i].text;
+          container.appendChild(script).parentNode.removeChild(script);
+        }
+      }
+    </script>
+
+    <div class="main_wrapper">
+      <div w3-include-html="/Components/Comman/header.html"></div>
+      <div w3-include-html="/Components/SportsTech/Hero/hero.html"></div>
+      <div w3-include-html="/Components/SportsTech/OurSportstechSolution/ourSportstechSolution.html"></div>
+      <div w3-include-html="/Components/SportsTech/OurBenefits/ourBenefits.html"></div>
+      <div w3-include-html="/Components/SportsTech/WhyEuropeanSportsPartner/whyEuropeanSports.html"></div>
+      <div w3-include-html="/Components/SportsTech/Blogs&Insights/blogs.html"></div>
+      <div w3-include-html="/Components/SportsTech/FAQ/faq.html"></div>
+      <div w3-include-html="/Components/SportsTech/GetInTouch/getInTouch.html"></div>
+      <div w3-include-html="/Components/Comman/footer.html"></div>
+    </div>
+
+    <script>
+      includeHTML();
+    </script>
+
+    <script src="/Assets/Js/tailwind.config.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    
+
+  </body>
+</html>

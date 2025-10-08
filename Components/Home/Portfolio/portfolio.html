@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Portfolio Section</title>
+<!-- our portfolio section start -->
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/a2e0e6adf3.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-
-  <body class="bg-[#0094EE0F]">
-    <div class="relative z-0 h-auto py-12">
+    <div class="bg-[#0094EE0F] relative z-0 h-auto py-12">
       <div class="container mx-auto px-6 lg:px-12 relative">
         <!-- Background Images -->
         <div class="absolute inset-y-0 top-0 left-0 z-0 opacity-70">
@@ -50,13 +28,16 @@
         </div>
 
         <!-- Heading & View All (Hidden on mobile) -->
-        <div class="hidden md:flex justify-between py-2 relative z-10">
+        <div class="py-2 relative z-10">
           <h2 class="text-3xl md:text-4xl font-medium text-[#132028]">
             Portfolio — Projects Across Globe
           </h2>
+          <div class="none lg:flex justify-between ">
+          <p class="text-md text-[#44464A] w-full lg:w-[665px]">A showcase of our latest projects across the UK, Germany, Netherlands, France, Spain, 
+            and the Balkans. Explore our work in FinTech, healthcare, manufacturing, e-commerce, and more.</p>
           <div>
             <button
-              class="flex justify-center gap-2 bg-primary py-2 px-4 rounded-3xl text-white text-sm group"
+              class="hidden md:flex justify-center gap-2 bg-primary py-2 px-4 rounded-3xl text-white text-sm group"
             >
               View All
               <span
@@ -65,6 +46,7 @@
                 <i class="fa-solid fa-arrow-right"></i>
               </span>
             </button>
+          </div>
           </div>
         </div>
 
@@ -297,33 +279,35 @@
           </div>
 
           <!-- Slider Buttons -->
-          <div class="flex flex-row gap-6 pt-4 md:pt-0 z-10">
-          <button id="portflioPrev"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Previous"
-            title="Previous"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button id="portfolioNext"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
-            aria-label="Next"
-            title="Next"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
+          <div class="flex flex-row gap-6 pt-4 md:pt-0 z-10 relative">
+  <button
+    id="portfolioPrev"
+    class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+    aria-label="Previous"
+    title="Previous"
+  >
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+  <button
+    id="portfolioNext"
+    class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+    aria-label="Next"
+    title="Next"
+  >
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+</div>
+
         </div>
       </div>
     </div>
 
     <!-- Swiper JS -->
-    <script>
+   <script>
   window.addEventListener("load", function () {
     const prevBtn = document.getElementById("portfolioPrev");
     const nextBtn = document.getElementById("portfolioNext");
 
-    // ✅ Initialize Swiper after DOM & buttons are ready
     const swiper = new Swiper(".portfolioSwiper", {
       slidesPerView: 1,
       spaceBetween: 20,
@@ -341,12 +325,9 @@
       },
     });
 
-    // ✅ Disable prev/next buttons at start/end
     function updateButtonState(swiper) {
       prevBtn.disabled = swiper.isBeginning;
       nextBtn.disabled = swiper.isEnd;
-
-      // Optional visual feedback (e.g. fade)
       prevBtn.classList.toggle("opacity-40", swiper.isBeginning);
       nextBtn.classList.toggle("opacity-40", swiper.isEnd);
     }
