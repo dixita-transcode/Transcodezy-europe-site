@@ -1,0 +1,134 @@
+<section class="bg-[#FFFFFF] py-12">
+  <div class="container mx-auto px-6 lg:px-12">
+
+    <!-- Title -->
+    <h5 class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl">
+      Testimonials
+    </h5>
+
+    <!-- Header -->
+    <div class="flex justify-between py-5 mt-2 items-center">
+      <h2 class="text-3xl font-semibold text-[#132028]">What Our Clients Say</h2>
+      <div class="hidden md:flex gap-6 z-10">
+        <button
+          class="testimonial-prev w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button
+          class="testimonial-next w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper testimonialSwiper mt-6">
+      <div class="swiper-wrapper">
+        <!-- Testimonial Cards -->
+        <div class="swiper-slide bg-white h-[220px] lg:h-[240px] xl:h-[200px] border-2 border-[#1320281F] py-8 px-6 rounded-2xl cursor-pointer transition-transform hover:scale-90 duration-700 hover:border-2 hover:border-primary z-10">
+          <p class="w-full xl:w-[350px] text-md text-[#44464A]">Networked has become the backbone of our online community, supporting us in bringing more diversity to boards and executive leadership.
+          </p></p>
+          <div class="flex items-center gap-2 pt-3">
+            <img src="../../../Assets/Images/testimonials_img.jpg" class="h-[50px] w-[50px] rounded-full object-cover" />
+            <div>
+              <h2 class="font-semibold">Gabriella Serrato</h2>
+              <p class="text-sm text-[#44464A]">Beyond Board</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide bg-white h-[220px] lg:h-[240px] xl:h-[200px] border-2 border-[#1320281F] py-8 px-5 rounded-2xl cursor-pointer transition-transform hover:scale-90 duration-700 hover:border-2 hover:border-primary z-10">
+          <p class="w-full xl:w-[350px] text-md text-[#44464A]">VLF members have leveraged the platform to connect with potential investors and gain access to crucial capital and financing.</p>
+          <div class="flex items-center gap-2 pt-3">
+            <img src="../../../Assets/Images/testimonials_img.jpg" class="h-[50px] w-[50px] rounded-full object-cover" />
+            <div>
+              <h2 class="font-semibold">Christina Bui</h2>
+              <p class="text-sm text-[#44464A]">Vietnamese Leaders Forum</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide bg-white h-[220px] lg:h-[240px] xl:h-[200px] border-2 border-[#1320281F] py-8 px-5 rounded-2xl cursor-pointer transition-transform hover:scale-90 duration-700 hover:border-2 hover:border-primary z-10">
+          <p class="w-full xl:w-[370px] text-md text-[#44464A]">Networked’s intuitive RSVP system helps us effortlessly organize events and foster networking opportunities.</p>
+          <div class="flex items-center gap-2 pt-3">
+            <img src="../../../Assets/Images/testimonials_img.jpg" class="h-[50px] w-[50px] rounded-full object-cover" />
+            <div>
+              <h2 class="font-semibold">Jim Graham</h2>
+              <p class="text-sm text-[#44464A]">Felix Global</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide bg-white h-[220px] lg:h-[240px] xl:h-[200px] border-2 border-[#1320281F] py-8 px-5 rounded-2xl cursor-pointer transition-transform hover:scale-90 duration-700 hover:border-2 hover:border-primary z-10">
+          <p class="w-full xl:w-[350px] text-md text-[#44464A]">Networked has become the backbone of our online community, supporting us in bringing more diversity to boards and executive leadership.</p>
+          <div class="flex items-center gap-2 pt-3">
+            <img src="../../../Assets/Images/testimonials_img.jpg" class="h-[50px] w-[50px] rounded-full object-cover" />
+            <div>
+              <h2 class="font-semibold">Lana D</h2>
+              <p class="text-sm text-[#44464A]">Event Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Buttons -->
+    <div class="block md:hidden flex gap-6 pt-6 z-10 relative">
+      <button
+        class="testimonial-prev w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button
+        class="testimonial-next w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      loop: false,
+      navigation: {
+        nextEl: ".testimonial-next",
+        prevEl: ".testimonial-prev",
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+      on: {
+        init: function () {
+          updateButtons(this);
+        },
+        slideChange: function () {
+          updateButtons(this);
+        },
+      },
+    });
+
+    function updateButtons(swiper) {
+      const prev = document.querySelectorAll(".testimonial-prev");
+      const next = document.querySelectorAll(".testimonial-next");
+
+      prev.forEach(btn =>
+        swiper.isBeginning
+          ? btn.setAttribute("disabled", true)
+          : btn.removeAttribute("disabled")
+      );
+
+      next.forEach(btn =>
+        swiper.isEnd
+          ? btn.setAttribute("disabled", true)
+          : btn.removeAttribute("disabled")
+      );
+    }
+  </script>
+

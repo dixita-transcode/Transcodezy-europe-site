@@ -1,133 +1,151 @@
-<!-- why choose us section start -->
+<section class="bg-[#FFFFFF] py-12">
+  <div class="container mx-auto px-6 lg:px-12 z-20">
+    
+    <!-- Title -->
+    <h5 class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-2 px-4 rounded-3xl text-center">
+      Why Choose Us
+    </h5>
 
-<section class="bg-[#FFFFFF]  py-12">
-    <div class="container mx-auto px-6 lg:px-12  z-20">
-      
-      <!-- Title -->
-      <h5 class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-2 px-4 rounded-3xl text-center">
-        Why Choose Us
-      </h5>
-
-      <!-- Header with nav -->
-      <div class="flex justify-between py-5 mt-2 items-center z-10">
-        <h2 class="text-4xl font-medium text-[#132028]">Why Choose Us</h2>
-        <div class="hidden md:flex gap-6 z-10">
-          <button
-            id="prevBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            id="nextBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
+    <!-- Header with nav -->
+    <div class="flex justify-between py-5 mt-2 items-center z-10">
+      <h2 class="text-4xl font-medium text-[#132028]">Why Choose Us</h2>
+      <div class="hidden md:flex gap-6 z-10">
+        <button
+          id="whyPrevBtn"
+          class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button
+          id="whyNextBtn"
+          class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
+    </div>
 
-      <!-- Swiper -->
-      <div class="swiper mt-6 z-10">
-        <div class="swiper-wrapper">
+    <!-- Swiper -->
+    <div class="why-choose-swiper swiper mt-6 z-10">
+      <div class="swiper-wrapper">
 
-          <!-- Card 1 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full  h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
-            <div class="mb-2 ">
-                <img src="../../../Assets/Images/AIandML/why_choose_img1.png" alt="Expertise Across Industries" class="h-[50px] w-[50px]"/>
-            </div>
-              <div class="pt-3 w-full xl:w-[220px]">
-                <h2 class="text-xl font-medium">Expertise Across Industries</h2>
-                <p class="text-sm text-[#44464A]">Deep experience in Healthcare, FinTech, Manufacturing, E-commerce, and more.</p>
-              </div>
+        <!-- Card 1 -->
+        <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[200px] lg:h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
+          <div class="mb-2">
+            <img src="../../../Assets/Images/AIandML/why_choose_img1.png" alt="Expertise Across Industries" class="h-[50px] w-[50px]" />
           </div>
-
-          <!-- Card 2 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
-            <div class="mb-2 ">
-                <img src="../../../Assets/Images/AIandML/why_choose_img2.png" alt="Scalable AI Solutions" class="h-[50px] w-[50px] "/>
-            </div>
-              <div class="pt-3 w-full xl:w-[200px]">
-                <h2 class="text-xl font-medium">Scalable AI Solutions</h2>
-                <p class="text-sm text-[#44464A]">Systems designed to grow with your business and adapt to new challenges.</p>
-              </div>
+          <div class="pt-3 w-full xl:w-[220px]">
+            <h2 class="text-xl font-medium">Expertise Across Industries</h2>
+            <p class="text-sm text-[#44464A]">Deep experience in Healthcare, FinTech, Manufacturing, E-commerce, and more.</p>
           </div>
-
-          <!-- Card 3 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full  h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
-            <div class="mb-2">
-                <img src="../../../Assets/Images/AIandML/why_choose_img3.png" alt="Intelligent Automation & RPA" class="h-[50px] w-[50px] "/>
-            </div>
-              <div class="pt-3 w-full xl:w-[220px]">
-                <h2 class="text-xl font-medium">Innovation-Driven</h2>
-                <p class="text-sm text-[#44464A]">Cutting-edge AI/ML technology to keep your enterprise competitive globally.</p>
-              </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full  h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
-            <div class="mb-2">
-                <img src="../../../Assets/Images/AIandML/why_choose_img4.png" alt="Computer Vision & Image Recognition" class="h-[50px] w-[50px] "/>
-            </div>
-              <div class="pt-3 w-full xl:w-[220px]">
-                <h2 class="text-xl font-medium">Compliance & Security First</h2>
-                <p class="text-sm text-[#44464A]">GDPR, WCAG, and global standards integrated in every project.</p>
-              </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full  h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
-            <div class="mb-2">
-                <img src="../../../Assets/Images/AIandML/why_choose_img1.png" alt="User-Centered Approach" class="h-[50px] w-[50px]"/>
-            </div>
-              <div class="pt-3 w-full xl:w-[220px]">
-                <h2 class="text-xl font-medium">Expertise Across Industries</h2>
-                <p class="text-sm text-[#44464A]">Deep experience in Healthcare, FinTech, Manufacturing, E-commerce, and more.</p>
-              </div>
-          </div>
-
         </div>
+
+        <!-- Card 2 -->
+        <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[200px] lg:h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
+          <div class="mb-2">
+            <img src="../../../Assets/Images/AIandML/why_choose_img2.png" alt="Scalable AI Solutions" class="h-[50px] w-[50px]" />
+          </div>
+          <div class="pt-3 w-full xl:w-[200px]">
+            <h2 class="text-xl font-medium">Scalable AI Solutions</h2>
+            <p class="text-sm text-[#44464A]">Systems designed to grow with your business and adapt to new challenges.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[200px] lg:h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
+          <div class="mb-2">
+            <img src="../../../Assets/Images/AIandML/why_choose_img3.png" alt="Innovation-Driven" class="h-[50px] w-[50px]" />
+          </div>
+          <div class="pt-3 w-full xl:w-[220px]">
+            <h2 class="text-xl font-medium">Innovation-Driven</h2>
+            <p class="text-sm text-[#44464A]">Cutting-edge AI/ML technology to keep your enterprise competitive globally.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[200px] lg:h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
+          <div class="mb-2">
+            <img src="../../../Assets/Images/AIandML/why_choose_img4.png" alt="Compliance & Security First" class="h-[50px] w-[50px]" />
+          </div>
+          <div class="pt-3 w-full xl:w-[220px]">
+            <h2 class="text-xl font-medium">Compliance & Security First</h2>
+            <p class="text-sm text-[#44464A]">GDPR, WCAG, and global standards integrated in every project.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="swiper-slide bg-white border-2 border-[#1320281F] p-6 rounded-2xl w-full h-[200px] lg:h-[250px] hover:scale-90 duration-700 cursor-pointer hover:border hover:border-primary">
+          <div class="mb-2">
+            <img src="../../../Assets/Images/AIandML/why_choose_img1.png" alt="User-Centered Approach" class="h-[50px] w-[50px]" />
+          </div>
+          <div class="pt-3 w-full xl:w-[220px]">
+            <h2 class="text-xl font-medium">Expertise Across Industries</h2>
+            <p class="text-sm text-[#44464A]">Deep experience in Healthcare, FinTech, Manufacturing, E-commerce, and more.</p>
+          </div>
+        </div>
+
       </div>
-       <div class="block md:hidden flex gap-6 pt-6 relative z-10">
-          <button
-            id="prevBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button
-            id="nextBtn"
-            class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
     </div>
+
+    <!-- Mobile Navigation -->
+    <div class="flex md:hidden gap-6 pt-6 relative z-10">
+      <button
+        id="whyPrevBtn"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+      >
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+      <button
+        id="whyNextBtn"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-40"
+      >
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
     </div>
-  </section>
-
-
+  </div>
+</section>
 
 <script>
-    const swiper = new Swiper('.swiper', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      breakpoints: {
-        640: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 },
+  const whySwiper = new Swiper('.why-choose-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 },
+    },
+    navigation: {
+      nextEl: '#whyNextBtn',
+      prevEl: '#whyPrevBtn',
+    },
+    on: {
+      init: function () {
+        document.getElementById('whyPrevBtn').disabled = this.isBeginning;
+        document.getElementById('whyNextBtn').disabled = this.isEnd;
       },
-      navigation: {
-        nextEl: '#nextBtn',
-        prevEl: '#prevBtn',
+      slideChange: function () {
+        document.getElementById('whyPrevBtn').disabled = this.isBeginning;
+        document.getElementById('whyNextBtn').disabled = this.isEnd;
       },
-      on: {
-        slideChange: function () {
-          document.getElementById('prevBtn').disabled = this.isBeginning;
-          document.getElementById('nextBtn').disabled = this.isEnd;
-        },
-      },
-    });
+    },
+  });
 
-    // Initial state
-    document.getElementById('prevBtn').disabled = true;
-  </script>
+  // Mobile Swiper
+  // const whySwiperMobile = new Swiper('.why-choose-swiper', {
+  //   slidesPerView: 1,
+  //   spaceBetween: 20,
+  //   navigation: {
+  //     nextEl: '#whyNextBtnMobile',
+  //     prevEl: '#whyPrevBtnMobile',
+  //   },
+  //   on: {
+  //     init: function () {
+  //       document.getElementById('whyPrevBtnMobile').disabled = this.isBeginning;
+  //       document.getElementById('whyNextBtnMobile').disabled = this.isEnd;
+  //     },
+  //     slideChange: function () {
+  //       document.getElementById('whyPrevBtnMobile').disabled = this.isBeginning;
+  //       document.getElementById('whyNextBtnMobile').disabled = this.isEnd;
+  //     },
+  //   },
+  // });
+</script>

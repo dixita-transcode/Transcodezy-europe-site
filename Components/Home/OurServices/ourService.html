@@ -19,7 +19,7 @@
     <div>
       <div class="py-5 w-full lg:w-[500px]">
         <h5
-          class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center z-10"
+          class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-2 px-4 rounded-3xl text-center z-10"
         >
           Services
         </h5>
@@ -27,91 +27,178 @@
       <div class="none md:flex justify-between py-2">
         <h2 class="text-4xl font-medium text-[#132028]">Our Core Services</h2>
         <div class="z-10 pt-2 md:pt-0">
-          <button id="viewAllBtn" class="flex justify-center gap-2 bg-primary py-2 px-4 rounded-3xl w-full md:w-fit text-white text-sm group ">View All
-            <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span>
+          <button
+            id="viewAllBtn"
+            class="flex justify-center gap-2 bg-primary py-2 px-4 rounded-3xl w-full md:w-fit text-white text-sm group"
+          >
+            View All
+            <span
+              class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
           </button>
         </div>
       </div>
-      <div id="servicesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
-        <div class="bg-[#ffffff]  h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/custom_software.jpg" alt="custom_software"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">Custom Software Development</h2>
-                <p class="text-md text-[#44464A] pt-2">Tailored web & mobile apps built for your business needs</p>
-                <button class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+      <div
+        id="servicesContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6"
+      >
+        <div
+          class="bg-[#ffffff] flex flex-col h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/custom_software.jpg"
+            alt="custom_software"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">Custom Software Development</h2>
+          <p class="text-md text-[#44464A] pt-2 flex-1">
+            Tailored web & mobile apps built for your business needs
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
-        <div class="bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/cloud_solution.jpg" alt="cloud_solution"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">Cloud & DevOps Solutions</h2>
-                <p class="text-md text-[#44464A] pt-2">Scalable, secure infrastructure & automation strategies</p>
-                <button class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+        <div
+          class="bg-[#ffffff] flex flex-col h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/cloud_solution.jpg"
+            alt="cloud_solution"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">Cloud & DevOps Solutions</h2>
+          <p class="text-md text-[#44464A] pt-2 flex-1">
+            Scalable, secure infrastructure & automation strategies
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
-        <div class="bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/AI&ML.jpg" alt="AI&ML"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">Artificial Intelligence & Machine Learning</h2>
-                <p class="text-md text-[#44464A] pt-2">Smarter automation & predictive insights</p>
-                <button class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+        <div
+          class="bg-[#ffffff] flex flex-col h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/AI&ML.jpg"
+            alt="AI&ML"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">
+            Artificial Intelligence & Machine Learning
+          </h2>
+          <p class="text-md text-[#44464A] pt-2 flex-1">
+            Smarter automation & predictive insights
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-4 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
       </div>
-      <div id="servicesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6">
-        <div class="hidden bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/blockchain_img.jpg" alt="blockchain_img"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">Blockchain & FinTech Solutions</h2>
-                <p class="text-md text-[#44464A] pt-2">Secure, transparent, and innovative digital finance ecosystems.</p>
-                <button class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+      <div
+        id="servicesContainer"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-6"
+      >
+        <div
+          class="hidden flex flex-col bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/blockchain_img.jpg"
+            alt="blockchain_img"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">Blockchain & FinTech Solutions</h2>
+          <p class="text-md text-[#44464A] pt-2 flex-1">
+            Secure, transparent, and innovative digital finance ecosystems.
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
-        <div class="hidden bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/uiux_img.jpg" alt="uiux_img"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">UI/UX & Product Design</h2>
-                <p class="text-md text-[#44464A] pt-2">User-focused design for intuitive and engaging digital experiences.</p>
-                <button class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+        <div
+          class="hidden flex flex-col bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/uiux_img.jpg"
+            alt="uiux_img"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">UI/UX & Product Design</h2>
+          <p class="text-md text-[#44464A] pt-2">
+            User-focused design for intuitive and engaging digital experiences.
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
-        <div class="hidden bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700">
-            <img src="../../../Assets/Images/digital_consulting.jpg" alt="digital_consulting"  class="w-[430px] h-[280px] rounded-2xl"/>
-            <div class="pt-3">
-                <h2 class="text-xl font-medium">Digital Transformation Consulting</h2>
-                <p class="text-md text-[#44464A] pt-2">Helping enterprises adopt modern technologies and scale effectively.</p>
-                <button class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary">
-                    <a herf="#" class="flex justify-start items-center gap-2">Read More 
-                        <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </button>
-            </div>
+        <div
+          class="hidden flex flex-col bg-[#ffffff] h-auto border border-[#1320281F] rounded-2xl p-4 z-10 shadow-lg shadow-[#00000040] hover:-translate-y-2 duration-700"
+        >
+          <img
+            src="../../../Assets/Images/digital_consulting.jpg"
+            alt="digital_consulting"
+            class="w-[430px] h-[280px] rounded-2xl mb-2"
+          />
+          <h2 class="text-xl font-medium">Digital Transformation Consulting</h2>
+          <p class="text-md text-[#44464A] pt-2 flex-1">
+            Helping enterprises adopt modern technologies and scale effectively.
+          </p>
+          <button
+            class="text-[#44464A] text-md font-medium pt-5 group hover:text-primary"
+          >
+            <a herf="#" class="flex justify-start items-center gap-2"
+              >Read More
+              <span
+                class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"
+                ><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </button>
         </div>
+      </div>
     </div>
   </div>
+
+  <script>
+    const viewAllBtn = document.getElementById("viewAllBtn");
+    const hiddenCards = document.querySelectorAll("#servicesContainer .hidden");
+
+    viewAllBtn.addEventListener("click", () => {
+      hiddenCards.forEach((card) => card.classList.remove("hidden"));
+      viewAllBtn.classList.toggle("show");
+    });
+  </script>
 </div>
-
-
-<script>
-  const viewAllBtn = document.getElementById("viewAllBtn");
-  const hiddenCards = document.querySelectorAll("#servicesContainer .hidden");
-
-  viewAllBtn.addEventListener("click", () => {
-    hiddenCards.forEach(card => card.classList.remove("hidden"));
-    viewAllBtn.classList.toggle("show"); 
-  });
-</script>
