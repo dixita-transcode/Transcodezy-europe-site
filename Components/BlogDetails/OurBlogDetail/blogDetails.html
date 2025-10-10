@@ -1,4 +1,4 @@
-<div class="bg-[#FFFFFF] py-12 mt-20">
+<!-- <div class="bg-[#FFFFFF] py-12 mt-20">
     <div class="container mx-auto px-6 lg:px-12">
       <div class="">
          <img src="../../../Assets/Images/Insights&Blogs/blog_img1.jpg" alt="blog_img1" class="h-[600px] w-[100%] object-cover rounded-2xl"/>
@@ -107,4 +107,33 @@
       </div>
     </div>
 </div>
+
+ -->
+
  
+ <div id="blog-detail" class="pt-28 pb-12">
+ </div>
+
+  <script>
+    // Get URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const category = params.get("category");
+
+    const blogContainer = document.getElementById("blog-detail");
+
+    if (blogDetails[category] && blogDetails[category][id]) {
+      const blog = blogDetails[category][id];
+      blogContainer.innerHTML = `
+        <div class="container mx-auto px-6 lg:px-12">
+          ${blog.content}
+        </div>
+      `;
+    } else {
+      blogContainer.innerHTML = `
+        <div class="text-center py-20 text-gray-600 text-xl">
+          Blog not found.
+        </div>
+      `;
+    }
+  </script>

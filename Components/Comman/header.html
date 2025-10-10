@@ -1,18 +1,19 @@
 <!-- header section start -->
-<header class="bg-[#132028] py-2 fixed top-0 left-0 right-0 z-50">
+<header class="bg-[#132028] py-2 fixed top-0 left-0 right-0 z-50 ">
   <div class="container mx-auto px-6 lg:px-12 ">
     <div class="flex justify-between items-center">
       <div class="">
+        <a href="/index.html" >
         <img
           src="../../Assets/Images/logo1.png"
           alt="logo"
           class="h-[70px] w-[70px]"
         />
+        </a>
       </div>
       <div class="menu hidden lg:block">
         <ul class="menu-items hidden md:flex justify-center items-center gap-5">
-          <!-- <li><a href="#" class="text-md uppercase">Home</a></li> -->
-          <li class="group"><a href="/software-services.html" class="relative z-50 text-md text-[#FFFFFF] uppercase inline-block transition-all 0.25s ease-in-out">Service</a>
+          <li class="group"><a href="/software-services.html" class="relative z-50 text-md text-[#FFFFFF] uppercase inline-block transition-all 0.25s ease-in-out ">Service</a>
             <div
               class="submenu bg-[#ffffff] border-t border-[#e8e8e9] absolute inset-x-0 left-0 right-0 mt-7 shadow-lg -z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-50 transition-all duration-300 w-full"
             >
@@ -22,6 +23,7 @@
                     <a href="/custom_software_development.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">Custom Software Development</p>
+                        <p class="text-[#44464A] text-sm mt-2">Tailored web and mobile applications designed to meet unique business needs.</p>
                       </div>
                     </a>
                   </li>
@@ -29,6 +31,7 @@
                     <a href="/cloud_and_devops_solutions.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">Cloud & DevOps Solutions</p>
+                        <p class="text-[#44464A] text-sm mt-2">Scalable, secure, and optimized infrastructure for seamless operations.</p>
                       </div>
                     </a>
                   </li>
@@ -36,6 +39,7 @@
                     <a href="ai_and_ml.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">AI & ML</p>
+                        <p class="text-[#44464A] text-sm mt-2">Intelligent automation, predictive analytics, and smart decision-making.</p>
                       </div>
                     </a>
                   </li>
@@ -43,6 +47,7 @@
                     <a href="/blockchain_and_fintech_solutions.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">Blockchain & FinTech Solutions</p>
+                        <p class="text-[#44464A] text-sm mt-2">Secure, transparent, and innovative digital finance ecosystems</p>
                       </div>
                     </a>
                   </li>
@@ -50,6 +55,7 @@
                     <a href="/uiux_and_product_design.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">UI/UX & Product Design</p>
+                        <p class="text-[#44464A] text-sm mt-2">User-focused design for intuitive and engaging digital experiences.</p>
                       </div>
                     </a>
                   </li>
@@ -57,6 +63,7 @@
                     <a href="/digital_transformation_consulting.html" class="block h-[100%] text-md mb-1 transition-colors duration-300 ease-in-out overflow-hidden">
                       <div class="flex flex-col relative pb-[40px] h-[100%] w-[240px] p-4">
                         <p class="font-medium font-md ">Digital Transformation Consulting</p>
+                        <p class="text-[#44464A] text-sm mt-2">Helping enterprises adopt modern technologies and scale effectively.</p>
                       </div>
                     </a>
                   </li>
@@ -334,3 +341,13 @@
   </div>
 </header>
 
+<script>
+  const links = document.querySelectorAll('a');
+  const currentPath = window.location.pathname;
+  
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('active');
+    }
+  });
+</script>

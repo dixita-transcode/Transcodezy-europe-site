@@ -1,0 +1,79 @@
+<!-- Counter Section -->
+<div class="bg-[#FFFFFF] py-8">
+  <div class="container mx-auto px-6 lg:px-12">
+    <div class="bg-[#132028] overflow-hidden relative z-0 rounded-2xl">
+      <img
+        src="../../../Assets/Images/getintouch.png"
+        alt="get-in-touch-bg"
+        class="absolute w-full h-full object-cover z-10"
+      />
+
+      <!-- Counter Wrapper -->
+      <div
+        class="relative z-20 flex flex-wrap justify-between items-center text-center py-10"
+        id="counter-section"
+      >
+        <div class="w-1/2 md:w-1/4 py-5">
+          <h2 class="counter text-4xl font-semibold text-white" data-target="3">0</h2>
+          <p class="mt-2 text-white text-md">Years of Experience</p>
+        </div>
+
+        <div class="w-1/2 md:w-1/4 py-5">
+          <h2 class="counter text-4xl font-semibold text-white" data-target="40">0</h2>
+          <p class="mt-2 text-white text-md">Talented IT Professionals</p>
+        </div>
+
+        <div class="w-1/2 md:w-1/4 py-5">
+          <h2 class="counter text-4xl font-semibold text-white" data-target="100">0</h2>
+          <p class="mt-2 text-white text-md">Successful Projects</p>
+        </div>
+
+        <div class="w-1/2 md:w-1/4 py-5">
+          <h2 class="counter text-4xl font-semibold text-white" data-target="15">0</h2>
+          <p class="mt-2 text-white text-md">Countries Served Across the Globe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS Script -->
+<script>
+  // Counter animation
+  const counters = document.querySelectorAll(".counter");
+  let started = false; // Prevent multiple triggers
+
+  const startCounting = () => {
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-target");
+      const speed = 200; // Adjust for faster/slower counting
+      const increment = target / speed;
+
+      const updateCount = () => {
+        const current = +counter.innerText;
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target + "+";
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Scroll detection using Intersection Observer
+  const counterSection = document.querySelector("#counter-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting && !started) {
+        startCounting();
+        started = true;
+      }
+    },
+    { threshold: 0.5 } // Trigger when 50% visible
+  );
+
+  observer.observe(counterSection);
+</script>

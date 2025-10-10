@@ -1,0 +1,109 @@
+<section class="bg-[#FFFFFF]">
+  <div class="container mx-auto px-6 lg:px-12 py-12">
+    <div class="flex flex-col lg:flex-row items-center gap-8">
+      <!-- Left Image -->
+      <div class="w-full lg:w-1/2">
+        <img
+          src="../../../Assets/Images/ContactUs/contact_form_bg.jpg"
+          alt="Team Collaboration"
+          class="w-[100%] h-[520px] rounded-t-full object-cover"
+        />
+      </div>
+
+      <!-- Right Form -->
+      <div
+        class="relative z-0 w-full lg:w-1/2 bg-gray-900 text-white rounded-2xl p-8 shadow-lg"
+      >
+        <img
+          src="../../../Assets/Images/Careers/howtoapply_form_bg.png"
+          alt="howtoapply_form_bg"
+          class="absolute z-10 inset-0 h-[100%] w-[100%] object-cover"
+        />
+        <h2 class="text-2xl font-semibold mb-6">
+          Collaborate with Transcodezy
+        </h2>
+        <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
+          />
+
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
+          />
+
+          <textarea
+            placeholder="About your project..."
+            class="w-full h-32 px-2 py-3 rounded-lg bg-[#FFFFFF14] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 z-10"
+          ></textarea>
+
+          <label class="rounded-lg cursor-pointer bg-[#FFFFFF14] p-2 z-10">
+            <p class="text-md text-gray-400 text-start mb-2">
+              Attachments (Optional)
+            </p>
+            <div
+              class="flex flex-col items-center justify-center w-full h-20 text-[#FFFFFF] rounded-lg border-2 border-dashed border-gray-600 hover:border-blue-500 transition"
+            >
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <input id="resume" type="file" class="hidden" />
+          </label>
+        </form>
+        <div class="pt-4">
+          <label class="flex items-center gap-2 text-sm text-gray-400 z-10">
+            <input
+              type="checkbox"
+              required
+              class="w-[16px] h-[16px] accent-primary z-10"
+            />
+            I have read Privacy Notice
+          </label>
+
+          <label class="flex items-start gap-2 text-sm text-gray-400 pt-3 z-10">
+            <input
+              type="checkbox"
+              class="w-[16px] h-[16px] accent-primary z-10"
+            />
+            I agree to receive marketing materials about news, events, and
+            proposals from Transcodezy
+          </label>
+        </div>
+        <button
+          type="submit"
+          class="bg-primary text-white font-medium py-3 px-6 rounded-3xl mt-4 z-10 relative hover:scale-105 duration-700 cursor-pointer"
+        >
+          <a href="#"> Send Message</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Message sent!");
+      this.reset();
+    });
+</script>
