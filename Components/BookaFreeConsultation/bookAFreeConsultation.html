@@ -1,0 +1,62 @@
+<div id="consultationModal" class=" block md:fixed inset-0 flex items-center justify-center backdrop-blur-md pt-20 md:pt-8">
+  <div class="bg-[#eaeaea] rounded-lg p-8 max-w-5xl w-full mx-4 relative">
+    
+    <!-- Close Button -->
+    <button id="closeModalBtn" class="absolute right-4 top-4 text-2xl text-gray-600 hover:text-black transition">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <!-- Title -->
+    <h1 class="text-5xl font-medium text-dark-blue mb-4">Drop Us a Message</h1>
+
+    <!-- Description -->
+    <p class="text-[#44464A] mb-8 max-w-3xl">
+      Start your project with confidence! Schedule a consultation with our European IT experts to discuss your business goals and explore tailored digital solutions that drive measurable impact.
+    </p>
+
+    <div class="flex flex-col md:flex-row gap-8">
+      <!-- Form Section -->
+      <div class="w-full md:w-1/2 bg-[#132028] rounded-3xl p-8">
+        <h2 class="text-2xl font-semibold text-white mb-6">Consult Your Project</h2>
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input type="text" placeholder="First Name" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
+            <input type="text" placeholder="Last Name" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <input type="email" placeholder="Email" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
+            <input type="text" placeholder="Company" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
+          </div>
+          <div>
+            <select class="w-full px-2 py-3 rounded-lg bg-[#FFFFFF14] text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary z-10">
+              <option disabled selected>How did you hear about us?</option>
+              <option>Google</option>
+              <option>LinkedIn</option>
+              <option>Referral</option>
+              <option>AI Engineer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <textarea placeholder="Tell us more about your project..." class="w-full bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400 h-32"></textarea>
+          <button class="bg-primary text-white rounded-3xl px-6 py-3 font-semibold hover:bg-blue-600 transition-colors w-full">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <!-- Image Section -->
+      <div class="w-full md:w-1/2">
+        <img src="../../Assets/Images/bookafreeconsultation/form_bg_img.jpg" alt="Consultation" class="w-full h-full object-cover rounded-3xl">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Get elements
+  const closeBtn = document.getElementById('closeModalBtn');
+
+  closeBtn.addEventListener('click', () => {
+    window.location.href = '/'; 
+  });
+</script>
