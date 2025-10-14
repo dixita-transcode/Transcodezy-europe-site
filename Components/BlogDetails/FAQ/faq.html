@@ -162,3 +162,96 @@
     });
   });
 </script>
+
+
+<!-- <div id="faq-section" class="pt-5 pb-5"></div>
+
+<script>
+const faqData = {
+  services: {
+    1: [
+      { question: "How does custom software improve healthcare operations?", answer: "It centralizes patient and operational data and automates workflows for better efficiency." },
+      { question: "Can custom software reduce operational costs?", answer: "Yes, by automating routine tasks and optimizing resource management." },
+      { question: "Is the software compatible with existing systems?", answer: "Our solutions are designed to integrate seamlessly with your current infrastructure." },
+      { question: "How quickly can implementation happen?", answer: "Implementation timelines depend on complexity but typically range from weeks to months." },
+    ],
+    2: [
+      { question: "What are the benefits of custom ERP systems?", answer: "Custom ERP systems streamline business operations and provide better integration with workflows." },
+      { question: "Can ERP systems be scaled for growth?", answer: "Yes, they are fully scalable to accommodate growing business needs." },
+      { question: "Do ERP systems improve reporting?", answer: "Absolutely, ERP provides detailed analytics and real-time reporting capabilities." },
+      { question: "Are there industry-specific ERP solutions?", answer: "Yes, ERP can be customized to suit the requirements of different industries." },
+    ],
+  },
+  industries: [
+    { question: "How do ERP and CRM systems complement each other?", answer: "ERP manages internal operations while CRM enhances client communication." },
+    { question: "Why upgrade legacy systems?", answer: "To enhance security, scalability, and performance while reducing costs." },
+  ],
+  expertise: [
+    { question: "How is GDPR compliance handled?", answer: "Using encryption, audit logs, and access control for complete data security." },
+    { question: "Are solutions suitable for small clinics?", answer: "Yes, they are fully scalable and adaptable to clinics, hospitals, or enterprises." },
+    { question: "How can institutions implement these solutions?", answer: "Contact our experts at info@transcodesolution.com for personalized consultation." },
+  ],
+};
+
+// Demo: default category and serviceId
+const category = "services"; // Can also be "industries" or "expertise"
+const serviceId = "1"; // For services only
+
+const faqSection = document.getElementById("faq-section");
+
+let faqs = [];
+if (category === "services") {
+  faqs = faqData.services[serviceId] || [];
+} else if (faqData[category]) {
+  faqs = faqData[category];
+}
+
+if (!faqs.length) {
+  faqSection.innerHTML = `<div class="text-center py-20 text-gray-600 text-xl">FAQs not found for this category.</div>`;
+} else {
+  faqSection.innerHTML = `
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="text-center mb-8">
+        <h5 class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit mx-auto py-1 px-4 rounded-3xl z-10">FAQ</h5>
+        <h1 class="text-4xl font-medium text-[#132028] mt-4">Frequently Asked Questions - ${category.charAt(0).toUpperCase() + category.slice(1)}</h1>
+      </div>
+      <div class="accordion space-y-4">
+        ${faqs.map((faq, index) => `
+          <div class="accordion-item border-b border-[#1320281F]">
+            <button class="accordion-toggle w-full flex justify-between items-center p-4 text-left text-gray-800 font-medium focus:outline-none">
+              <span class="text-lg font-medium">${faq.question}</span>
+              <span class="plus-minus font-bold text-xl">+</span>
+            </button>
+            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600">
+              <p class="p-4 text-sm">${faq.answer}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  // Accordion functionality
+  const toggles = document.querySelectorAll(".accordion-toggle");
+  toggles.forEach(toggle => {
+    toggle.addEventListener("click", () => {
+      const content = toggle.nextElementSibling;
+      const plusMinus = toggle.querySelector(".plus-minus");
+
+      // Close all others
+      document.querySelectorAll(".accordion-content").forEach(c => c.style.maxHeight = "0px");
+      document.querySelectorAll(".plus-minus").forEach(pm => pm.textContent = "+");
+
+      // Open current
+      if (content.style.maxHeight === "0px" || !content.style.maxHeight) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        plusMinus.textContent = "−";
+      } else {
+        content.style.maxHeight = "0px";
+        plusMinus.textContent = "+";
+      }
+    });
+  });
+
+}
+</script> -->
