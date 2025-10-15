@@ -110,6 +110,7 @@
 
 <script>
   const accordions = document.querySelectorAll(".accordion-item");
+
   accordions.forEach((item) => {
     const toggle = item.querySelector(".accordion-toggle");
     const content = item.querySelector(".accordion-content");
@@ -119,23 +120,39 @@
     toggle.addEventListener("click", () => {
       const isOpen = !content.classList.contains("max-h-0");
 
+      // Close all other accordions
+      accordions.forEach((otherItem) => {
+        if (otherItem !== item) {
+          const otherContent = otherItem.querySelector(".accordion-content");
+          const otherPlus = otherItem.querySelector(".plus-icon");
+          const otherMinus = otherItem.querySelector(".minus-icon");
+
+          otherContent.classList.add("max-h-0");
+          otherContent.classList.remove("max-h-screen");
+          otherItem.classList.remove("bg-[#0094EE05]");
+
+          otherPlus.classList.remove("hidden");
+          otherMinus.classList.add("hidden");
+        }
+      });
+
+      // Toggle the clicked accordion
       if (isOpen) {
-        // Closing
+        // Close current
         content.classList.add("max-h-0");
         content.classList.remove("max-h-screen");
         item.classList.remove("bg-[#0094EE05]");
-
         plusIcon.classList.remove("hidden");
         minusIcon.classList.add("hidden");
       } else {
-        // Opening
+        // Open current
         content.classList.remove("max-h-0");
         content.classList.add("max-h-screen");
         item.classList.add("bg-[#0094EE05]");
-
         plusIcon.classList.add("hidden");
         minusIcon.classList.remove("hidden");
       }
     });
   });
 </script>
+

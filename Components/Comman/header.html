@@ -1,6 +1,6 @@
 <!-- header section start -->
-<header class="bg-[#132028] py-2 fixed top-0 left-0 right-0 z-50 ">
-  <div class="container mx-auto px-6 lg:px-12 ">
+<nav class="bg-[#132028] py-2 fixed top-0 left-0 right-0 z-50 ">
+  <div class="container mx-auto px-8 ">
     <div class="flex justify-between items-center">
       <div class="">
         <a href="/index.html" >
@@ -277,7 +277,7 @@
           <ul class="mob-menu_items block ">
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
-                <a href="/software-services.html" class="text-2xl uppercase font-medium hover:text-primary cursor-pointer">Services</a>
+                <a href="/software-services.html" class="text-xl uppercase font-medium hover:text-primary cursor-pointer">Services</a>
                 <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
                   <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -297,7 +297,7 @@
             </li>
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
-                <a href="/software-industries.html" class="text-2xl uppercase font-medium hover:text-primary cursor-pointer">Industries</a>
+                <a href="/software-industries.html" class="text-xl uppercase font-medium hover:text-primary cursor-pointer">Industries</a>
                 <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
                   <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -318,7 +318,7 @@
             </li>
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
-                <a href="/software-careers.html" class="text-2xl uppercase font-medium hover:text-primary cursor-pointer">Careers</a>
+                <a href="/software-careers.html" class="text-xl uppercase font-medium hover:text-primary cursor-pointer">Careers</a>
                 <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
                   <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -334,7 +334,7 @@
             </li>
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
-                <a href="/software-company.html" class="text-2xl uppercase font-medium hover:text-primary cursor-pointer">Company</a>
+                <a href="/software-company.html" class="text-xl uppercase font-medium hover:text-primary cursor-pointer">Company</a>
                 <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
                   <i class="fa-solid fa-angle-down"></i>
                 </span>
@@ -356,7 +356,7 @@
           
             <li class="mob-menu_item">
             <div class="mob-menu_item_link py-4">
-              <a href="#" class="text-2xl uppercase font-medium hover:text-primary cursor-pointer">Insights & Blogs</a>
+              <a href="#" class="text-xl uppercase font-medium hover:text-primary cursor-pointer">Insights & Blogs</a>
             </div>
           </li>
           </ul>
@@ -369,15 +369,24 @@
       </div>
     </nav>
   </div>
-</header>
+</nav>
 
 <script>
-  const links = document.querySelectorAll('a');
-  const currentPath = window.location.pathname;
-  
-  links.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
-      link.classList.add('active');
-    }
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("nav a"); // or use '.menu a' depending on your HTML
+    const currentPath = window.location.pathname;
+
+    links.forEach((link) => {
+      const href = link.getAttribute("href");
+
+      if (href && currentPath.includes(href.split("/").pop())) {
+        link.classList.add("active");
+
+        const parentMenu = link.closest(".submenu")?.closest("li")?.querySelector("a");
+        if (parentMenu) {
+          parentMenu.classList.add("active");
+        }
+      }
+    });
   });
 </script>

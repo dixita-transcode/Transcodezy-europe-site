@@ -1,7 +1,7 @@
 <!-- industries section start -->
 
 <div class="bg-[#ffffff] py-10">
-  <div class="container mx-auto px-6 lg:px-12">
+  <div class="container mx-auto px-8">
     <div>
       <div class="py-5 w-full lg:w-[500px]">
         <h5
@@ -11,7 +11,7 @@
         </h5>
       </div>
       <div>
-        <h2 class="text-4xl font-medium text-[#132028]">
+        <h2 class="text-3xl md:text-4xl font-medium text-[#132028]">
           Industries We Empower in Europe
         </h2>
       </div>
@@ -140,34 +140,40 @@
   const buttons = document.querySelectorAll(".industry-btn");
   const images = document.querySelectorAll(".industry-img");
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const index = btn.getAttribute("data-index");
+  // Function to set active button and image
+  function setActive(index) {
+    // hide all images
+    images.forEach((img) => img.parentElement.classList.add("hidden"));
 
-      // hide all images
-      images.forEach((img) => img.parentElement.classList.add("hidden"));
+    // show selected image
+    images[index].parentElement.classList.remove("hidden");
 
-      // show selected image
-      images[index].parentElement.classList.remove("hidden");
-
-      // remove active color from all button titles
-      buttons.forEach((b) => {
-        const title = b.querySelector("h2");
-        const detail= b.querySelector("p");
-        detail.classList.remove("text-primary");
-        detail.classList.add("text-[#44464A]");
-        title.classList.remove("text-primary");
-        title.classList.add("text-[#132028]"); 
-      });
-
-      // add active color to clicked button's title
-      const activeTitle = btn.querySelector("h2");
-      const activeDetail = btn.querySelector("p");
-      activeDetail.classList.remove("text-[#44464A]"); 
-      activeDetail.classList.add("text-primary");
-      activeTitle.classList.remove("text-[#132028]");
-      activeTitle.classList.add("text-primary");
+    // remove active color from all buttons
+    buttons.forEach((b) => {
+      const title = b.querySelector("h2");
+      const detail = b.querySelector("p");
+      detail.classList.remove("text-primary");
+      detail.classList.add("text-[#44464A]");
+      title.classList.remove("text-primary");
+      title.classList.add("text-[#132028]");
     });
+
+    // add active color to selected button
+    const activeTitle = buttons[index].querySelector("h2");
+    const activeDetail = buttons[index].querySelector("p");
+    activeDetail.classList.remove("text-[#44464A]");
+    activeDetail.classList.add("text-primary");
+    activeTitle.classList.remove("text-[#132028]");
+    activeTitle.classList.add("text-primary");
+  }
+
+  // Set first industry (FinTech) as active on page load
+  setActive(0);
+
+  // Add click event to all buttons
+  buttons.forEach((btn, idx) => {
+    btn.addEventListener("click", () => setActive(idx));
   });
 </script>
+
 

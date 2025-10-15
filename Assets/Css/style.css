@@ -19,6 +19,11 @@ body{
 
 /* header css start */
 
+nav a.active {
+  color: #0094EE;
+  font-weight: 600;
+}
+
 .menu .menu-items li>a {
     position: relative;
     display: inline-block;
