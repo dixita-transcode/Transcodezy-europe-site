@@ -470,10 +470,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/service_ecom1.jpeg" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/service_ecom2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
 
@@ -625,10 +625,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/blockchain_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/blockchain_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
 
@@ -774,10 +774,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/uiux_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/uiux_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
 
@@ -922,10 +922,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/digital_trans1.png" alt="benefits" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/cloud_blog_img2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/digital_trans2.png" alt="Healthcare" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
 
@@ -3424,10 +3424,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="./blogs-img/Rectangle1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/custom_crm2.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="./blogs-img/Rectangle2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/custom_crm1.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
         
@@ -3584,10 +3584,10 @@ const blogDetails = {
         <!-- Images Section -->
         <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
             <div class="w-full md:w-1/2">
-                <img src="./blogs-img/Rectangle1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/advance_crm1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="./blogs-img/Rectangle2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/advance_crm2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
             </div>
         </div>
         
