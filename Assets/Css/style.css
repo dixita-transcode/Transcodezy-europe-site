@@ -15,6 +15,56 @@
 body{
     margin: 0;
     font-family: 'Outfit',sans-serif;
+    overflow-x: hidden;
+}
+
+/* Base: mobile */
+.heading {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.paragraph  {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+    .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .paragraph  {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+.heading {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 /* header css start */
@@ -40,7 +90,7 @@ nav a.active {
 
 .mob-menu_wrapper{
     min-height: 100%;
-    padding: 40px 0 40px;
+    /* padding: 40px 0 40px; */
     flex-direction: column;
     display: flex;
 }
@@ -66,8 +116,6 @@ nav a.active {
 
 /* Hamburger button  mobile menu*/
 #menu-icon {
-    width: 48px;
-    height: 48px;
     position: relative;
     cursor: pointer;
 }
@@ -111,9 +159,9 @@ nav a.active {
     padding: 10px 5px;
     left: 0;
     right: 0;
-    background-color: #fff;
+    background-color: #132028;
     height:100vh;
-    max-height: calc(100vh - 71px);
+    max-height: calc(100vh - 62px);
     overflow-x: hidden;
     overflow-y: auto;
     transition: top 0.40s ease-in-out;
@@ -128,12 +176,12 @@ nav a.active {
     top: calc(100% - 1px);
 }
 
-.mob-submenu {
-  transition: all 0.3s ease-in-out;
-  transform-origin: center;
+.mob-menu_item_switcher img {
+    transition: transform 0.3s ease;
 }
+
 .rotate-180 {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* submenu css */

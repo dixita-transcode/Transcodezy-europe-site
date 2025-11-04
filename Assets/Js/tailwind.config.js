@@ -2,7 +2,9 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        primary: '#0094EE', // Primary brand color (logo, buttons, highlights)
+        primary: '#0094EE',
+        accent: "#132028",
+        secondary: "#44464A",
         gradientStart: '#FFFFFF00', 
         gradientEnd: '#F6F6F7F5',   
       },
