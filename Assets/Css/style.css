@@ -15,6 +15,56 @@
 body{
     margin: 0;
     font-family: 'Outfit',sans-serif;
+    overflow-x: hidden;
+}
+
+/* Base: mobile */
+.heading {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.paragraph  {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Medium screens */
+@media (min-width: 768px) {
+    .heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .paragraph  {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+.heading {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .heading {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+        line-height: 26px;
+    }
 }
 
 /* header css start */

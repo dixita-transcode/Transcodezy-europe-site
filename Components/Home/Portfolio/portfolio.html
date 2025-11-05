@@ -1,7 +1,7 @@
 <!-- our portfolio section start -->
 
   <body class="bg-white">
-    <div class="bg-[#0094EE0F] relative z-0 h-auto py-12">
+    <div class="bg-[#0094EE0F] relative z-0 h-auto py-16 sm:py-20 lg:py-[100px]">
       <!-- Background Images -->
       <div class="absolute inset-y-0 top-0 left-0 z-0 opacity-70">
         <img
@@ -18,32 +18,30 @@
         />
       </div>
 
-      <div class="container mx-auto px-8 relative z-10">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Section Title -->
-        <div class="py-5 w-full lg:w-[500px] relative z-10">
+        <div class="pb-4 w-full lg:w-[500px] relative z-10">
           <h5
-            class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-1 px-4 rounded-3xl text-center"
+            class="paragraph text-accent bg-[#FFFFFF0A] border border-accent w-fit py-3 px-6 rounded-[40px] text-center"
           >
             Portfolio
           </h5>
         </div>
 
         <!-- Heading & View All (Hidden on mobile) -->
-        <div class="py-2 relative z-10">
-          <h2
-            class="text-3xl md:text-4xl font-medium text-[#132028]"
-          >
-            Portfolio — Projects Across Globe
+        <div class="pb-2 relative z-10">
+          <h2 class="text-accent heading font-medium pb-2">
+            Portfolio &mdash; Projects Across Globe
           </h2>
-          <div class="none lg:flex justify-between">
-            <p class="text-md text-[#44464A] w-full lg:w-[665px] py-3">
-              A showcase of our latest projects across Europe. Explore our work
-              in Social Media, Healthcare, Sports Tech, and more.
+          <div class="flex flex-col lg:flex-row justify-between gap-2 lg:gap-0">
+            <p class="paragraph text-secondary w-full max-w-[776px]">
+            A showcase of our latest projects across the UK, Germany, Netherlands, France, Spain, and the Balkans. Explore our work
+            in Social Media, healthcare, Sports Tech , e-commerce, and more.
             </p>
             <div>
               <button
                 id="viewAllBtn"
-                class="hidden md:flex justify-center gap-2 bg-primary bg-[#0094EE] py-2 px-4 rounded-3xl text-white text-sm group"
+                class="hidden md:flex justify-center gap-2 bg-primary bg-primary py-3 px-6 paragraph rounded-3xl text-white group"
               >
                 View All
                 <span
@@ -62,28 +60,28 @@
         >
           <!-- Card 1 -->
           <div
-            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-4 shadow-lg hover:-translate-y-2 duration-700"
+            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-3 xl:p-6 shadow-lg hover:-translate-y-2 duration-700"
           >
             <img
               src="../../../Assets/Images/network_portfolio.jpg"
               alt="network"
-              class="w-full h-[250px] rounded-2xl object-cover"
+              class="w-full h-[300px] rounded-2xl object-cover"
             />
             <div class="pt-3">
               <h5
-                class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
               >
                 Social Media & Networking
               </h5>
             </div>
-            <h2 class="text-xl font-medium pt-2">Networked</h2>
-            <p class="text-md text-[#44464A] pt-2 line-clamp-3 flex-1">
-              Scalable community management platform with real-time chat, 
-              role-based access & secure payments for growth.
+            <h2 class="text-2xl text-accent font-medium pt-2">Networked</h2>
+            <p class="paragraph text-secondary pt-2 line-clamp-3 flex-1">
+              Scalable community management platform with real-time chat,
+              role-based access & secure payments.
             </p>
             <a
               href="/project_details.html"
-              class="flex items-center gap-2 pt-4 group hover:text-primary"
+              class="flex items-center gap-2 pt-4 group hover:text-primary paragraph text-secondary"
             >
               Read More
               <span
@@ -96,28 +94,28 @@
 
           <!-- Card 2 -->
           <div
-            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-4 shadow-lg hover:-translate-y-2 duration-700"
+            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-3 xl:p-6 shadow-lg hover:-translate-y-2 duration-700"
           >
             <img
               src="../../../Assets/Images/cricket_analysis.jpg"
               alt="cricket_analysis"
-              class="w-full h-[250px] rounded-2xl object-cover"
+              class="w-full h-[300px] rounded-2xl object-cover"
             />
             <div class="pt-3">
               <h5
-                class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
               >
                 Sports
               </h5>
             </div>
-            <h2 class="text-xl font-medium pt-2">Cricket Analysis</h2>
-            <p class="text-md text-[#44464A] pt-2 line-clamp-3 flex-1">
-             Cricket analysis platform to upload, process & analyze match data 
-             with automated mapping, reports & insights.
+            <h2 class="text-2xl text-accent font-medium pt-2">Cricket Analysis</h2>
+            <p class="paragraph text-secondary pt-2 line-clamp-3 flex-1">
+              Cricket analysis platform to upload, process & analyze match data
+              with automated mapping & insights.
             </p>
             <a
               href="/project_details.html"
-              class="flex items-center gap-2 pt-4 group hover:text-primary"
+              class="flex items-center gap-2 pt-4 group hover:text-primary paragraph text-secondary"
             >
               Read More
               <span
@@ -130,28 +128,27 @@
 
           <!-- Card 3 -->
           <div
-            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-4 shadow-lg hover:-translate-y-2 duration-700"
+            class="flex flex-col bg-white border border-[#1320281F] rounded-2xl p-3 xl:p-6 shadow-lg hover:-translate-y-2 duration-700"
           >
             <img
               src="../../../Assets/Images/agent_xenon.jpg"
               alt="agent_xenon"
-              class="w-full h-[250px] rounded-2xl object-cover"
+             class="w-full h-[300px] rounded-2xl object-cover"
             />
             <div class="pt-3">
               <h5
-                class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
               >
                 HR Tech
               </h5>
             </div>
-            <h2 class="text-xl font-medium pt-2">Agent-Xenon</h2>
-            <p class="text-md text-[#44464A] pt-2 line-clamp-3 flex-1">
-              Scalable HR technology platform for employee management,
-               workforce planning & organizational efficiency.
+            <h2 class="text-2xl text-accent font-medium pt-2">Agent-Xenon</h2>
+            <p class="paragraph text-secondary pt-2 line-clamp-3 flex-1">
+              HR technology platform for workforce planning & management.
             </p>
             <a
               href="project_details.html"
-              class="flex items-center gap-2 pt-4 group hover:text-primary"
+              class="flex items-center gap-2 pt-4 group hover:text-primary paragraph text-secondary"
             >
               Read More
               <span
@@ -164,33 +161,33 @@
         </div>
 
         <!-- MOBILE SWIPER SLIDER -->
-        <div class="md:hidden py-8 relative z-50 ">
+        <div class="md:hidden py-4 lg:py-8 relative z-50 ">
           <div class="swiper portfolioSwiper">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
               <div class="swiper-slide">
                 <div
-                  class="bg-white border border-[#1320281F] rounded-2xl p-4 shadow-lg"
+                  class="bg-white border border-[#1320281F] rounded-2xl p-3 shadow-lg"
                 >
                   <img
                     src="../../../Assets/Images/network_portfolio.jpg"
-                    class="w-full h-[230px] rounded-2xl object-cover"
+                    class="w-full h-[220px] rounded-2xl object-cover"
                     alt="Networked"
                   />
                   <div class="pt-3">
                     <h5
-                      class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                       class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
                     >
                       Social Media & Networking
                     </h5>
-                    <h2 class="text-lg font-medium pt-2">Networked</h2>
-                    <p class="text-md text-[#44464A] pt-2">
+                    <h2 class="text-xl text-accent font-medium pt-2">Networked</h2>
+                    <p class="text-sm text-secondary pt-2">
                       Scalable community management platform with real-time chat
                       & secure payments.
                     </p>
                     <a
                       href="/project_details.html"
-                      class="flex items-center gap-2 pt-4 group hover:text-primary"
+                      class="flex items-center gap-2 pt-4 group text-base text-secondary hover:text-primary "
                     >
                       Read More
                       <span
@@ -210,22 +207,22 @@
                 >
                   <img
                     src="../../../Assets/Images/cricket_analysis.jpg"
-                    class="w-full h-[230px] rounded-2xl object-cover"
+                    class="w-full h-[220px] rounded-2xl object-cover"
                     alt="Cricket Analysis"
                   />
                   <div class="pt-3">
                     <h5
-                      class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                       class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
                     >
                       Sports
                     </h5>
-                    <h2 class="text-lg font-medium pt-2">Cricket Analysis</h2>
-                    <p class="text-md text-[#44464A] pt-2">
+                    <h2 class="text-xl text-accent font-medium pt-2">Cricket Analysis</h2>
+                   <p class="text-sm text-secondary pt-2">
                       Analysis platform for match data, insights & performance.
                     </p>
                     <a
                       href="/project_details.html"
-                      class="flex items-center gap-2 pt-4 group hover:text-primary"
+                     class="flex items-center gap-2 pt-4 group text-base text-secondary hover:text-primary "
                     >
                       Read More
                       <span
@@ -245,22 +242,22 @@
                 >
                   <img
                     src="../../../Assets/Images/agent_xenon.jpg"
-                    class="w-full h-[230px] rounded-2xl object-cover"
+                    class="w-full h-[220px] rounded-2xl object-cover"
                     alt="Agent Xenon"
                   />
                   <div class="pt-3">
                     <h5
-                      class="text-sm text-[#132028] border border-[#132028] w-fit py-1 px-4 rounded-3xl"
+                       class="paragraph text-accent border border-[#1320283D] w-fit py-2 px-4 rounded-3xl"
                     >
                       HR Tech
                     </h5>
-                    <h2 class="text-lg font-medium pt-2">Agent-Xenon</h2>
-                    <p class="text-md text-[#44464A] pt-2">
+                    <h2 class="text-xl text-accent font-medium pt-2">Agent-Xenon</h2>
+                   <p class="text-sm text-secondary pt-2">
                       HR platform for workforce planning & management.
                     </p>
                     <a
                       href="/project_details.html"
-                      class="flex items-center gap-2 pt-4 group hover:text-primary"
+                     class="flex items-center gap-2 pt-4 group text-base text-secondary hover:text-primary "
                     >
                       Read More
                       <span

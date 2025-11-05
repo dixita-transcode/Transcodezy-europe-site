@@ -3,6 +3,8 @@ tailwind.config = {
     extend: {
       colors: {
         primary: '#0094EE', // Primary brand color (logo, buttons, highlights)
+        accent: "#132028",
+        secondary: "#44464A",
         gradientStart: '#FFFFFF00', 
         gradientEnd: '#F6F6F7F5',   
       },
