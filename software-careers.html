@@ -18,54 +18,7 @@
 
 </head>
 <body>
-    
-    <script>
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            /*loop through a collection of all HTML elements:*/
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    /*make an HTTP request using the attribute value as the file name:*/
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                                executeScripts(elmnt);
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            /*remove the attribute, and call this function once more:*/
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML();
-                        }
-                    }
-                    console.log("object", xhttp);
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    /*exit the function:*/
-                    return;
-                }
-            }
-        };
-
-        function executeScripts(container) {
-            var scripts = container.getElementsByTagName('script');
-            for (var i = 0; i < scripts.length; i++) {
-                var script = document.createElement('script');
-                script.text = scripts[i].text;
-                container.appendChild(script).parentNode.removeChild(script);
-            }
-        }
-
-    </script>
-
-     <div class="main_wrapper">
+    <div class="main_wrapper">
         <div w3-include-html="/Components/Comman/header.html"></div>
         <div w3-include-html="/Components/Careers/Hero/hero.html"></div>
         <div w3-include-html="/Components/Careers/OurCulture/ourCulture.html"></div>
@@ -75,14 +28,121 @@
         <div w3-include-html="/Components/Careers/HowToApply/howToApply.html"></div>
         <div w3-include-html="/Components/Careers/GetInTouch/getInTouch.html"></div>
         <div w3-include-html="/Components/Comman/footer.html"></div>
-     </div>   
+    </div>
+  
+    <!-- ================= SCRIPTS ================= -->
+    
+    <script src="/Assets/Js/tailwind.config.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- ================= JS FUNCTIONS ================= -->
+    
+    <script>
+        function includeHTML() {
+            const elements = document.querySelectorAll("[w3-include-html]");
+            elements.forEach((el) => {
+                const file = el.getAttribute("w3-include-html");
+                if (file) {
+                    fetch(file)
+                        .then((response) => {
+                            if (response.ok) return response.text();
+                            throw new Error("Page not found");
+                        })
+                        .then((data) => {
+                            el.innerHTML = data;
+                            el.removeAttribute("w3-include-html");
+                            includeHTML(); // recursively load nested includes
+                            initNavbar(); // reinitialize navbar after header load
+                        })
+                        .catch((err) => {
+                            el.innerHTML = "Include file not found.";
+                            console.error(err);
+                        });
+                }
+            });
+        }
 
-     <script>
+        // ✅ Navbar Behavior
+        function initNavbar() {
+            const menuIcon = document.getElementById("menu-icon");
+            const menuImg = document.getElementById("menu-toggle-icon");
+            const mobMenu = document.querySelector(".mob-menu");
+
+            if (!menuIcon || !mobMenu) return; // stop if header not loaded
+
+            // Toggle mobile menu open/close
+            menuIcon.addEventListener("click", () => {
+                mobMenu.classList.toggle("active");
+                menuIcon.classList.toggle("open");
+
+                menuImg.src = menuIcon.classList.contains("open")
+                    ? "../../Assets/Images/close.svg"
+                    : "../../Assets/Images/menu.svg";
+            });
+
+            // Toggle submenus — only when arrow is clicked
+            document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
+                const linkWrapper = arrow.closest(".mob-menu_item_link");
+                const submenu = linkWrapper.nextElementSibling;
+                const arrowImg = arrow.querySelector("img");
+
+                arrow.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    document.querySelectorAll(".mob-submenu").forEach((sub) => {
+                        if (sub !== submenu) sub.classList.add("hidden");
+                    });
+                    document
+                        .querySelectorAll(".mob-menu_item_switcher img")
+                        .forEach((img) => {
+                            if (img !== arrowImg) img.classList.remove("rotate-180");
+                        });
+
+                    submenu.classList.toggle("hidden");
+                    arrowImg.classList.toggle("rotate-180");
+                });
+            });
+
+            // Highlight active link
+            const currentPath = window.location.pathname;
+            document.querySelectorAll("nav a").forEach((link) => {
+                const href = link.getAttribute("href");
+                if (href && currentPath.includes(href.split("/").pop())) {
+                    link.classList.add("active");
+                }
+            });
+
+            // Smooth scroll for anchor links
+            setTimeout(() => {
+                const links = document.querySelectorAll(
+                    'a[href*="software-company.html#"], a[href^="#"]'
+                );
+                links.forEach((link) => {
+                    link.addEventListener("click", function (e) {
+                        const href = this.getAttribute("href");
+                        const hashIndex = href.indexOf("#");
+                        if (hashIndex === -1) return;
+
+                        const targetId = href.substring(hashIndex + 1);
+                        const target = document.getElementById(targetId);
+
+                        if (target) {
+                            e.preventDefault();
+                            window.scrollTo({
+                                top: target.offsetTop - 100,
+                                behavior: "smooth",
+                            });
+                        }
+                    });
+                });
+            }, 500);
+        }
+
+        // ✅ Call the function after defining it
         includeHTML();
     </script>
-
-    <script src="/Assets/Js/tailwind.config.js"></script>
-    <script src="Assets/Js/custom.js"></script>
-
 </body>
 </html>
