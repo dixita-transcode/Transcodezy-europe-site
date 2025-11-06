@@ -8,7 +8,7 @@
     >
     <div class="flex justify-between items-center">
       <div>
-        <h2 class="text-accent heading font-medium pt-5 lg:pt-10">Recent Blogs</h2>
+        <h2 class="text-accent heading font-medium py-5 lg:py-10">Recent Blogs</h2>
       </div>
 
       <!-- Nav Buttons -->
@@ -32,22 +32,22 @@
         <!-- Card 1 -->
         <div class="swiper-slide">
           <div
-            class="bg-white border border-[#1320281A] lg:h-[560px] xl:h-[520px] rounded-3xl overflow-hidden p-3 lg:p-6"
+            class="bg-white flex flex-col gap-[10px] h-[510px] lg:h-[540px] xl:h-[520px] border border-[#1320281A] rounded-3xl overflow-hidden p-3 lg:p-6"
           >
             <img
               src="../../../Assets/Images/CloudAndDevopsSolution/cloud&devops.jpg"
               alt=""
               class="w-full h-[300px] object-cover rounded-2xl"
             />
-            <div class="pt-3">
-              <h3 class="font-medium text-accent text-2xl">
+            
+              <h3 class="font-medium text-accent text-2xl ">
                 Cloud & DevOps in European Healthcare
               </h3>
-              <p class="paragraph text-secondary pt-3">
+              <p class="paragraph text-secondary flex-1">
                 Streamline hospital operations with secure cloud & monitoring.
               </p>
               <button
-              class="paragraph text-secondary font-medium pt-4 group hover:text-primary"
+              class="paragraph text-secondary font-medium  group hover:text-primary"
             >
               <a href="#" class="flex justify-start items-center gap-2"
                 >Read More
@@ -56,29 +56,28 @@
                   ><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </button>
-            </div>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="swiper-slide">
           <div
-            class="bg-white border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
+            class="bg-white flex flex-col gap-[10px] h-[510px] lg:h-[540px] xl:h-[520px] border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
           >
             <img
               src="../../../Assets/Images/CloudAndDevopsSolution/scaling_fintech.jpg"
               alt="scaling_fintech"
               class="w-full h-[300px] object-cover rounded-2xl"
             />
-            <div class="pt-3">
-              <h3 class="font-medium text-accent text-2xl">
+            
+              <h3 class="font-medium text-accent text-2xl ">
                 Scaling FinTech Platforms with Docker & Kubernetes
               </h3>
-              <p class="paragraph text-secondary pt-3">
+              <p class="paragraph text-secondary  flex-1">
                 Faster deployments & regulatory compliance.
               </p>
               <button
-              class="paragraph text-secondary font-medium pt-4 group hover:text-primary"
+              class="paragraph text-secondary font-medium  group hover:text-primary"
             >
               <a herf="#" class="flex justify-start items-center gap-2"
                 >Read More
@@ -87,29 +86,28 @@
                   ><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </button>
-            </div>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="swiper-slide">
           <div
-            class="bg-white border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
+            class="bg-white flex flex-col gap-[10px] h-[510px] lg:h-[540px] xl:h-[520px] border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
           >
             <img
               src="../../../Assets/Images/CloudAndDevopsSolution/terraform.jpg"
               alt="terraform"
               class="w-full h-[300px] object-cover rounded-2xl"
             />
-            <div class="pt-3">
-              <h3 class="font-medium text-accent text-2xl">
+            
+              <h3 class="font-medium text-accent text-2xl ">
                 Terraform & CloudFormation for Infrastructure Automation
               </h3>
-              <p class="paragraph text-secondary pt-3">
+              <p class="paragraph text-secondary  flex-1">
                 Efficient multi-cloud management.
               </p>
               <button
-              class="paragraph text-secondary font-medium pt-4 group hover:text-primary"
+              class="paragraph text-secondary font-medium group hover:text-primary"
             >
               <a herf="#" class="flex justify-start items-center gap-2"
                 >Read More
@@ -118,29 +116,29 @@
                   ><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </button>
-            </div>
+            
           </div>
         </div>
 
         <!-- Card 4 -->
         <div class="swiper-slide">
           <div
-            class="bg-white border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
+            class="bg-white flex flex-col gap-[10px] h-[510px] lg:h-[540px] xl:h-[520px] border border-[#1320281A] h-auto rounded-3xl overflow-hidden p-3 lg:p-6"
           >
             <img
               src="../../../Assets/Images/CloudAndDevopsSolution/cloud&devops.jpg"
               alt="Blog 4"
               class="w-full h-[300px] object-cover rounded-2xl"
             />
-            <div class="pt-3">
+            
               <h3 class="font-medium text-accent text-2xl">
                 Cloud & DevOps in European Healthcare
               </h3>
-              <p class="paragraph text-secondary pt-3">
+              <p class="paragraph text-secondary flex-1">
                 Streamline hospital operations with secure cloud & monitoring.
               </p>
               <button
-              class="paragraph text-secondary font-medium pt-4 group hover:text-primary"
+              class="paragraph text-secondary font-medium group hover:text-primary"
             >
               <a herf="#" class="flex justify-start items-center gap-2"
                 >Read More
@@ -149,7 +147,7 @@
                   ><i class="fa-solid fa-arrow-right"></i></span
               ></a>
             </button>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -172,7 +170,7 @@
 <script>
   const blogSwiper = new Swiper(".blogSwiper", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 40,
     loop: false,
     navigation: {
       nextEl: ".blog-next",
