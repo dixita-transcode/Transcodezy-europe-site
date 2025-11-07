@@ -35,6 +35,9 @@
     <!-- Tailwind config -->
     <script src="/Assets/Js/tailwind.config.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         // ✅ Include HTML Function
         function includeHTML() {
@@ -79,46 +82,83 @@
             }
         }
 
-        // ✅ Navbar Toggle Logic
-        function initNavbar() {
-            const menuIcon = document.getElementById("menu-icon");
-            const menuImg = document.getElementById("menu-toggle-icon");
-            const mobMenu = document.querySelector(".mob-menu");
+        // ✅ Navbar Behavior
+    function initNavbar() {
+        const menuIcon = document.getElementById("menu-icon");
+        const menuImg = document.getElementById("menu-toggle-icon");
+        const mobMenu = document.querySelector(".mob-menu");
 
-            if (!menuIcon || !mobMenu) return;
+        if (!menuIcon || !mobMenu) return; // stop if header not loaded
 
-            // Toggle mobile menu
-            menuIcon.addEventListener("click", () => {
-                mobMenu.classList.toggle("active");
-                menuIcon.classList.toggle("open");
+        // Toggle mobile menu open/close
+        menuIcon.addEventListener("click", () => {
+            mobMenu.classList.toggle("active");
+            menuIcon.classList.toggle("open");
 
-                menuImg.src = menuIcon.classList.contains("open")
-                    ? "../../Assets/Images/close.svg"
-                    : "../../Assets/Images/menu.svg";
-            });
+            menuImg.src = menuIcon.classList.contains("open")
+                ? "../../Assets/Images/close.svg"
+                : "../../Assets/Images/menu.svg";
+        });
 
-            // Toggle submenus
-            document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
-                const linkWrapper = arrow.closest(".mob-menu_item_link");
-                const submenu = linkWrapper.nextElementSibling;
-                const arrowImg = arrow.querySelector("img");
+        // Toggle submenus — only when arrow is clicked
+        document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
+            const linkWrapper = arrow.closest(".mob-menu_item_link");
+            const submenu = linkWrapper.nextElementSibling;
+            const arrowImg = arrow.querySelector("img");
 
-                arrow.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
+            arrow.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
 
-                    document.querySelectorAll(".mob-submenu").forEach((sub) => {
-                        if (sub !== submenu) sub.classList.add("hidden");
-                    });
-                    document.querySelectorAll(".mob-menu_item_switcher img").forEach((img) => {
+                document.querySelectorAll(".mob-submenu").forEach((sub) => {
+                    if (sub !== submenu) sub.classList.add("hidden");
+                });
+                document
+                    .querySelectorAll(".mob-menu_item_switcher img")
+                    .forEach((img) => {
                         if (img !== arrowImg) img.classList.remove("rotate-180");
                     });
 
-                    submenu.classList.toggle("hidden");
-                    arrowImg.classList.toggle("rotate-180");
+                submenu.classList.toggle("hidden");
+                arrowImg.classList.toggle("rotate-180");
+            });
+        });
+
+        // Highlight active link
+        const currentPath = window.location.pathname;
+        document.querySelectorAll("nav a").forEach((link) => {
+            const href = link.getAttribute("href");
+            if (href && currentPath.includes(href.split("/").pop())) {
+                link.classList.add("active");
+            }
+        });
+
+        // Smooth scroll for anchor links
+        setTimeout(() => {
+            const links = document.querySelectorAll(
+                'a[href*="software-company.html#"], a[href^="#"]'
+            );
+            links.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    const href = this.getAttribute("href");
+                    const hashIndex = href.indexOf("#");
+                    if (hashIndex === -1) return;
+
+                    const targetId = href.substring(hashIndex + 1);
+                    const target = document.getElementById(targetId);
+
+                    if (target) {
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: target.offsetTop - 100,
+                            behavior: "smooth",
+                        });
+                    }
                 });
             });
-        }
+        }, 500);
+    }
+
 
         // ✅ Run includeHTML on load
         includeHTML();
