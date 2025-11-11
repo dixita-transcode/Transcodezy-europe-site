@@ -1,99 +1,94 @@
-<section class="bg-[#FFFFFF]">
-  <div class="container mx-auto px-8 py-12">
-    <div class="flex flex-col lg:flex-row items-center gap-8">
+<section class="bg-[#FFFFFF] pb-[50px]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div
+      class="flex flex-col xl:flex-row items-center gap-[40px] xl:gap-[80px] h-auto min-h-[628px]"
+    >
       <!-- Left Image -->
       <div class="w-full lg:w-1/2">
         <img
           src="../../../Assets/Images/ContactUs/contact_form_bg.jpg"
           alt="Team Collaboration"
-          class="w-[100%] h-[520px] rounded-t-full object-cover"
+          class="w-full h-[628px] rounded-tl-[440px] rounded-tr-[440px] rounded-br-[24px] rounded-bl-[24px] object-cover"
         />
       </div>
 
       <!-- Right Form -->
       <div
-        class="relative z-0 w-full lg:w-1/2 bg-gray-900 text-white rounded-2xl p-8 shadow-lg"
+        class="relative z-0 bg-[#0F1A24] w-full max-w-3xl p-5 lg:p-10 rounded-[24px] min-h-[628px] w-full xl:w-[720px] shadow-lg"
       >
-        <img
-          src="../../../Assets/Images/Careers/howtoapply_form_bg.png"
-          alt="howtoapply_form_bg"
-          class="absolute z-10 inset-0 h-[100%] w-[100%] object-cover"
-        />
-        <h2 class="text-2xl font-semibold mb-6">
+        <h2 class="text-white text-[32px] font-medium">
           Collaborate with Transcodezy
         </h2>
-        <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
-          />
+        <form class="space-y-6 relative z-10 py-5 lg:py-10">
+          <!-- Row 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
 
-          <input
-            type="text"
-            name="company"
-            placeholder="Company Name"
-            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            class="p-3 rounded-lg bg-[#FFFFFF14] text-white focus:outline-none focus:ring-2 focus:ring-blue-500 col-span-1 md:col-span-1 z-10"
-          />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
+          </div>
 
-          <textarea
-            placeholder="About your project..."
-            class="w-full h-32 px-2 py-3 rounded-lg bg-[#FFFFFF14] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 z-10"
-          ></textarea>
+          <!-- Row 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="Company Name"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
 
-          <label class="rounded-lg cursor-pointer bg-[#FFFFFF14] p-2 z-10">
-            <p class="text-md text-gray-400 text-start mb-2">
-              Attachments (Optional)
-            </p>
-            <div
-              class="flex flex-col items-center justify-center w-full h-20 text-[#FFFFFF] rounded-lg border-2 border-dashed border-gray-600 hover:border-blue-500 transition"
-            >
-              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <!-- Position Applied Dropdown -->
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- About your project -->
+            <textarea
+              placeholder="About your project..."
+              class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            ></textarea>
+
+            <!-- Attachments (Optional) -->
+            <label class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3 z-10">
+              <p class="text-md text-[#FFFFFF66] text-start mb-2">
+                Attachments (Optional)
+              </p>
+              <div
+                class="flex flex-col items-center justify-center w-full h-[70px] text-[#FFFFFF66] rounded-lg border-2 border-dashed border-gray-600 hover:border-primary transition"
+              >
+                <i class="fa-solid fa-arrow-up-from-bracket text-2xl"></i>
+              </div>
+              <input id="resume" type="file" class="hidden" />
+            </label>
+          </div>
+          <div class=" space-y-3">
+            <!-- Checkbox 1 -->
+            <div class="form-group">
+              <input type="checkbox" id="html">
+              <label for="html" class="text-[#FFFFFF66]">I have read Privacy Notice</label>
             </div>
-            <input id="resume" type="file" class="hidden" />
-          </label>
-        </form>
-        <div class="pt-4">
-          <label class="flex items-center gap-2 text-sm text-gray-400 z-10">
-            <input
-              type="checkbox"
-              required
-              class="w-[16px] h-[16px] accent-primary z-10"
-            />
-            I have read Privacy Notice
-          </label>
 
-          <label class="flex items-start gap-2 text-sm text-gray-400 pt-3 z-10">
-            <input
-              type="checkbox"
-              class="w-[16px] h-[16px] accent-primary z-10"
-            />
-            I agree to receive marketing materials about news, events, and
-            proposals from Transcodezy
-          </label>
+            <!-- Checkbox 2 -->
+            <div class="form-group">
+              <input type="checkbox" id="css">
+              <label for="css" class="text-[#FFFFFF66]">I agree to receive marketing materials about news, events, and proposals from Transcodezy </label>
+            </div>
+          </div>
+        </form>
+        <div class="mt-3 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
+                <a href="#" >Send Message</a>
         </div>
-        <button
-          type="submit"
-          class="bg-primary text-white font-medium py-3 px-6 rounded-3xl mt-4 z-10 relative hover:scale-105 duration-700 cursor-pointer"
-        >
-          <a href="#"> Send Message</a>
-        </button>
-      </div>
     </div>
   </div>
 </section>
