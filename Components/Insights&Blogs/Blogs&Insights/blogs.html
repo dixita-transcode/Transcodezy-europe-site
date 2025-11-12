@@ -1,66 +1,66 @@
 <!-- Blogs section start -->
-<div class="bg-[#FFFFFF] h-auto py-12">
-  <div class="container mx-auto px-8">
+<div class="bg-[#FFFFFF] h-auto py-16 sm:py-20 lg:py-[100px]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Heading -->
-    <div class="py-5 w-full lg:w-[500px]">
+    <div class="py-5 w-full ">
       <h5
-        class="text-sm text-[#132028] bg-[#FFFFFF0A] border border-[#132028] w-fit py-2 px-4 rounded-3xl text-center z-10"
+        class="paragraph text-accent border border-accent w-fit py-3 px-6 rounded-[40px]"
       >
         Blog & Insights
       </h5>
     </div>
-    <div class="none md:flex justify-between py-2">
-      <h2 class="text-3xl md:text-4xl font-medium text-[#132028]">Recent Blogs</h2>
+    <div class="none md:flex justify-between">
+      <h2 class="text-accent heading font-medium py-4 lg:py-8">Recent Blogs</h2>
     </div>
 
     <!-- Tabs -->
-    <div class="flex flex-wrap gap-8 pb-2 mb-5 mt-5">
+    <div class="none md:flex flex-wrap gap-6 mb-8">
       <button
-        class="tab-btn text-primary font-medium border-b-2 border-primary"
+        class="tab-btn text-primary paragraph border-b-2 border-primary w-[144px] mb-4 md:mb-0"
         data-tab="services"
       >
         Services
       </button>
       <button
-        class="tab-btn text-gray-600 font-medium hover:text-primary"
+        class="tab-btn paragraph text-secondary hover:text-primary w-[144px] mb-4 md:mb-0"
         data-tab="industries"
       >
         Industries
       </button>
       <button
-        class="tab-btn text-gray-600 font-medium hover:text-primary"
+        class="tab-btn paragraph text-secondary hover:text-primary w-[144px] mb-4 md:mb-0"
         data-tab="expertise"
       >
         Expertise
       </button>
     </div>
     <!-- Sub-Tabs for Expertise -->
-    <div id="expertiseSection" class="hidden mb-6">
-      <h2 class="text-2xl font-medium mb-4">
+    <div id="expertiseSection" class="hidden pb-6 ">
+      <h2 class="text-[32px] text-accent font-medium mb-4">
         Discover our expertise experience
       </h2>
       <!-- Sub-Tabs for Expertise -->
-      <div id="subTabs" class="flex flex-wrap gap-6">
+      <div id="subTabs" class="none md:flex flex-wrap gap-6 w-full max-w-[1520px]">
         <button
-          class="sub-tab-btn text-primary font-medium border-b-2 border-primary"
+          class="sub-tab-btn text-primary paragraph border-b-2 border-primary w-[299px] mb-4 md:mb-0"
           data-subtab="custom_software_development"
         >
           Custom Software Development
         </button>
         <button
-          class="sub-tab-btn text-gray-600 font-medium hover:text-primary"
+          class="sub-tab-btn paragraph text-secondary hover:text-primary w-[157px] mb-4 md:mb-0"
           data-subtab="ui_ux_design"
         >
           UI/UX Design
         </button>
         <button
-          class="sub-tab-btn text-gray-600 font-medium hover:text-primary"
+          class="sub-tab-btn paragraph text-secondary hover:text-primary w-[305px] mb-4 md:mb-0"
           data-subtab="web_mobile_app_development"
         >
           Web & Mobile App Development
         </button>
         <button
-          class="sub-tab-btn text-gray-600 font-medium hover:text-primary"
+          class="sub-tab-btn paragraph text-secondary hover:text-primary w-[163px] mb-4 md:mb-0"
           data-subtab="crm_solutions"
         >
           CRM Solutions
@@ -88,11 +88,11 @@
     cardsContainer.innerHTML = data
       .map(
         (item) => `
-      <div class="bg-white flex flex-col border border-[#1320281A] h-[460px] shadow-md rounded-2xl overflow-hidden p-4 transition-transform hover:-translate-y-1 hover:shadow-lg">
-        <img src="${item.img}" alt="${item.title}" class="w-full h-56 object-cover rounded-xl"/>
-        <h3 class="font-medium text-[#132028] text-xl mt-2">${item.title}</h3>
-        <p class="text-[#555] text-md pt-2 flex-1">${item.desc}</p>
-        <button class="text-[#44464A] text-md font-medium pt-3 group hover:text-primary">
+      <div class="bg-white flex flex-col border border-[#1320281A] h-[564px] shadow-md rounded-2xl overflow-hidden p-4 transition-transform hover:-translate-y-1 hover:shadow-lg">
+        <img src="${item.img}" alt="${item.title}" class="w-full h-[300px] object-cover rounded-xl"/>
+        <h3 class="font-medium text-accent text-2xl pt-3">${item.title}</h3>
+        <p class="paragraph text-secondary flex-1 pt-2">${item.desc}</p>
+        <button class="paragraph text-secondary font-medium  group hover:text-primary pt-2">
           <a href="${item.link}" class="flex justify-start items-center gap-2">
             Read More
             <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]">

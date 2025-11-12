@@ -264,7 +264,7 @@
       </div>
       <div class="hidden lg:block hover:scale-110 duration-500 cursor-pointer">
           <a href="/contactUs.html" class="paragraph py-3 px-6 bg-primary font-medium text-white rounded-[40px]">
-            Contact Us
+            <Span>Contact Us</Span>
           </a>
     
       </div>
@@ -377,80 +377,93 @@
 </nav>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuIcon = document.getElementById("menu-icon");
-    const menuImg = document.getElementById("menu-toggle-icon");
-    const mobMenu = document.querySelector(".mob-menu");
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.getElementById("menu-icon");
+  const menuImg = document.getElementById("menu-toggle-icon");
+  const mobMenu = document.querySelector(".mob-menu");
 
-    // ✅ Toggle mobile menu open/close
-    menuIcon.addEventListener("click", () => {
-      mobMenu.classList.toggle("active");
-      menuIcon.classList.toggle("open");
+  // ✅ Toggle mobile menu open/close
+  menuIcon.addEventListener("click", () => {
+    mobMenu.classList.toggle("active");
+    menuIcon.classList.toggle("open");
 
-      menuImg.src = menuIcon.classList.contains("open")
-        ? "../../Assets/Images/close.svg"
-        : "../../Assets/Images/menu.svg";
-    });
+    menuImg.src = menuIcon.classList.contains("open")
+      ? "../../Assets/Images/close.svg"
+      : "../../Assets/Images/menu.svg";
+  });
 
-    // ✅ Toggle submenus — only when arrow is clicked
-    document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
-      const linkWrapper = arrow.closest(".mob-menu_item_link");
-      const submenu = linkWrapper.nextElementSibling;
-      const arrowImg = arrow.querySelector("img");
+  // ✅ Toggle submenus — only when arrow is clicked
+  document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
+    const linkWrapper = arrow.closest(".mob-menu_item_link");
+    const submenu = linkWrapper.nextElementSibling;
+    const icon = arrow.querySelector("i");
 
-      arrow.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation(); // prevent link navigation
+    arrow.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
 
-        // Close other submenus
-        document.querySelectorAll(".mob-submenu").forEach((sub) => {
-          if (sub !== submenu) sub.classList.add("hidden");
-        });
-        document.querySelectorAll(".mob-menu_item_switcher img").forEach((img) => {
-          if (img !== arrowImg) img.classList.remove("rotate-180");
-        });
-
-        // Toggle current submenu
-        submenu.classList.toggle("hidden");
-        arrowImg.classList.toggle("rotate-180");
+      // Close all other submenus
+      document.querySelectorAll(".mob-submenu").forEach((sub) => {
+        if (sub !== submenu) sub.classList.add("hidden");
       });
-    });
+      document.querySelectorAll(".mob-menu_item_switcher i").forEach((otherIcon) => {
+        if (otherIcon !== icon) otherIcon.classList.remove("rotate-180");
+      });
 
-    // ✅ Highlight active page link
-    const currentPath = window.location.pathname;
-    document.querySelectorAll("nav a").forEach((link) => {
-      const href = link.getAttribute("href");
-      if (href && currentPath.includes(href.split("/").pop())) {
-        link.classList.add("active");
+      // Toggle current submenu
+      submenu.classList.toggle("hidden");
+      icon.classList.toggle("rotate-180");
+    });
+  });
+
+  // ✅ Highlight active main or submenu page
+  const currentPath = window.location.pathname.toLowerCase();
+  const allLinks = document.querySelectorAll("nav a");
+
+  allLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) return;
+
+    const pageName = href.split("/").pop().toLowerCase();
+
+    // Direct match for exact page
+    if (currentPath.includes(pageName) && pageName !== "") {
+      link.classList.add("active");
+      // Highlight parent main menu link (if submenu)
+      const parentGroup = link.closest(".group");
+      if (parentGroup) {
+        const mainLink = parentGroup.querySelector(":scope > a");
+        if (mainLink) mainLink.classList.add("active");
+      }
+    }
+  });
+
+  // ✅ Smooth scroll for internal anchors
+  const anchorLinks = document.querySelectorAll(
+    'a[href*="software-company.html#"], a[href^="#"]'
+  );
+
+  anchorLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      const hashIndex = href.indexOf("#");
+      if (hashIndex === -1) return;
+
+      const targetId = href.substring(hashIndex + 1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        e.preventDefault();
+        window.scrollTo({
+          top: target.offsetTop - 100,
+          behavior: "smooth",
+        });
       }
     });
   });
-
-  // ✅ Smooth scroll for company and career section anchors
-  document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(() => {
-      const links = document.querySelectorAll('a[href*="software-company.html#"], a[href^="#"]');
-      links.forEach(link => {
-        link.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          const hashIndex = href.indexOf("#");
-          if (hashIndex === -1) return;
-
-          const targetId = href.substring(hashIndex + 1);
-          const target = document.getElementById(targetId);
-
-          if (target) {
-            e.preventDefault();
-            window.scrollTo({
-              top: target.offsetTop - 100, // adjust for sticky header height
-              behavior: "smooth"
-            });
-          }
-        });
-      });
-    }, 500);
-  });
+});
 </script>
+
 
 
 

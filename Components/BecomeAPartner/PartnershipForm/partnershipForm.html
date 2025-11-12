@@ -1,49 +1,103 @@
-<div class="bg-[#FFFFFF] py-12">
-    <div class="container mx-auto px-8">
-       <div class="flex flex-col lg:flex-row mb-16 gap-8 py-8 z-10">
-      <div class="w-full lg:w-1/2">
+<div class="bg-[#FFFFFF] py-[50px] lg:py-[70px] xl:py-[90px] 2xl:py-[100px]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+       <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] z-10">
+      <div class="w-full max-w-[720px]">
         <img
           src="../../../Assets/Images/BecomeAPartner/partnership_form_img.jpg"
           alt="Automation"
-          class="w-full h-[600px] object-cover rounded-3xl"
+          class="w-full h-full xl:min-h-[652px] object-cover rounded-3xl"
         />
       </div>
-      <div class="w-full lg:w-1/2 bg-[#132028] p-6 rounded-3xl">
-         <h2 class="text-3xl font-Medium text-white mb-4">Collaborate. Innovate. Scale — Globally.</h2>
-         <p class="text-md text-[#FFFFFF] opacity-60 mb-8">Transcodezy is ready to co-create intelligent, scalable, and impactful technology solutions with you.</p>
-        <form class="space-y-4">
-          <div class="grid grid-cols-2 gap-4">
-            <input type="text" placeholder="First Name" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
-            <input type="text" placeholder="Last Name" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
-          </div>
-          <div class="grid grid-cols-2 gap-4">
-            <input type="email" placeholder="Email" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
-            <input type="text" placeholder="Company" class="bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400">
-          </div>
-          <div class="grid grid-cols-2 gap-4">
-            <select class="w-full px-2 py-3 rounded-lg bg-[#FFFFFF14] text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary z-10">
-              <option disabled selected>Partnership Type</option>
-              <option>Technology Partner</option>
-              <option>Channel Partner</option>
-              <option>Strategic Partner</option>
-              <option>Implementation Partner</option>
-            </select>
+      <div class="w-full bg-[#132028]  p-5 lg:p-10 rounded-[24px] h-auto xl:min-h-[652px] w-full xl:max-w-[720px] shadow-lg">
+         <h2 class="text-[32px] font-medium text-white">Collaborate. Innovate. Scale — Globally.</h2>
+         <p class="paragraph text-[#FFFFFF] opacity-60">Transcodezy is ready to co-create intelligent, scalable, and impactful technology solutions with you.</p>
+        <form class="space-y-6 py-4 lg:py-8">
+          <!-- Row 1 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
 
-            <select class="w-full px-2 py-3 rounded-lg bg-[#FFFFFF14] text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary z-10">
-              <option disabled selected>Your Industry</option>
-              <option>FinTech</option>
-              <option>Healthcare</option>
-              <option>Education</option>
-              <option>Manufacturing</option>
-              <option>Retail & E-commerce</option>
-              <option>Other</option>
-            </select>
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
           </div>
-          <textarea placeholder="Tell us about your partnership goals..." class="w-full bg-[#FFFFFF14] text-white rounded-lg p-3 placeholder-gray-400 h-32"></textarea>
-          <button class="bg-primary text-white rounded-3xl px-6 py-3 font-semibold hover:scale-105 duration-700 cursor-pointer  w-fit">
-            <a href="#" >Apply to Join</a>
-          </button>
+
+          <!-- Row 2 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="Company Name"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
+
+            <!-- Position Applied Dropdown -->
+            <input
+              type="tel"
+              placeholder="Country"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+            />
+          </div>
+
+          <!-- Row 3 -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- About your project -->
+              <div class="relative w-full xl:max-w-[335px]">
+                <select
+                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
+                >
+                  <option class="text-accent paragraph p-3">Partnership Type</option>
+                  <option class="text-accent paragraph p-3">Technology Partner</option>
+                  <option class="text-accent paragraph p-3">Channel Partner</option>
+                  <option class="text-accent paragraph p-3">Strategic Partner</option>
+                  <option class="text-accent paragraph p-3">Implementation Partner</option>
+                </select>
+
+                <!-- Icon inside select -->
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-3 flex items-center"
+                >
+                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
+                </div>
+              </div>
+
+              <div class="relative w-full xl:max-w-[335px]">
+                <select
+                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
+                >
+                  <option class="text-accent paragraph p-3">Your Industry</option>
+                  <option class="text-accent paragraph p-3">FinTech</option>
+                  <option class="text-accent paragraph p-3">Healthcare</option>
+                  <option class="text-accent paragraph p-3">Education</option>
+                  <option class="text-accent paragraph p-3">Manufacturing</option>
+                  <option class="text-accent paragraph p-3">Retail & E-commerce</option>
+                  <option class="text-accent paragraph p-3">Other</option>
+                </select>
+
+                <!-- Icon inside select -->
+                <div
+                  class="pointer-events-none absolute inset-y-0 right-3 flex items-center"
+                >
+                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
+                </div>
+              </div>
+            </div>
+            <!-- row-4 -->
+            <div class="w-full">
+                <textarea
+                  placeholder="Tell us about your partnership goals..."
+                  class="w-full bg-[#FFFFFF14] paragraph text-[#FFFFFF66] rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
+                ></textarea>
+            </div>  
+            
         </form>
+        <div class="mt-1 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
+                <a href="#" >Apply to Join</a>
+        </div>
       </div>
     </div>
     </div>
