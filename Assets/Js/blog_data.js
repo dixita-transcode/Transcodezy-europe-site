@@ -2390,128 +2390,129 @@ const blogDetails = {
         "Why Custom Software Development Is Key for Digital Transformation in Europe",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/custom_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/custom_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Custom Software Development Is Key for Digital Transformation in Europe</h1>
-            <h3 class="text-2xl font-semibold mb-4">The Digital Transformation Wave in Europe</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%] ">
+            <h1 class="heading font-medium text-accent mb-6">Why Custom Software Development Is Key for Digital Transformation in Europe</h1>
+            <h3 class="paragraph text-secondary mb-2">The Digital Transformation Wave in Europe</h3>
+            <p class="paragraph text-secondary mb-2">
                Europe is undergoing a major digital transformation revolution, driven by innovation, automation, 
                and smarter technology adoption. Businesses — from small and medium-sized enterprises (SMEs) to large corporations 
                — are rethinking their operations to stay competitive in an increasingly connected world.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary mb-2">
               However, many organizations face one major challenge: standard software solutions often fail to meet their unique business needs. 
               This is where custom software development becomes a game changer.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary mb-8">
               At Transcodezy IT Solutions Pvt. Ltd., we design and develop custom digital solutions tailored to meet industry-specific requirements,
                ensuring that every feature aligns with your business objectives and growth strategy.
             </p>
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
-            <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/why_img1.jpg" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
+             <div class="w-full md:w-1/2">
+                <img src="../../../Assets/Images/blogDetail/why_img2.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/why_img2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/why_img1.jpg" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!--Why Custom Software Development Matters Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Why Custom Software Development Matters</h2>
+            <h2 class="text-2xl font-medium text-acccent mb-4">Why Custom Software Development Matters</h2>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">1. Tailored to European Business Needs</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h3 class="text-xl font-medium text-accent mb-2">1. Tailored to European Business Needs</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                Every business in Europe has its own workflow, compliance regulations, and customer demands. 
                Custom-built software ensures seamless integration with your existing processes, 
                eliminating inefficiencies and boosting productivity.</p>
 
-            <p class="text-gray-700 leading-relaxed mb-6"> Unlike off-the-shelf solutions, which often require compromising your workflow, 
+            <p class="paragraph text-secondary leading-relaxed mb-6"> Unlike off-the-shelf solutions, which often require compromising your workflow, 
             custom applications empower you to work exactly the way your business demands.</p>   
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">2. Regulatory Compliance & Data Protection</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h3 class="text-xl font-medium text-accent mb-2">2. Regulatory Compliance & Data Protection</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                In Europe, regulations such as GDPR make data protection and user privacy top priorities. 
                Custom software development allows the integration of region-specific compliance modules, 
                ensuring your systems meet the highest security standards.</p>
 
-            <p class="text-gray-700 leading-relaxed mb-4">At Transcodezy IT Solutions Pvt. Ltd., we embed data protection mechanisms, encryption,
+            <p class="paragraph text-secondary leading-relaxed mb-6">At Transcodezy IT Solutions Pvt. Ltd., we embed data protection mechanisms, encryption,
              and secure access controls directly into your software architecture to keep your users’ information safe and compliant.
             </p>
             
-            <h3 class="text-xl font-medium text-gray-800 mb-2">3. Scalability and Long-Term Flexibility</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h3 class="text-xl font-medium text-accent mb-2">3. Scalability and Long-Term Flexibility</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               As your company grows, your software must evolve with you. Custom software is built to scale, allowing easy integration with new technologies like AI 
               and blockchain without starting from scratch.</p>
 
-            <p class="text-gray-700 leading-relaxed mb-4"> This flexibility helps European enterprises and 
+            <p class="paragraph text-secondary leading-relaxed mb-6"> This flexibility helps European enterprises and 
             global organizations adapt quickly to changing market dynamics, reducing downtime and development costs.
             </p>
 
-             <h3 class="text-xl font-medium text-gray-800 mb-2">4. Improved Customer Experience</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+             <h3 class="text-xl font-medium text-accent mb-2">4. Improved Customer Experience</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               In today’s experience-driven market, personalized customer interaction is key. 
               Custom software allows businesses to build features that enhance user journeys, automate responses, and personalize content.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-4">  From e-commerce platforms in Germany to healthcare applications in Spain, 
+            <p class="paragraph text-secondary leading-relaxed mb-6">  From e-commerce platforms in Germany to healthcare applications in Spain, 
             tailored solutions help companies deliver high-quality digital experiences that foster loyalty and trust.
             </p>
 
-             <h3 class="text-xl font-medium text-gray-800 mb-2">5. Gaining a Competitive Edge Globally</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+             <h3 class="text-xl font-medium text-accent mb-2">5. Gaining a Competitive Edge Globally</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               Europe’s digital economy competes on a global stage. With custom software, businesses can innovate faster, gather actionable insights,
                and automate complex processes — giving them a strategic edge over competitors.
             </p>
 
-            <p class="text-gray-700 leading-relaxed mb-4">   At Transcodezy IT Solutions Pvt. Ltd., we empower clients to accelerate innovation through advanced analytics, cloud integration,
+            <p class="paragraph text-secondary leading-relaxed mb-6">   At Transcodezy IT Solutions Pvt. Ltd., we empower clients to accelerate innovation through advanced analytics, cloud integration,
              and intelligent automation solutions designed for global competitiveness.
             </p>   
 
             <!--  The Global Impact of Custom Software Development Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> The Global Impact of Custom Software Development</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-acccent mb-4"> The Global Impact of Custom Software Development</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              While Europe leads in compliance and innovation, the impact of custom software extends far beyond the continent.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Across North America, Asia, and the Middle East, companies are using tailored software to:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Across North America, Asia, and the Middle East, companies are using tailored software to:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Automate operations</span> and reduce human error
+                    <span class="font-medium">Automate operations</span> and reduce human error
                 </li>
                 <li>
-                    <span class="font-semibold">Enhance decision-making</span> with real-time analytics             
+                    <span class="font-medium">Enhance decision-making</span> with real-time analytics             
                 </li>
                 <li>
-                    <span class="font-semibold">Connect devices and systems</span> via IoT for predictive maintenance.               
+                    <span class="font-medium">Connect devices and systems</span> via IoT for predictive maintenance.               
                 </li>
                 <li>
-                    <span class="font-semibold">Leverage AI and machine learning</span> for smarter automation               
+                    <span class="font-medium">Leverage AI and machine learning</span> for smarter automation               
                 </li>
             </ul>
-            <p class="text-gray-700 mb-6">This global shift highlights that customization is no longer a luxury — it’s a necessity for organizations aiming to lead in the digital-first era.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6">This global shift highlights that customization is no longer a luxury — it’s a necessity for organizations aiming to lead in the digital-first era.</p>
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
+    
+      <div class="">
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-semibold mb-4">Digital transformation is more than adopting technology — it’s about reshaping business models to thrive in a data-driven world.</p>
-            <p class="text-gray-700 mb-2">Custom software development gives European and global enterprises the agility, security, 
+            <h2 class="text-2xl font-medium text-acccent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Digital transformation is more than adopting technology — it’s about reshaping business models to thrive in a data-driven world.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Custom software development gives European and global enterprises the agility, security, 
             and intelligence they need to innovate faster, scale smarter, and operate efficiently.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we specialize in developing tailored software solutions that drive performance, ensure compliance, and empower digital growth for businesses across Europe and worldwide.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we specialize in developing tailored software solutions that drive performance, ensure compliance, and empower digital growth for businesses across Europe and worldwide.</p>
                    
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
+    </div>
     </div>
             `,
     },
@@ -2520,235 +2521,236 @@ const blogDetails = {
         "Top Trends in Enterprise Software Development for Global Markets in 2025",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/industrie_blog5.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/industrie_blog5.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Top Trends in Enterprise Software Development for Global Markets in 2025</h1>
-            <h3 class="text-2xl font-semibold mb-4">The New Era of Enterprise Software Development</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%]">
+            <h1 class="heading text-accent font-medium mb-6">Top Trends in Enterprise Software Development for Global Markets in 2025</h1>
+            <h3 class="paragraph text-secondary leading-relaxed mb-2">The New Era of Enterprise Software Development</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                The year 2025 marks a defining point in the evolution of enterprise software. Across Europe and the global business landscape, 
                organizations are harnessing cutting-edge technologies like AI, cloud computing, IoT, and automation to gain a competitive edge.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                The focus has shifted from simply building systems that “work” to creating intelligent, secure, 
                and scalable ecosystems that accelerate innovation and enhance user experiences.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                At Transcodezy IT Solutions Pvt. Ltd., we empower businesses to adapt to this digital evolution by offering custom enterprise software solutions that are robust,
                 secure, and designed for the future.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
                Our expertise spans Europe’s top industries — including manufacturing, healthcare, fintech, 
                and e-commerce — ensuring every solution aligns with regional compliance, scalability, and market demand.
             </p>
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/top_trend_img2.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/top_trend_img2.png" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src=".../../../Assets/Images/blogDetail/top_trend_img1.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src=".../../../Assets/Images/blogDetail/top_trend_img1.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!--Artificial Intelligence and Machine Learning Dominate Enterprise Innovation Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Artificial Intelligence and Machine Learning Dominate Enterprise Innovation</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">Artificial Intelligence and Machine Learning Dominate Enterprise Innovation</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
                AI and ML continue to revolutionize how organizations function. In 2025, European and global enterprises are embedding 
                AI-driven intelligence across workflows — from predictive analytics to intelligent process automation.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key AI Trends in Enterprise Software:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="paragraph text-secondary leading-relaxed mb-2">Key AI Trends in Enterprise Software:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Predictive Analytics:</span> Forecasting customer behavior and market demand using real-time data.
+                    <span class="font-medium">Predictive Analytics:</span> Forecasting customer behavior and market demand using real-time data.
 
                 </li>
                 <li>
-                    <span class="font-semibold">AI Chatbots & Virtual Assistants:</span> Enhancing customer experience through natural language processing.             
+                    <span class="font-medium">AI Chatbots & Virtual Assistants:</span> Enhancing customer experience through natural language processing.             
                 </li>
                 <li>
-                   <span class="font-semibold">Process Automation:</span> Reducing manual tasks with intelligent automation, improving productivity by 40–60%.                
+                   <span class="font-medium">Process Automation:</span> Reducing manual tasks with intelligent automation, improving productivity by 40–60%.                
                 </li>
             </ul>
-            <p class="text-gray-700 mb-4">In Europe, AI adoption in enterprise software is particularly high in manufacturing, logistics, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">In Europe, AI adoption in enterprise software is particularly high in manufacturing, logistics, 
             and healthcare — driving operational accuracy and real-time decision-making.</p>
-            <p class="text-gray-700 mb-6">At Transcodezy IT Solutions Pvt. Ltd., we help organizations integrate AI models seamlessly into enterprise systems, 
+            <p class="paragraph text-secondary leading-relaxed mb-6">At Transcodezy IT Solutions Pvt. Ltd., we help organizations integrate AI models seamlessly into enterprise systems, 
             ensuring smarter, data-driven business operations.</p>  
 
             <!-- Cloud-Native and Multi-Cloud Architecture Become the Foundation Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Cloud-Native and Multi-Cloud Architecture Become the Foundation</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">Cloud-Native and Multi-Cloud Architecture Become the Foundation</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              Cloud adoption has matured. In 2025, the focus is on cloud-native and multi-cloud strategies that enhance scalability, 
              reduce infrastructure costs, and improve system reliability.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Benefits for European & Global Businesses:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Benefits for European & Global Businesses:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Scalability:</span> Instantly scale resources based on demand fluctuations.
+                    <span class="font-medium">Scalability:</span> Instantly scale resources based on demand fluctuations.
 
                 </li>
                 <li>
-                   <span class="font-semibold">Resilience:</span> Multi-cloud deployments eliminate downtime and vendor lock-in            
+                   <span class="font-medium">Resilience:</span> Multi-cloud deployments eliminate downtime and vendor lock-in            
                 </li>
                 <li>
-                    <span class="font-semibold">Security & Compliance:</span> Built-in encryption and GDPR-ready frameworks.               
+                    <span class="font-medium">Security & Compliance:</span> Built-in encryption and GDPR-ready frameworks.               
                 </li>
             </ul>
-            <p class="text-gray-700 mb-4">European companies, particularly in Germany, the Netherlands, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">European companies, particularly in Germany, the Netherlands, 
             and the U.K., are migrating to multi-cloud ecosystems to achieve agility and regulatory alignment.</p>
-            <p class="text-gray-700 mb-6">Transcodezy IT Solutions Pvt. Ltd. designs cloud-native enterprise applications on AWS, Azure, 
+            <p class="paragraph text-secondary leading-relaxed mb-6">Transcodezy IT Solutions Pvt. Ltd. designs cloud-native enterprise applications on AWS, Azure, 
             and Google Cloud — ensuring high performance, cost efficiency, and future scalability.
             </p>
 
             <!--  Cybersecurity-First Development: Security at Every Layer Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> Cybersecurity-First Development: Security at Every Layer</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4"> Cybersecurity-First Development: Security at Every Layer</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              As enterprises digitize, cyber threats grow exponentially. The EU’s strict GDPR regulations and rising ransomware attacks have made cybersecurity a top strategic priority.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Cybersecurity Trends:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Cybersecurity Trends:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Zero-Trust Architecture (ZTA):</span> No implicit trust within networks — every access is verified.
+                    <span class="font-medium">Zero-Trust Architecture (ZTA):</span> No implicit trust within networks — every access is verified.
 
                 </li>
                 <li>
-                   <span class="font-semibold">AI-Powered Threat Detection:</span> Machine learning algorithms to identify anomalies in real time.
+                   <span class="font-medium">AI-Powered Threat Detection:</span> Machine learning algorithms to identify anomalies in real time.
                 </li>
                 <li>
-                    <span class="font-semibold"> Data Encryption & Secure APIs:</span> Protecting sensitive customer and business data.               
+                    <span class="font-medium"> Data Encryption & Secure APIs:</span> Protecting sensitive customer and business data.               
                 </li>
             </ul>
             
-            <p class="text-gray-700 mb-6">At Transcodezy IT Solutions Pvt. Ltd., security is integrated into every development phase — from design to deployment — ensuring your enterprise applications remain secure, compliant, 
+            <p class="paragraph text-secondary leading-relaxed mb-6">At Transcodezy IT Solutions Pvt. Ltd., security is integrated into every development phase — from design to deployment — ensuring your enterprise applications remain secure, compliant, 
             and resilient against evolving digital threats
             </p>
 
             <!-- Low-Code and No-Code Platforms Revolutionize Development Speed Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Low-Code and No-Code Platforms Revolutionize Development Speed</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">Low-Code and No-Code Platforms Revolutionize Development Speed</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
             In 2025, low-code and no-code (LCNC) platforms are transforming how businesses build internal tools and enterprise apps.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
             These solutions empower organizations to accelerate time-to-market, reduce development costs, and allow business teams to innovate without extensive coding knowledge.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Why It Matters:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Why It Matters:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Rapid Prototyping: </span> Build and test applications faster than traditional development.
+                    <span class="font-medium">Rapid Prototyping: </span> Build and test applications faster than traditional development.
 
                 </li>
                 <li>
-                   <span class="font-semibold"> Accessibility:</span> Enables non-technical users to contribute to app creation.
+                   <span class="font-medium"> Accessibility:</span> Enables non-technical users to contribute to app creation.
                 </li>
                 <li>
-                    <span class="font-semibold">Cost-Efficiency:</span> Reduces dependency on large development teams.               
+                    <span class="font-medium">Cost-Efficiency:</span> Reduces dependency on large development teams.               
                 </li>
             </ul>
             
-            <p class="text-gray-700 mb-4">Across Europe, SMEs are adopting LCNC solutions to digitalize quickly while keeping budgets optimized.</p>
-            <p class="text-gray-700 mb-6"> Globally, these platforms are fueling innovation in industries such as banking, logistics, and education.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Across Europe, SMEs are adopting LCNC solutions to digitalize quickly while keeping budgets optimized.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"> Globally, these platforms are fueling innovation in industries such as banking, logistics, and education.</p>
 
             <!-- API-Driven Architecture and Microservices Integration Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> API-Driven Architecture and Microservices Integration</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4"> API-Driven Architecture and Microservices Integration</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
             Modern enterprises depend on system interoperability. The future of enterprise software lies in API-first development 
             — enabling seamless integration between diverse applications like CRM, ERP, HRM, and analytics systems.</p>
         
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Advantages:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Advantages:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Faster Data Exchange: </span> Real-time connectivity across systems.
+                    <span class="font-medium">Faster Data Exchange: </span> Real-time connectivity across systems.
 
                 </li>
                 <li>
-                   <span class="font-semibold">Improved Flexibility:</span> Modular microservices allow independent scaling
+                   <span class="font-medium">Improved Flexibility:</span> Modular microservices allow independent scaling
                 </li>
                 <li>
-                    <span class="font-semibold">Enhanced Business Agility:</span> Enables faster innovation with minimal downtime.               
+                    <span class="font-medium">Enhanced Business Agility:</span> Enables faster innovation with minimal downtime.               
                 </li>
             </ul>
             
-            <p class="text-gray-700 mb-6"> At Transcodezy IT Solutions Pvt. Ltd., we build custom APIs and integration frameworks that simplify data exchange,
+            <p class="paragraph text-secondary leading-relaxed mb-6"> At Transcodezy IT Solutions Pvt. Ltd., we build custom APIs and integration frameworks that simplify data exchange,
              optimize performance, and enable digital ecosystems to scale globally.</p>
 
              <!-- Generative AI and Intelligent Automationn Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Generative AI and Intelligent Automation</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">Generative AI and Intelligent Automation</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
             Generative AI is transforming enterprise software development — from automating code generation to personalizing customer experiences.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              By integrating GenAI tools, businesses are reducing human error, cutting costs, and accelerating deployment cycles.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Examples of Generative AI in Enterprise:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Examples of Generative AI in Enterprise:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Code Automation:  </span>AI writing and debugging code efficiently.
+                    <span class="font-medium">Code Automation:  </span>AI writing and debugging code efficiently.
 
                 </li>
                 <li>
-                   <span class="font-semibold">Content Generation:</span> Personalized marketing content and documentation.
+                   <span class="font-medium">Content Generation:</span> Personalized marketing content and documentation.
                 </li>
                 <li>
-                    <span class="font-semibold"> Intelligent Assistants:</span> Supporting employees with contextual recommendations.              
+                    <span class="font-medium"> Intelligent Assistants:</span> Supporting employees with contextual recommendations.              
                 </li>
             </ul>
             
-            <p class="text-gray-700 mb-6"> At Transcodezy, we leverage AI-driven development frameworks to enhance productivity 
+            <p class="paragraph text-secondary leading-relaxed mb-6"> At Transcodezy, we leverage AI-driven development frameworks to enhance productivity 
              and deliver more accurate, innovative enterprise solutions.</p>
 
              <!--  Sustainable and Green Software Engineering Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> Sustainable and Green Software Engineering</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4"> Sustainable and Green Software Engineering</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
             Sustainability has become a global software development priority.</p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               European governments and organizations are investing in green coding — optimizing algorithms, reducing cloud energy consumption, 
               and developing carbon-efficient infrastructure.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Green Tech Impact:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Green Tech Impact:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Reduced Carbon Footprint:  </span> Optimized server usage and clean code practices.
+                    <span class="font-medium">Reduced Carbon Footprint:  </span> Optimized server usage and clean code practices.
 
                 </li>
                 <li>
-                   <span class="font-semibold">Energy Efficiency:</span> Cloud computing with renewable-powered data centers.
+                   <span class="font-medium">Energy Efficiency:</span> Cloud computing with renewable-powered data centers.
                 </li>
                 <li>
-                    <span class="font-semibold">Corporate Responsibility:</span> Aligning technology goals with ESG commitments.             
+                    <span class="font-medium">Corporate Responsibility:</span> Aligning technology goals with ESG commitments.             
                 </li>
             </ul>
             
-            <p class="text-gray-700 mb-6"> At Transcodezy IT Solutions Pvt. Ltd., we design software systems that are not only high-performing but also environmentally conscious,
+            <p class="paragraph text-secondary leading-relaxed mb-6"> At Transcodezy IT Solutions Pvt. Ltd., we design software systems that are not only high-performing but also environmentally conscious,
              aligning with Europe’s Green Digital Deal and global sustainability goals</p>
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
+    
+      <div>
 
        <!--  Global Collaboration and Remote Development Ecosystems Section -->
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Global Collaboration and Remote Development Ecosystems</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">The modern enterprise development model is borderless.</p>
-            <p class="text-gray-700 leading-relaxed mb-4"> In 2025, companies are adopting distributed development teams and cross-border IT partnerships to access specialized talent 
+            <h2 class="text-2xl font-medium text-accent mb-4">Global Collaboration and Remote Development Ecosystems</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">The modern enterprise development model is borderless.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"> In 2025, companies are adopting distributed development teams and cross-border IT partnerships to access specialized talent 
             and reduce operational costs.</p>
-            <p class="text-gray-700 leading-relaxed mb-6"> Transcodezy IT Solutions Pvt. Ltd. collaborates with global enterprises to deliver offshore 
+            <p class="paragraph text-secondary leading-relaxed mb-6"> Transcodezy IT Solutions Pvt. Ltd. collaborates with global enterprises to deliver offshore 
             and nearshore development services that combine European quality standards with global scalability and cost efficiency.</p>
 
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-semibold mb-4">Building the Future of Enterprise Software</p>
-            <p class="text-gray-700 mb-2">The enterprise software landscape in 2025 is driven by AI, cloud computing, automation, and sustainability.</p>
-            <p class="text-gray-700 mb-2">Businesses that embrace these trends will unlock greater agility, stronger security, and smarter innovation — giving them a lasting edge in both European and global markets.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we build custom enterprise software that transforms challenges into opportunities.</p> 
-            <p class="text-gray-700 mb-4"> Whether you’re in London, Berlin, Madrid, or across the Atlantic, our tailored digital solutions help you scale efficiently, operate securely, and lead confidently in the digital era.</p>      
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Building the Future of Enterprise Software</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">The enterprise software landscape in 2025 is driven by AI, cloud computing, automation, and sustainability.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Businesses that embrace these trends will unlock greater agility, stronger security, and smarter innovation — giving them a lasting edge in both European and global markets.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we build custom enterprise software that transforms challenges into opportunities.</p> 
+            <p class="paragraph text-secondary leading-relaxed mb-2"> Whether you’re in London, Berlin, Madrid, or across the Atlantic, our tailored digital solutions help you scale efficiently, operate securely, and lead confidently in the digital era.</p>      
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
+    </div>
     </div>
             `,
     },
@@ -2757,131 +2759,130 @@ const blogDetails = {
         "The Role of UI/UX Design in Driving Engagement for European & Global Apps",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/uiux_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/uiux_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] object-cover rounded-2xl ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">The Role of UI/UX Design in Driving Engagement for European & Global Apps</h1>
-            <h3 class="text-2xl font-semibold mb-4"> Why UI/UX Matters More Than Ever</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%]">
+            <h1 class="heading font-medium text-accent mb-6">The Role of UI/UX Design in Driving Engagement for European & Global Apps</h1>
+            <h3 class="paragraph text-secondary mb-2"> Why UI/UX Matters More Than Ever</h3>
+            <p class=" paragraph text-secondary leading-relaxed mb-2">
                In today’s digital-first world, UI/UX design has become the foundation of every successful application — whether it’s a European fintech platform,
                 a global e-commerce app, or an AI-powered enterprise tool. Users across Europe and around the globe expect seamless navigation, 
                 fast performance, and visually appealing interfaces that deliver both functionality and delight.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
               At Transcodezy IT Solutions Pvt. Ltd., we understand that superior UI/UX design isn’t just about aesthetics — 
               it’s about creating human-centered digital experiences that drive engagement, retention, and business growth.
             </p>
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/global_img1.jpg" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/global_img1.jpg" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/global_img2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/global_img2.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!-- What Makes Great UI/UX Design? Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> What Makes Great UI/UX Design?</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4"> What Makes Great UI/UX Design?</h2>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">A great user experience combines usability, accessibility, and emotional appeal. Here’s how top-tier design impacts app success:</h3>
-             <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">A great user experience combines usability, accessibility, and emotional appeal. Here’s how top-tier design impacts app success:</h3>
+             <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
-                    <span class="font-semibold">User-Centric Design </span>– Every decision, from layout to color scheme, is based on user research and real behavior patterns.
+                    <span class="font-medium">User-Centric Design </span>: Every decision, from layout to color scheme, is based on user research and real behavior patterns.
                 </li>
                 <li>
-                    <span class="font-semibold">Consistent Branding</span> – Visual consistency helps users instantly connect your app with your brand identity.             
+                    <span class="font-medium">Consistent Branding</span> : Visual consistency helps users instantly connect your app with your brand identity.             
                 </li>
                 <li>
-                    <span class="font-semibold">Intuitive Navigation</span> – Clear pathways and smooth interactions make it easy for users to complete actions effortlessly.              
+                    <span class="font-medium">Intuitive Navigation</span> : Clear pathways and smooth interactions make it easy for users to complete actions effortlessly.              
                 </li>
                 <li>
-                    <span class="font-semibold">Mobile Optimization</span> – With Europe’s smartphone penetration exceeding 90%, mobile-first design is essential for success.
+                    <span class="font-medium">Mobile Optimization</span> : With Europe’s smartphone penetration exceeding 90%, mobile-first design is essential for success.
               
                 </li>
             </ul>
             
             <!--  How UI/UX Drives Engagement & Retention Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">How UI/UX Drives Engagement & Retention</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">How UI/UX Drives Engagement & Retention</h2>
         
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Modern users have countless app options — meaning first impressions count more than ever. 
+            <h3 class="text-xl font-medium text-secondary mb-2">Modern users have countless app options — meaning first impressions count more than ever. 
             An engaging UI and smooth UX design ensure that users don’t just try your app — they stay.</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
-                    <span class="font-semibold">Reduces Friction: </span>Simplified processes enhance the user journey, minimizing drop-offs.
+                    <span class="font-medium">Reduces Friction: </span>Simplified processes enhance the user journey, minimizing drop-offs.
                 </li>
                 <li>
-                    <span class="font-semibold">Increases Retention:</span> A beautiful, intuitive design keeps users coming back.            
+                    <span class="font-medium">Increases Retention:</span> A beautiful, intuitive design keeps users coming back.            
                 </li>
                 <li>
-                    <span class="font-semibold"> Boosts Conversions:</span> Strategic design elements lead users toward desired actions, like purchases or sign-ups.
+                    <span class="font-medium"> Boosts Conversions:</span> Strategic design elements lead users toward desired actions, like purchases or sign-ups.
                
                 </li>
                 <li>
-                    <span class="font-semibold">Builds Trust:</span> A professional and consistent interface fosters reliability and credibility.              
+                    <span class="font-medium">Builds Trust:</span> A professional and consistent interface fosters reliability and credibility.              
                 </li>
             </ul>
 
             <!-- UI/UX Design Trends Transforming the European & Global Market Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">UI/UX Design Trends Transforming the European & Global Market</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">UI/UX Design Trends Transforming the European & Global Market</h2>
            
-            <h3 class="text-xl font-medium text-gray-800 mb-2">The future of design is intelligent, personalized, and adaptive. 
+            <h3 class="text-xl font-medium text-secondary mb-2">The future of design is intelligent, personalized, and adaptive. 
             In 2025 and beyond, the following trends are shaping how global and European businesses approach digital product design:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
-                    <span class="font-semibold">AI-Driven Personalization:</span> Adaptive interfaces that learn user preferences and behavior.
+                    <span class="font-medium">AI-Driven Personalization:</span> Adaptive interfaces that learn user preferences and behavior.
                 </li>
                 <li>
-                    <span class="font-semibold"> Voice & Gesture Interfaces:</span> Enhancing accessibility and convenience for diverse users.            
+                    <span class="font-medium"> Voice & Gesture Interfaces:</span> Enhancing accessibility and convenience for diverse users.            
                 </li>
                 <li>
-                    <span class="font-semibold">Minimalism & Speed:</span>  Clean designs with optimized loading times for better performance.
+                    <span class="font-medium">Minimalism & Speed:</span>  Clean designs with optimized loading times for better performance.
                
                 </li>
                 <li>
-                    <span class="font-semibold"> Dark Mode & Dynamic Themes:</span>  Improving user comfort and battery life across devices.              
+                    <span class="font-medium"> Dark Mode & Dynamic Themes:</span>  Improving user comfort and battery life across devices.              
                 </li>
                 <li>
-                    <span class="font-semibold">Data-Backed Design Decisions:</span> Using analytics and A/B testing to refine the user journey continuously.              
+                    <span class="font-medium">Data-Backed Design Decisions:</span> Using analytics and A/B testing to refine the user journey continuously.              
                 </li>
             </ul>
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
+
       <!--   The European Perspective: Design Meets Compliance & Culture Section -->
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> The European Perspective: Design Meets Compliance & Culture</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">Designing for European audiences means blending creativity with compliance. The GDPR and accessibility standards play a significant role in shaping how UI/UX is structured for inclusivity and trust.</p>
-            <p class="text-gray-700 leading-relaxed mb-4"> Moreover, Europe’s diverse cultures and languages demand localized design strategies — ensuring the app feels native to every market, from Germany to France, Spain, and the Nordic region.</p>
+            <h2 class="text-2xl font-medium text-accent mb-4"> The European Perspective: Design Meets Compliance & Culture</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Designing for European audiences means blending creativity with compliance. The GDPR and accessibility standards play a significant role in shaping how UI/UX is structured for inclusivity and trust.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"> Moreover, Europe’s diverse cultures and languages demand localized design strategies — ensuring the app feels native to every market, from Germany to France, Spain, and the Nordic region.</p>
 
              <!--    How Transcodezy IT Solutions Pvt. Ltd. Empowers Businesses Section -->
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">  How Transcodezy IT Solutions Pvt. Ltd. Empowers Businesses</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">At Transcodezy IT Solutions Pvt. Ltd., we specialize in designing custom UI/UX solutions that align with your business objectives and user expectations. Our design experts leverage cutting-edge tools, usability testing, 
+            <h2 class="text-2xl font-medium text-accent mb-4">  How Transcodezy IT Solutions Pvt. Ltd. Empowers Businesses</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we specialize in designing custom UI/UX solutions that align with your business objectives and user expectations. Our design experts leverage cutting-edge tools, usability testing, 
             and human psychology to create experiences that convert users into loyal advocates..</p>
-            <p class="text-gray-700 leading-relaxed mb-4"> We serve clients across Europe, the U.K., 
+            <p class="paragraph text-secondary leading-relaxed mb-2"> We serve clients across Europe, the U.K., 
             and global markets, delivering visually appealing, high-performing, and user-focused digital products.</p>
 
 
 
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-semibold mb-4">In the competitive global and European app market, UI/UX design is no longer optional — it’s a strategic differentiator. By prioritizing thoughtful design, businesses can enhance user satisfaction, foster brand loyalty, and drive measurable growth.</p>
-            <p class="text-gray-700 mb-2">Partner with Transcodezy IT Solutions Pvt. Ltd. to transform your digital experience and turn design into your competitive advantage.</p>
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">In the competitive global and European app market, UI/UX design is no longer optional — it’s a strategic differentiator. By prioritizing thoughtful design, businesses can enhance user satisfaction, foster brand loyalty, and drive measurable growth.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Partner with Transcodezy IT Solutions Pvt. Ltd. to transform your digital experience and turn design into your competitive advantage.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,
@@ -2890,48 +2891,48 @@ const blogDetails = {
       title: "Best Practices for Creating Intuitive UI/UX for Global Audiences",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/uiux_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/uiux_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Best Practices for Creating Intuitive UI/UX for Global Audiences</h1>
-            <h3 class="text-2xl font-semibold mb-4">Designing for a Global Audience</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%] ">
+            <h1 class="heading font-medium text-gray-accent mb-6">Best Practices for Creating Intuitive UI/UX for Global Audiences</h1>
+            <h3 class="paragraph text-secondary font-medium mb-2">Designing for a Global Audience</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               In today’s connected digital ecosystem, users come from every corner of the world — each with distinct languages, cultures, 
               and digital expectations. For businesses expanding across Europe and global markets, designing intuitive and inclusive interfaces has become a top priority.
 
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-6">
              At Transcodezy IT Solutions Pvt. Ltd., we believe that great design transcends borders. 
              Our mission is to help brands deliver seamless, culturally aware digital experiences that resonate with diverse users while maintaining a unified global identity.
             </p>
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/intuitive_img1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/intuitive_img1.png" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/intuitive_img2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/intuitive_img2.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!-- Why Intuitive UI/UX Design Matters Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Why Intuitive UI/UX Design Matters?</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">Why Intuitive UI/UX Design Matters?</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              An intuitive design doesn’t just look appealing — it feels natural to the user.
               Whether your audience is in Spain, Germany, India, or the U.K., the goal is the same: enable users to navigate your product effortlessly without confusion.
             </p>
         
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Benefits of intuitive UI/UX design:</h3>
-             <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Benefits of intuitive UI/UX design:</h3>
+             <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Enhances accessibility and usability for diverse audiences.
                 </li>
@@ -2948,86 +2949,84 @@ const blogDetails = {
             
             <!-- Understanding Cultural Context in Design Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Understanding Cultural Context in Design</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">One of the biggest challenges in global UI/UX design is cultural variation. A color or icon that means one thing in France may mean something entirely different in Japan.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">To ensure global appeal, Transcodezy emphasizes:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h2 class="text-2xl font-medium text-accent mb-4">Understanding Cultural Context in Design</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">One of the biggest challenges in global UI/UX design is cultural variation. A color or icon that means one thing in France may mean something entirely different in Japan.</p>
+            <h3 class="text-xl font-medium text-secondary mb-2">To ensure global appeal, Transcodezy emphasizes:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
-                    <span class="font-semibold">Localization: </span> Adapting text, visuals, and layouts to regional norms.
+                    <span class="font-medium">Localization: </span> Adapting text, visuals, and layouts to regional norms.
                 </li>
                 <li>
-                    <span class="font-semibold">Color Psychology:</span> Selecting colors that align with cultural meanings.            
+                    <span class="font-medium">Color Psychology:</span> Selecting colors that align with cultural meanings.            
                 </li>
                 <li>
-                    <span class="font-semibold">Reading Patterns:</span> Adjusting layouts for left-to-right or right-to-left languages.
+                    <span class="font-medium">Reading Patterns:</span> Adjusting layouts for left-to-right or right-to-left languages.
                
                 </li>
                 <li>
-                    <span class="font-semibold">Typography:</span> Choosing fonts that support multiple language scripts while preserving brand aesthetics.             
+                    <span class="font-medium">Typography:</span> Choosing fonts that support multiple language scripts while preserving brand aesthetics.             
                 </li>
             </ul>
-            <p> class="text-gray-700 mb-6">This careful attention to cultural detail allows brands to communicate effectively with audiences worldwide.</p>
+            <p> class="paragraph text-secondary leading-relaxed mb-6">This careful attention to cultural detail allows brands to communicate effectively with audiences worldwide.</p>
 
             <!-- Best Practices for Creating Intuitive Global UI/UX Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Best Practices for Creating Intuitive Global UI/UX</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">Best Practices for Creating Intuitive Global UI/UX</h2>
            
-            <h3 class="text-xl font-medium text-gray-800 mb-2">1. Focus on Simplicity</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Keep layouts clean, actions clear, and visual hierarchy strong. 
+            <h3 class="text-xl font-medium text-secondary mb-2">1. Focus on Simplicity</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Keep layouts clean, actions clear, and visual hierarchy strong. 
             Simplicity ensures that users from any background can instantly understand how to use your product.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">2. Use Universal Icons & Visuals</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Avoid region-specific metaphors or slang. 
+            <h3 class="text-xl font-medium text-secondary mb-2">2. Use Universal Icons & Visuals</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Avoid region-specific metaphors or slang. 
             Use universally recognizable symbols (e.g., magnifying glass for search, envelope for messages).</p>
 
-             <h3 class="text-xl font-medium text-gray-800 mb-2">3. Prioritize Responsive & Adaptive Design</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Ensure your application adapts seamlessly to different devices 
+             <h3 class="text-xl font-medium text-secondary mb-2">3. Prioritize Responsive & Adaptive Design</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Ensure your application adapts seamlessly to different devices 
             and screen sizes — from European desktops to global mobile devices.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">4. Optimize for Multilingual Interfaces</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Design layouts that accommodate text expansion or contraction when translated.
+            <h3 class="text-xl font-medium text-secondary mb-2">4. Optimize for Multilingual Interfaces</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Design layouts that accommodate text expansion or contraction when translated.
              Language flexibility enhances inclusivity.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">5. Embrace Accessibility</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Follow WCAG and EU accessibility standards to ensure your design is usable by all,
+            <h3 class="text-xl font-medium text-secondary mb-2">5. Embrace Accessibility</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Follow WCAG and EU accessibility standards to ensure your design is usable by all,
              including users with disabilities.</p>  
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">6. Leverage Data & User Testing</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Gather user behavior insights from multiple markets. 
+            <h3 class="text-xl font-medium text-secondary mb-2">6. Leverage Data & User Testing</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">Gather user behavior insights from multiple markets. 
             A/B testing across regions helps refine UI/UX for maximum engagement.</p>  
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">7. Maintain Visual Consistency</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Consistent branding and color schemes across your global product suite enhance familiarity and trust, regardless of region.</p>
+            <h3 class="text-xl font-medium text-secondary mb-2">7. Maintain Visual Consistency</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-6">Consistent branding and color schemes across your global product suite enhance familiarity and trust, regardless of region.</p>
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
       <!--    The European & Global Perspective Section -->
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> The European & Global Perspective</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">In Europe, where digital regulations and cultural diversity shape user expectations, companies must design experiences that comply with GDPR, 
+            <h2 class="text-2xl font-medium text-accent mb-4"> The European & Global Perspective</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">In Europe, where digital regulations and cultural diversity shape user expectations, companies must design experiences that comply with GDPR, 
             respect accessibility laws, and appeal to multilingual users.</p>
-            <p class="text-gray-700 leading-relaxed mb-4"> Across global markets, inclusivity and personalization are key. Whether designing a FinTech app in London or an eCommerce platform in Spain, 
+            <p class="paragraph text-secondary leading-relaxed mb-6"> Across global markets, inclusivity and personalization are key. Whether designing a FinTech app in London or an eCommerce platform in Spain, 
             success depends on creating an experience that feels both universal and local.</p>
 
              <!-- How Transcodezy IT Solutions Pvt. Ltd. Helps Businesses Section -->
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> How Transcodezy IT Solutions Pvt. Ltd. Helps Businesses</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">At Transcodezy IT Solutions Pvt. Ltd., we craft intuitive, human-centered designs that connect brands with audiences worldwide. 
+            <h2 class="text-2xl font-medium text-accent mb-4"> How Transcodezy IT Solutions Pvt. Ltd. Helps Businesses</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we craft intuitive, human-centered designs that connect brands with audiences worldwide. 
              Our design team blends aesthetic creativity with user psychology to build digital experiences that are both visually stunning and effortlessly functional.</p>
-            <p class="text-gray-700 leading-relaxed mb-4"> From research to prototyping and user testing, we ensure your product not only looks good but also works flawlessly across every market
+            <p class="paragraph text-secondary leading-relaxed mb-6"> From research to prototyping and user testing, we ensure your product not only looks good but also works flawlessly across every market
              — empowering businesses in Europe and beyond to thrive globally.</p>
 
 
 
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-semibold mb-4">Designing for a global audience is more than just translating an interface — it’s about creating empathy through design. By prioritizing simplicity, accessibility, 
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Designing for a global audience is more than just translating an interface — it’s about creating empathy through design. By prioritizing simplicity, accessibility, 
             and cultural adaptability, brands can deliver truly global user experiences.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we help businesses transform ideas into engaging, intuitive products that speak to users everywhere. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we help businesses transform ideas into engaging, intuitive products that speak to users everywhere. 
             Let’s design your next global success story together.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,
@@ -3037,45 +3036,45 @@ const blogDetails = {
         "How Progressive Web Apps Are Changing Digital Engagement in Europe",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/web_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/web_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">How Progressive Web Apps Are Changing Digital Engagement in Europe</h1>
-            <h3 class="text-2xl font-semibold mb-4">The Rise of Progressive Web Apps</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%] ">
+            <h1 class="heading font-medium text-accent mb-6">How Progressive Web Apps Are Changing Digital Engagement in Europe</h1>
+            <h3 class="paragraph text-secondary mb-2">The Rise of Progressive Web Apps</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              In the evolving digital economy, speed, reliability, and seamless experience define user engagement. Across Europe and the global market, 
              consumers expect instant access to digital products — whether they’re shopping online, booking healthcare services, or managing finances.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
              Enter Progressive Web Apps (PWAs) — the hybrid solution combining the best of web and mobile applications. At Transcodezy IT Solutions Pvt. Ltd., we empower European enterprises 
              and global brands with high-performing PWAs that enhance engagement, reduce bounce rates, and strengthen customer loyalty.
             </p>
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/web_app1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/web_app1.png" alt="ERP System" class="w-full h-[650px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/web_app2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/web_app2.png" alt="CRM System" class="w-full h-[650px] rounded-2xl">
             </div>
         </div>
         
 
             <!-- What Are Progressive Web Apps (PWAs)? Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> What Are Progressive Web Apps (PWAs)?</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4"> What Are Progressive Web Apps (PWAs)?</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               Progressive Web Apps are web-based applications built using modern web technologies like HTML, CSS, and JavaScript, 
               offering an app-like experience directly from the browser — without requiring downloads from app stores.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="paragraph text-secondary leading-relaxed mb-6">
               PWAs combine the reach of the web with the performance of native mobile apps, enabling businesses to deliver faster 
               and more engaging experiences across all devices.
             </p>
@@ -3083,80 +3082,78 @@ const blogDetails = {
 
             <!--  Why PWAs Are Revolutionizing Digital Engagement Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4"> Why PWAs Are Revolutionizing Digital Engagement</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4"> Why PWAs Are Revolutionizing Digital Engagement</h2>
            
-            <h3 class="text-xl font-medium text-gray-800 mb-2">1. Speed and Performance</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">PWAs load almost instantly, even on slow networks, thanks to service workers that cache content and data.
+            <h3 class="text-xl font-medium text-secondary mb-2">1. Speed and Performance</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">PWAs load almost instantly, even on slow networks, thanks to service workers that cache content and data.
              For European users accustomed to high-speed digital experiences, this is a game-changer — ensuring users stay engaged, not waiting.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">2. Offline Functionality</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">One of the biggest strengths of PWAs is their ability to work offline. By caching essential resources, 
+            <h3 class="text-xl font-medium text-secondary mb-2">2. Offline Functionality</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">One of the biggest strengths of PWAs is their ability to work offline. By caching essential resources, 
              users can still access features without internet connectivity — crucial for mobile-first markets across Europe and developing regions globally.</p>
 
-             <h3 class="text-xl font-medium text-gray-800 mb-2">3. Cross-Platform Compatibility</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">PWAs run smoothly on any device — desktop, tablet, or smartphone — without the need to create multiple versions for different operating systems. 
+             <h3 class="text-xl font-medium text-secondary mb-2">3. Cross-Platform Compatibility</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">PWAs run smoothly on any device — desktop, tablet, or smartphone — without the need to create multiple versions for different operating systems. 
             This approach helps European SMEs reduce development costs while expanding their digital footprint.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">4. App-Like Experience Without the Store</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">PWAs look and feel like native mobile apps, complete with push notifications, full-screen display, 
+            <h3 class="text-xl font-medium text-secondary mb-2">4. App-Like Experience Without the Store</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-4">PWAs look and feel like native mobile apps, complete with push notifications, full-screen display, 
              and home-screen installation — but without app store restrictions or installation friction.</p>
 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">5. Improved SEO and Discoverability</h3>
-            <p class="text-gray-700 leading-relaxed mb-6">Because PWAs are still websites at their core, they are fully indexable by search engines, 
+            <h3 class="text-xl font-medium text-secondary mb-2">5. Improved SEO and Discoverability</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-6">Because PWAs are still websites at their core, they are fully indexable by search engines, 
              giving European businesses a major SEO advantage over native apps.</p> 
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
          <!--  The European and Global Shift Toward PWAs Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">The European and Global Shift Toward PWAs</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">The European and Global Shift Toward PWAs</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              European businesses — from retailers in Germany to fintech innovators in the U.K. — are leading the adoption of PWAs to improve user engagement and retention.</p>
-            <p> class="text-gray-700 leading-relaxed mb-4">Globally, industries in North America, Asia, and the Middle East are also embracing PWAs for their low maintenance costs,
+            <p class="paragraph text-secondary leading-relaxed mb-2">Globally, industries in North America, Asia, and the Middle East are also embracing PWAs for their low maintenance costs,
              faster deployment, and consistent user experiences across geographies.</p> 
-            <h3 class="text-xl font-medium text-gray-800 mb-2">For example:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">For example:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">E-commerce brands</span> use PWAs to increase conversions by reducing page load times.
+                    <span class="font-medium">E-commerce brands</span> use PWAs to increase conversions by reducing page load times.
                 </li>
                 <li>
-                    <span class="font-semibold">Healthcare companies</span> leverage PWAs to allow patients to book appointments or access records offline.             
+                    <span class="font-medium">Healthcare companies</span> leverage PWAs to allow patients to book appointments or access records offline.             
                 </li>
                 <li>
-                    <span class="font-semibold">Hospitality and travel industries</span> use PWAs for seamless booking and customer engagement.             
+                    <span class="font-medium">Hospitality and travel industries</span> use PWAs for seamless booking and customer engagement.             
                 </li>
             </ul>
-            <p class="text-gray-700 mb-6">At Transcodezy IT Solutions Pvt. Ltd., our PWA solutions are tailored to meet the demands of European businesses looking 
+            <p class="paragraph text-secondary leading-relaxed mb-6">At Transcodezy IT Solutions Pvt. Ltd., our PWA solutions are tailored to meet the demands of European businesses looking 
             to enhance user engagement, brand loyalty, and digital scalability worldwide.</p>
 
         <!-- Advantages of PWAs for Businesses Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Advantages of PWAs for Businesses</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">Advantages of PWAs for Businesses</h2>
     
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
-                    <span class="font-semibold">Reduced Development Costs:</span> Build once, deploy everywhere.
+                    <span class="font-medium">Reduced Development Costs:</span> Build once, deploy everywhere.
                 </li>
                 <li>
-                    <span class="font-semibold">Higher Conversion Rates:</span> Faster load times mean fewer drop-offs.             
+                    <span class="font-medium">Higher Conversion Rates:</span> Faster load times mean fewer drop-offs.             
                 </li>
                 <li>
-                    <span class="font-semibold">Enhanced User Retention:</span> Offline functionality keeps users returning.             
+                    <span class="font-medium">Enhanced User Retention:</span> Offline functionality keeps users returning.             
                 </li>
                 <li>
-                    <span class="font-semibold">SEO Visibility:</span> Indexed like traditional websites.             
+                    <span class="font-medium">SEO Visibility:</span> Indexed like traditional websites.             
                 </li>
                 <li>
-                    <span class="font-semibold">Frictionless Updates:</span> No app store approvals or version updates required.             
+                    <span class="font-medium">Frictionless Updates:</span> No app store approvals or version updates required.             
                 </li>
             </ul>
 
         <!--How Transcodezy IT Solutions Pvt. Ltd. Supports PWA Development Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">How Transcodezy IT Solutions Pvt. Ltd. Supports PWA Development</h2>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Our team of experts specializes in creating custom Progressive Web Apps that align with your business goals. We focus on:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h2 class="text-2xl font-medium text-accent mb-4">How Transcodezy IT Solutions Pvt. Ltd. Supports PWA Development</h2>
+            <h3 class="text-xl font-medium text-secondary mb-2">Our team of experts specializes in creating custom Progressive Web Apps that align with your business goals. We focus on:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
                     Optimized performance and speed.
                 </li>
@@ -3173,20 +3170,20 @@ const blogDetails = {
                     Scalable architecture for global deployment.             
                 </li>
             </ul>
-            <p class="text-gray-700 mb-6">Whether you’re a startup or a large enterprise, Transcodezy IT Solutions Pvt. Ltd. 
+            <p class="paragraph text-secondary mb-6">Whether you’re a startup or a large enterprise, Transcodezy IT Solutions Pvt. Ltd. 
             ensures your PWA delivers lasting digital engagement and measurable ROI.</p>    
     
 
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-semibold mb-4">Progressive Web Apps are redefining how businesses connect with customers in the digital age. For European companies competing in a mobile-first market, 
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Progressive Web Apps are redefining how businesses connect with customers in the digital age. For European companies competing in a mobile-first market, 
               PWAs offer the perfect balance of accessibility, performance, and engagement.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we help organizations worldwide leverage PWAs to build faster, smarter, and more impactful digital experiences. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we help organizations worldwide leverage PWAs to build faster, smarter, and more impactful digital experiences. 
             The future of web engagement is progressive — and it’s already here.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,
@@ -3196,52 +3193,52 @@ const blogDetails = {
         "Mobile App Development Trends Every European Company Should Know in 2026",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/web_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full ">
+            <img src="../../../Assets/Images/Insights&Blogs/web_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Mobile App Development Trends Every European Company Should Know in 2026</h1>
-            <h3 class="text-2xl font-semibold mb-4">The Digital Future of Mobile Apps</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%]">
+            <h1 class="heading font-medium text-accent mb-6">Mobile App Development Trends Every European Company Should Know in 2026</h1>
+            <h3 class="paragraph text-secondary leading-relaxed mb-2">The Digital Future of Mobile Apps</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               The year 2025 marks a turning point for the mobile app development industry, especially across Europe and global markets. 
               With technology evolving at lightning speed, users now demand personalized, secure, and high-performing mobile experiences.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              At Transcodezy IT Solutions Pvt. Ltd., we stay at the forefront of digital innovation, helping businesses build intelligent, scalable, 
              and engaging mobile applications that connect brands with users worldwide.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
              Whether it’s an AI-powered retail app in Germany, an E-Commerce solution in the U.K., or a healthcare platform in France, mobile app development trends are reshaping industries 
              and driving digital transformation across Europe and beyond.
             </p>
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/mobile_app1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/mobile_app2.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/mobile_app2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/mobile_app1.png" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!-- Top Mobile App Development Trends for 2026 Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Top Mobile App Development Trends for 2026</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">Top Mobile App Development Trends for 2026</h2>
         
             <!-- AI-Powered Personalization Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">1. AI-Powered Personalization</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">1. AI-Powered Personalization</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Artificial Intelligence continues to redefine how mobile apps interact with users. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Artificial Intelligence continues to redefine how mobile apps interact with users. 
              By integrating machine learning algorithms, apps now deliver smarter recommendations, predictive content, and real-time personalization.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     European eCommerce and media companies are using AI to enhance user engagement and retention.
 
@@ -3253,11 +3250,11 @@ const blogDetails = {
 
             <!--  5G Connectivity Boosting App Performance Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">2. 5G Connectivity Boosting App Performance</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">2. 5G Connectivity Boosting App Performance</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">The rollout of 5G technology across Europe and other regions is revolutionizing app speed, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">The rollout of 5G technology across Europe and other regions is revolutionizing app speed, 
             data transfer, and responsiveness.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Businesses benefit from ultra-low latency and faster content delivery, improving user satisfaction.
                 </li>
@@ -3265,11 +3262,11 @@ const blogDetails = {
 
             <!--Cross-Platform Development Frameworks Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">3. Cross-Platform Development Frameworks</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">3. Cross-Platform Development Frameworks</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Frameworks like Flutter and React are empowering developers to create apps that perform seamlessly across both iOS 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Frameworks like Flutter and React are empowering developers to create apps that perform seamlessly across both iOS 
               and Android platforms.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                    European SMEs prefer these frameworks for their cost efficiency and faster time-to-market.
                 </li>
@@ -3280,10 +3277,10 @@ const blogDetails = {
 
             <!--Progressive Web Apps (PWAs) Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">4. Progressive Web Apps (PWAs)</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">4. Progressive Web Apps (PWAs)</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">PWAs continue to bridge the gap between web and mobile by providing an app-like experience directly in browsers.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <p class="paragraph text-secondary leading-relaxed mb-2">PWAs continue to bridge the gap between web and mobile by providing an app-like experience directly in browsers.</p>
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                    They are ideal for European companies seeking accessibility and engagement without app store limitations.
                 </li>
@@ -3294,10 +3291,10 @@ const blogDetails = {
 
             <!--Enhanced Security with Blockchain Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">5. Enhanced Security with Blockchain</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">5. Enhanced Security with Blockchain</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">As data privacy regulations like GDPR dominate Europe’s tech landscape, blockchain integration is growing rapidly.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <p class="paragraph text-secondary leading-relaxed mb-2">As data privacy regulations like GDPR dominate Europe’s tech landscape, blockchain integration is growing rapidly.</p>
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                    Blockchain ensures transparency and security for transactions, especially in finance, logistics, and healthcare apps.
                 </li>
@@ -3308,10 +3305,10 @@ const blogDetails = {
 
             <!--AR and VR Experiences for Real Engagement Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">6. AR and VR Experiences for Real Engagement</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">6. AR and VR Experiences for Real Engagement</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Augmented and Virtual Reality are revolutionizing retail, education, and tourism industries.</p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <p class="paragraph text-secondary leading-relaxed mb-2">Augmented and Virtual Reality are revolutionizing retail, education, and tourism industries.</p>
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                    European brands use AR for virtual try-ons, immersive tours, and interactive training.
                 </li>
@@ -3322,28 +3319,27 @@ const blogDetails = {
             
             <!--Sustainability and Green App DevelopmentSection -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">7. Sustainability and Green App Development</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">7. Sustainability and Green App Development</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-6">Europe is leading the way in eco-conscious digital innovation. Developers are now building energy-efficient mobile apps that optimize performance 
+            <p class="paragraph text-secondary leading-relaxed mb-6">Europe is leading the way in eco-conscious digital innovation. Developers are now building energy-efficient mobile apps that optimize performance 
             and reduce data consumption — contributing to a greener planet.</p>
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
+
          <!-- The European & Global Outlook Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">The European & Global Outlook</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
+            <h2 class="text-2xl font-medium text-accent mb-4">The European & Global Outlook</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              European companies are adopting mobile-first strategies to meet the evolving expectations of users who prioritize convenience and personalization.</p>
-            <p> class="text-gray-700 leading-relaxed mb-4"Globally, mobile app development is transitioning toward AI-driven ecosystems, sustainable practices, and immersive experiences.</p> 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Globally, mobile app development is transitioning toward AI-driven ecosystems, sustainable practices, and immersive experiences.</p> 
 
-            <p class="text-gray-700 mb-6">At Transcodezy IT Solutions Pvt. Ltd., we help businesses in Europe and around the world design apps that align with emerging trends — ensuring relevance, scalability, and long-term success.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6">At Transcodezy IT Solutions Pvt. Ltd., we help businesses in Europe and around the world design apps that align with emerging trends — ensuring relevance, scalability, and long-term success.</p>
 
         <!--How Transcodezy IT Solutions Pvt. Ltd. Leads Mobile Innovation Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">How Transcodezy IT Solutions Pvt. Ltd. Leads Mobile Innovation</h2>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">As a trusted technology partner, we specialize in:</h3>
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h2 class="text-2xl font-medium text-accent mb-4">How Transcodezy IT Solutions Pvt. Ltd. Leads Mobile Innovation</h2>
+            <h3 class="text-xl font-medium text-secondary mb-2">As a trusted technology partner, we specialize in:</h3>
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
                     Custom iOS & Android App Development
                 </li>
@@ -3360,20 +3356,20 @@ const blogDetails = {
                     UX/UI Design & Testing for Global Audiences             
                 </li>
             </ul>
-            <p class="text-gray-700 mb-6">Our goal is to help brands innovate faster, engage users deeply, 
+            <p class="paragraph text-secondary leading-relaxed mb-6">Our goal is to help brands innovate faster, engage users deeply, 
             and expand globally through transformative mobile solutions.</p>    
     
 
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-medium mb-4">The mobile app landscape in 2026 is smarter, faster, and more connected than ever before. 
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">The mobile app landscape in 2026 is smarter, faster, and more connected than ever before. 
               For European companies, embracing these trends isn’t just about innovation — it’s about staying competitive in a global digital ecosystem.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., 
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., 
               we combine technical expertise with creativity to deliver cutting-edge mobile apps that empower businesses to thrive in the digital future.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,
@@ -3382,156 +3378,154 @@ const blogDetails = {
       title: "Why Custom CRM Solutions Are Essential for European SMEs",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/crm_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/crm_blog1.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Custom CRM Solutions Are Essential for European SMEs</h1>
-            <h3 class="text-xl font-semibold mb-4">Explore how personalized CRM systems drive efficiency and strengthen customer relationships</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%]">
+            <h1 class="heading font-medium text-accent mb-6">Why Custom CRM Solutions Are Essential for European SMEs</h1>
+            <h3 class="paragraph text-secondary mb-2">Explore how personalized CRM systems drive efficiency and strengthen customer relationships</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
               In the fast-paced and competitive European business landscape, small and medium-sized enterprises (SMEs) face unique challenges in managing customer relationships, streamlining operations, 
               and maintaining sustainable growth. Many off-the-shelf CRM solutions are generic and lack the flexibility to adapt to specific business needs, diverse customer profiles, and regional regulatory requirements. This often leads to inefficiencies, missed opportunities, and reduced customer satisfaction.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
             At Transcodezy IT Solutions Pvt. Ltd., we specialize in delivering tailored CRM solutions for European SMEs and global businesses. Our solutions are designed to optimize operations, enhance customer engagement, and support businesses as they scale across Europe and beyond. By combining industry expertise with advanced technology, 
              we help organizations stay competitive, improve efficiency, and maximize ROI.
             </p>
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center text-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/custom_crm2.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/custom_crm2.png" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/custom_crm1.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/custom_crm1.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!-- Key Advantages of Custom CRM Solutions for European SMEs Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Key Advantages of Custom CRM Solutions for European SMEs</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">Key Advantages of Custom CRM Solutions for European SMEs</h2>
         
             <!--  Streamlining Business Processes Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">1. Streamlining Business Processes</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">1. Streamlining Business Processes</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">European SMEs often operate with lean teams, where every resource counts. A custom CRM automates repetitive tasks, manages workflows efficiently, and centralizes customer data.
+            <p class="paragraph text-secondary leading-relaxed mb-2">European SMEs often operate with lean teams, where every resource counts. A custom CRM automates repetitive tasks, manages workflows efficiently, and centralizes customer data.
              This reduces manual errors, improves coordination, and ensures that teams focus on core business activities such as sales, customer service, and strategic planning.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Automation of repetitive tasks:</span> Schedule follow-ups, generate invoices, and send reminders automatically.
+                    <span class="font-medium">Automation of repetitive tasks:</span> Schedule follow-ups, generate invoices, and send reminders automatically.
                 </li>
                 <li>
-                    <span class="font-semibold">Centralized data access:</span> Ensure all departments can access up-to-date customer information in real time.            
+                    <span class="font-medium">Centralized data access:</span> Ensure all departments can access up-to-date customer information in real time.            
                 </li>
                 <li>
-                    <span class="font-semibold">Improved productivity:</span> Reduce administrative overhead, freeing teams to focus on high-value activities.            
+                    <span class="font-medium">Improved productivity:</span> Reduce administrative overhead, freeing teams to focus on high-value activities.            
                 </li>
             </ul>
 
-            <p class="text-gray-700 leading-relaxed mb-6"><span class="font-semibold">Example:</span> A European logistics SME implemented a custom CRM that automated client tracking and invoicing, reducing operational time by 35% and improving client satisfaction.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"><span class="font-medium">Example:</span> A European logistics SME implemented a custom CRM that automated client tracking and invoicing, reducing operational time by 35% and improving client satisfaction.</p>
 
             <!--Enhancing Customer Engagement Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">2. Enhancing Customer Engagement</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">2. Enhancing Customer Engagement</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Customer engagement is the cornerstone of long-term business growth. SMEs that understand customer behaviors and preferences can deliver tailored experiences, build loyalty, and retain clients. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Customer engagement is the cornerstone of long-term business growth. SMEs that understand customer behaviors and preferences can deliver tailored experiences, build loyalty, and retain clients. 
              Custom CRM solutions provide detailed insights into customer interactions, allowing businesses to segment audiences, personalize communications, and respond proactively to client needs.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Tailored communication:</span> Send personalized emails, offers, and updates that resonate with customers.
+                    <span class="font-medium">Tailored communication:</span> Send personalized emails, offers, and updates that resonate with customers.
                 </li>
                 <li>
-                    <span class="font-semibold">Predictive analytics:</span> Forecast buying patterns and anticipate customer needs to improve engagement.            
+                    <span class="font-medium">Predictive analytics:</span> Forecast buying patterns and anticipate customer needs to improve engagement.            
                 </li>
 
             </ul>
 
-            <p class="text-gray-700 leading-relaxed mb-6"><span class="font-semibold">Example:</span>A European retail SME leveraged predictive analytics from a custom CRM to identify high-value customers, increasing repeat purchases by 20% within six months.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"><span class="font-medium">Example:</span>A European retail SME leveraged predictive analytics from a custom CRM to identify high-value customers, increasing repeat purchases by 20% within six months.</p>
 
 
             <!--Scalability for Growth Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">3. Scalability for Growth</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">3. Scalability for Growth</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">European SMEs often aim to expand into international markets, including Germany, France, the U.K., and the Netherlands. Unlike generic CRMs, custom solutions can scale seamlessly with business growth. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">European SMEs often aim to expand into international markets, including Germany, France, the U.K., and the Netherlands. Unlike generic CRMs, custom solutions can scale seamlessly with business growth. 
               Whether adding new product lines, new teams, or integrating with other business tools, a custom CRM adapts to changing needs without disruption.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-22">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Seamless scalability:</span> Easily accommodate new markets, products, or departments.
+                    <span class="font-medium">Seamless scalability:</span> Easily accommodate new markets, products, or departments.
                 </li>
                 <li>
-                    <span class="font-semibold">Integration capabilities:</span> Connect with ERP systems, marketing platforms, and analytics tools for unified operations.            
+                    <span class="font-medium">Integration capabilities:</span> Connect with ERP systems, marketing platforms, and analytics tools for unified operations.            
                 </li>
 
             </ul>
 
-            <p class="text-gray-700 leading-relaxed mb-6"><span class="font-semibold">Example:</span> A technology SME in the U.K. scaled its operations to France and Germany using a custom CRM,
+            <p class="paragraph text-secondary leading-relaxed mb-6"><span class="font-medium">Example:</span> A technology SME in the U.K. scaled its operations to France and Germany using a custom CRM,
               integrating multi-lingual support and localized compliance features, ensuring smooth expansion.</p>
 
 
             <!-- Ensuring Data Security and Compliance Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">4. Ensuring Data Security and Compliance</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">4. Ensuring Data Security and Compliance</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">With GDPR and other European data protection laws, data security is critical for SMEs. Custom CRM solutions can be designed with robust security features, including encryption, role-based access, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">With GDPR and other European data protection laws, data security is critical for SMEs. Custom CRM solutions can be designed with robust security features, including encryption, role-based access, 
               and audit trails, ensuring compliance and protecting sensitive customer information.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">GDPR-compliant:</span> Store and process data securely while meeting regulatory requirements.
+                    <span class="font-medium">GDPR-compliant:</span> Store and process data securely while meeting regulatory requirements.
                 </li>
                 <li>
-                    <span class="font-semibold">Advanced security:</span> Protect sensitive information with encryption and strict access controls.            
+                    <span class="font-medium">Advanced security:</span> Protect sensitive information with encryption and strict access controls.            
                 </li>
 
             </ul>
 
-            <p class="text-gray-700 leading-relaxed mb-6"><span class="font-semibold">Example:</span> A European healthcare SME implemented a custom CRM with encrypted patient data storage, ensuring compliance with GDPR and increasing patient trust.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"><span class="font-medium">Example:</span> A European healthcare SME implemented a custom CRM with encrypted patient data storage, ensuring compliance with GDPR and increasing patient trust.</p>
 
            <!--Leveraging Actionable Analytics Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">5. Leveraging Actionable Analytics</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">5. Leveraging Actionable Analytics</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Data-driven insights are crucial for business optimization. Custom CRMs provide real-time dashboards, customized reports, and predictive analytics tailored to business KPIs. Management can monitor sales performance, customer trends, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Data-driven insights are crucial for business optimization. Custom CRMs provide real-time dashboards, customized reports, and predictive analytics tailored to business KPIs. Management can monitor sales performance, customer trends, 
             and operational efficiency, enabling smarter decisions and strategic planning.</p>
-            <h3>class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-2 space-y-2">
                 <li>
-                    <span class="font-semibold">Real-time insights:</span> Monitor sales, customer interactions, and operational metrics instantly.
+                    <span class="font-medium">Real-time insights:</span> Monitor sales, customer interactions, and operational metrics instantly.
                 </li>
                 <li>
-                    <span class="font-semibold">Custom reporting:</span> Generate reports that align with business goals and performance metrics.            
+                    <span class="font-medium">Custom reporting:</span> Generate reports that align with business goals and performance metrics.            
                 </li>
 
             </ul>
 
-            <p class="text-gray-700 leading-relaxed mb-6"><span class="font-semibold">Example:</span>A European fintech SME used custom analytics dashboards to track customer onboarding and payment behavior, improving conversion rates by 15%.</p>
+            <p class="paragraph text-secondary leading-relaxed mb-6"><span class="font-medium">Example:</span>A European fintech SME used custom analytics dashboards to track customer onboarding and payment behavior, improving conversion rates by 15%.</p>
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
             
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-medium mb-4">For European SMEs seeking to improve efficiency, enhance customer engagement, 
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">For European SMEs seeking to improve efficiency, enhance customer engagement, 
              and expand globally, investing in a custom CRM solution is essential. Unlike generic software, custom CRMs are designed to meet unique business requirements, 
              comply with regional regulations, and evolve alongside your company.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we specialize in delivering end-to-end CRM solutions tailored for SMEs across Europe and worldwide. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we specialize in delivering end-to-end CRM solutions tailored for SMEs across Europe and worldwide. 
              Our solutions help businesses streamline operations, strengthen customer relationships, and scale confidently, driving long-term growth and competitive advantage.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,
@@ -3540,22 +3534,22 @@ const blogDetails = {
       title: "Maximizing Customer Insights with Advanced CRM Analytics",
       image: "./image/OBJECTS.png",
       content: `
-        <div class="container mx-auto md:px-8 lg:px-12">
+        <div class="py-10">
         <!-- Image Section -->
-        <div class="mb-8 rounded-lg overflow-hidden shadow-lg w-full mx-auto">
-            <img src="../../../Assets/Images/Insights&Blogs/crm_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[25vw] object-cover ">
+        <div class="mb-8 rounded-2xl overflow-hidden w-full">
+            <img src="../../../Assets/Images/Insights&Blogs/crm_blog2.jpg" alt="Healthcare professionals working with custom software" class="w-full h-[604px] rounded-2xl object-cover ">
         </div>
 
         <!-- Content Section -->
-        <div class="max-w-[100%] mx-auto">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Maximizing Customer Insights with Advanced CRM Analytics</h1>
-            <h3 class="text-xl font-semibold mb-4"> Learn how to leverage analytics to make data-driven decisions and enhance customer satisfaction.</h3>
-            <p class="text-gray-700 leading-relaxed mb-4">
+        <div class="max-w-[100%]">
+            <h1 class="text-3xl font-medium text-accent mb-6">Maximizing Customer Insights with Advanced CRM Analytics</h1>
+            <h3 class="paragraph text-secondary leading-relaxed mb-2"> Learn how to leverage analytics to make data-driven decisions and enhance customer satisfaction.</h3>
+            <p class="paragraph text-secondary leading-relaxed mb-2">
              In today’s competitive European and global business landscape, understanding your customers is no longer optional—it’s essential. 
              Businesses need to go beyond basic data collection and leverage advanced CRM analytics to uncover actionable insights. 
              These insights help companies anticipate customer needs, optimize marketing strategies, improve sales performance, and enhance overall customer satisfaction.
             </p>
-            <p class="text-gray-700 leading-relaxed mb-6">
+            <p class="paragraph text-secondary leading-relaxed mb-8">
              At Transcodezy IT Solutions Pvt. Ltd., we specialize in delivering custom CRM solutions with advanced analytics that empower European SMEs 
              and global businesses to make informed, data-driven decisions. Our solutions integrate seamlessly with business workflows, 
              offering actionable insights that enhance customer experiences, improve operational efficiency, and support strategic growth.
@@ -3563,29 +3557,29 @@ const blogDetails = {
         
 
         <!-- Images Section -->
-        <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-[20px] lg:gap-[40px] mb-12">
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/advance_crm1.png" alt="ERP System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/advance_crm2.png" alt="CRM System" class="w-full h-[640px] rounded-2xl">
             </div>
             <div class="w-full md:w-1/2">
-                <img src="../../../Assets/Images/blogDetail/advance_crm2.png" alt="CRM System" class="w-full h-auto rounded-lg shadow-lg">
+                <img src="../../../Assets/Images/blogDetail/advance_crm1.png" alt="ERP System" class="w-full h-[640px] rounded-2xl">
             </div>
         </div>
         
 
             <!--Key Areas Where Advanced CRM Analytics Drives Business Success Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">Key Areas Where Advanced CRM Analytics Drives Business Success</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">Key Areas Where Advanced CRM Analytics Drives Business Success</h2>
         
             <!--  Unlock Customer Behavior Insights Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">1. Unlock Customer Behavior Insight</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">1. Unlock Customer Behavior Insight</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Advanced CRM analytics enables businesses to track and analyze customer interactions across multiple channels, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Advanced CRM analytics enables businesses to track and analyze customer interactions across multiple channels, 
              including social media, email, in-store activities, and online purchases. By capturing detailed data on customer preferences, buying behavior, 
              and engagement history, businesses can create a 360-degree view of each customer.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Comprehensive insights into customer behavior for personalized strategies
                 </li>
@@ -3599,13 +3593,13 @@ const blogDetails = {
 
             <!-- Optimize Sales and Marketing Strategies Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">2. Optimize Sales and Marketing Strategies</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">2. Optimize Sales and Marketing Strategies</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">CRM analytics empowers businesses to optimize sales 
+            <p class="paragraph text-secondary leading-relaxed mb-2">CRM analytics empowers businesses to optimize sales 
              and marketing processes by providing visibility into lead performance, campaign effectiveness, and customer engagement. 
              This allows companies to identify high-potential prospects, allocate resources effectively, and refine messaging to maximize results.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Data-driven identification of high-value leads and opportunities
                 </li>
@@ -3621,12 +3615,12 @@ const blogDetails = {
 
             <!--Leverage Predictive Analytics for Smarter Decisions Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">3. Leverage Predictive Analytics for Smarter Decisions</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">3. Leverage Predictive Analytics for Smarter Decisions</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Modern CRM analytics offers predictive capabilities that forecast future customer behavior, market trends, 
+            <p class="paragraph text-secondary leading-relaxed mb-2">Modern CRM analytics offers predictive capabilities that forecast future customer behavior, market trends, 
              and sales opportunities. These predictive insights allow businesses to act proactively, anticipate demand, and make strategic decisions to improve performance.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Forecasting customer needs to reduce churn and enhance loyalty
                 </li>
@@ -3641,12 +3635,12 @@ const blogDetails = {
             
             <!-- Monitor Performance with Real-Time Reporting Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">4. Monitor Performance with Real-Time Reporting</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">4. Monitor Performance with Real-Time Reporting</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">Custom CRM solutions provide real-time dashboards and reporting tools, giving managers instant visibility into business performance across departments.
+            <p class="paragraph text-secondary leading-relaxed mb-2">Custom CRM solutions provide real-time dashboards and reporting tools, giving managers instant visibility into business performance across departments.
              Real-time insights help identify trends, monitor key performance indicators (KPIs), and make timely adjustments to processes or strategies.</p>
-            <h3 class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Instant access to critical business metrics for informed decision-making
                 </li>
@@ -3662,13 +3656,13 @@ const blogDetails = {
 
            <!-- Drive Growth Through Customer-Centric Strategies Section -->
             
-            <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">5. Drive Growth Through Customer-Centric Strategies</h2>
+            <h2 class="text-2xl font-medium text-accent mb-4">5. Drive Growth Through Customer-Centric Strategies</h2>
            
-            <p class="text-gray-700 leading-relaxed mb-4">By leveraging advanced CRM analytics, businesses can adopt a truly customer-centric approach. 
+            <p class="paragraph text-secondary leading-relaxed mb-2">By leveraging advanced CRM analytics, businesses can adopt a truly customer-centric approach. 
              Insights from analytics guide strategies across sales, marketing, and customer service to ensure that every interaction aligns with customer needs and expectations. 
              This fosters loyalty, enhances satisfaction, and drives sustainable growth.</p>
-            <h3>class="text-xl font-medium text-gray-800 mb-2">Key Benefits:</h3> 
-            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+            <h3 class="text-xl font-medium text-secondary mb-2">Key Benefits:</h3> 
+            <ul class="list-disc list-inside paragraph text-secondary mb-6 space-y-2">
                 <li>
                     Personalized experiences that resonate with customers
                 </li>
@@ -3682,20 +3676,18 @@ const blogDetails = {
             </ul>
             
         </div>
-    </div>
-      <div class="container mx-auto px-6 lg:px-12 py-8">
-            
+         
         <!-- Conclusion Section -->
         <section class="mb-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Conclusion</h2>
-            <p class="text-gray-700 font-medium mb-4">In the modern European and global market, leveraging advanced CRM analytics is crucial for businesses aiming to understand their customers, optimize operations, 
+            <h2 class="text-2xl font-medium text-accent mb-4">Conclusion</h2>
+            <p class="paragraph text-secondary leading-relaxed mb-2">In the modern European and global market, leveraging advanced CRM analytics is crucial for businesses aiming to understand their customers, optimize operations, 
               and enhance satisfaction. Advanced analytics provide actionable insights that drive better decisions, improve sales and marketing efficiency, and enable proactive customer engagement.</p>
-            <p class="text-gray-700 mb-2">At Transcodezy IT Solutions Pvt. Ltd., we provide custom CRM solutions with advanced analytics that help SMEs 
+            <p class="paragraph text-secondary leading-relaxed mb-2">At Transcodezy IT Solutions Pvt. Ltd., we provide custom CRM solutions with advanced analytics that help SMEs 
             and global businesses transform data into actionable insights, deliver personalized customer experiences, and achieve measurable growth. 
             By integrating analytics into CRM workflows, businesses can strengthen customer relationships, improve operational efficiency, and maintain a competitive edge in their industries.</p>
         
-            <p class="text-gray-700 mb-1">Email: info@transcodesolution.com</p>
-            <p class="text-gray-700"><a href="https://www.transcodezyitsolutions.com" class="text-blue-600 hover:underline">Website: www.transcodezyitsolutions.com</a></p>
+            <p class="paragraph text-secondary leading-relaxed mb-2">Email: info@transcodesolution.com</p>
+            <p class="paragraph text-secondary leading-relaxed mb-2"><a href="#">Website:<span class="text-primary"> www.transcodezyitsolutions.com</span></a></p>
         </section>
     </div>
             `,

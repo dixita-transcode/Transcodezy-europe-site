@@ -262,12 +262,11 @@
           <li><a href="/insights_and_blogs.html" class="text-md uppercase text-white">Insights & Blogs</a></li>
         </ul>
       </div>
-      <div class="hidden lg:block hover:scale-110 duration-500 cursor-pointer">
+        <div class="hidden lg:block hover:scale-110 duration-500 cursor-pointer">
           <a href="/contactUs.html" class="paragraph py-3 px-6 bg-primary font-medium text-white rounded-[40px]">
             <Span>Contact Us</Span>
           </a>
-    
-      </div>
+        </div>
       <div id="menu-icon" class="lg:hidden cursor-pointer w-8 h-8">
         <img id="menu-toggle-icon" src="../../Assets/Images/menu.svg" alt="menu icon"
           class="w-full h-full transition-all duration-300">
@@ -281,8 +280,8 @@
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-2 flex items-center border-b border-[#d2d2d3]">
                 <a href="/software-services.html" class="text-lg text-white hover:text-primary uppercase font-medium cursor-pointer">Services</a>
-                <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
-                  <i class="fa-solid fa-angle-down"></i>
+                <span class="mob-menu_item_switcher block text-white absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </div>
               <div class="mob-submenu hidden">
@@ -303,14 +302,14 @@
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
                 <a href="/software-industries.html" class="text-lg text-white hover:text-primary uppercase font-medium cursor-pointer">Industries</a>
-                <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
-                  <i class="fa-solid fa-angle-down"></i>
+                <span class="mob-menu_item_switcher block absolute text-white top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </div>
               <div class="mob-submenu hidden">
                 <div class="mob-submenu_item">
                   <ul class="mob-submenu_list py-2 text-lg text-white font-normal">
-                    <li class="py-2"><a href="/ecommerce-indutries.html">E-commercet</a></li>
+                    <li class="py-2"><a href="/ecommerce-indutries.html">E-commerce</a></li>
                     <li class="py-2"><a href="/healthcare.html">Healthcare</a></li>
                     <li class="py-2"><a href="/social_media.html">Social Media</a></li>
                     <li class="py-2"><a href="/sportsTech.html">Sports tech</a></li>
@@ -324,8 +323,8 @@
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
                 <a href="/software-careers.html" class="text-lg text-white hover:text-primary uppercase font-medium cursor-pointer">Careers</a>
-                <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
-                  <i class="fa-solid fa-angle-down"></i>
+                <span class="mob-menu_item_switcher block absolute text-white top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </div>
               <div class="mob-submenu hidden">
@@ -340,8 +339,8 @@
             <li class="mob-menu_item">
               <div class="mob-menu_item_link relative py-4 flex items-center border-b border-[#d2d2d3]">
                 <a href="/software-company.html" class="text-lg text-white hover:text-primary uppercase font-medium cursor-pointer">Company</a>
-                <span class="mob-menu_item_switcher block absolute top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
-                  <i class="fa-solid fa-angle-down"></i>
+                <span class="mob-menu_item_switcher block absolute text-white top-[35%] right-0 z-1 w-[32px] h-[32px] cursor-pointer">
+                  <i class="fa-solid fa-chevron-down"></i>
                 </span>
               </div>
               <div class="mob-submenu hidden">
@@ -393,26 +392,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ✅ Toggle submenus — only when arrow is clicked
-  document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
-    const linkWrapper = arrow.closest(".mob-menu_item_link");
-    const submenu = linkWrapper.nextElementSibling;
-    const icon = arrow.querySelector("i");
+ const submenuToggles = document.querySelectorAll(".mob-menu_item_link");
+  submenuToggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      const parentItem = toggle.closest(".mob-menu_item");
+      const submenu = parentItem.querySelector(".mob-submenu");
+      const icon = toggle.querySelector("i");
 
-    arrow.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+      // Close all first
+      document.querySelectorAll(".mob-submenu").forEach((s) => s.classList.add("hidden"));
+      document.querySelectorAll(".mob-menu_item_switcher i").forEach((i) => i.classList.remove("rotate-180"));
 
-      // Close all other submenus
-      document.querySelectorAll(".mob-submenu").forEach((sub) => {
-        if (sub !== submenu) sub.classList.add("hidden");
-      });
-      document.querySelectorAll(".mob-menu_item_switcher i").forEach((otherIcon) => {
-        if (otherIcon !== icon) otherIcon.classList.remove("rotate-180");
-      });
-
-      // Toggle current submenu
-      submenu.classList.toggle("hidden");
-      icon.classList.toggle("rotate-180");
+      // Toggle this one
+      if (submenu.classList.contains("hidden")) {
+        submenu.classList.remove("hidden");
+        icon.classList.add("rotate-180");
+      } else {
+        submenu.classList.add("hidden");
+        icon.classList.remove("rotate-180");
+      }
     });
   });
 
