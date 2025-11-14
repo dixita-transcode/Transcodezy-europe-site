@@ -366,7 +366,7 @@
           </ul>
         </div>
         <div class="mt-3 flex justify-center items-center text-center">
-            <a href="#" class="w-full paragraph py-3 px-6 bg-primary font-medium text-white rounded-[40px]">
+            <a href="/contactUs.html" class="w-full paragraph py-3 px-6 bg-primary font-medium text-white rounded-[40px]">
               Contact Us
             </a>
         </div>
@@ -395,7 +395,7 @@ document.addEventListener("DOMContentLoaded", () => {
  const submenuToggles = document.querySelectorAll(".mob-menu_item_link");
   submenuToggles.forEach((toggle) => {
     toggle.addEventListener("click", () => {
-      const parentItem = toggle.closest(".mob-menu_item");
+      const parentItem = toggle.closest(".mob-menu_item ");
       const submenu = parentItem.querySelector(".mob-submenu");
       const icon = toggle.querySelector("i");
 
@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Highlight active main or submenu page
   const currentPath = window.location.pathname.toLowerCase();
-  const allLinks = document.querySelectorAll("nav a");
+  const allLinks = document.querySelectorAll("nav li a");
 
   allLinks.forEach((link) => {
     const href = link.getAttribute("href");

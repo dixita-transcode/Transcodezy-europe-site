@@ -184,6 +184,14 @@ nav a.active {
     transform: rotate(180deg);
 }
 
+.mob-menu_item_switcher i {
+  color: #fff; /* make icon white */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mob-menu_item_switcher i.rotate-180 {
+  transform: rotate(180deg);
+}
 
 /* submenu css */
 
@@ -206,6 +214,7 @@ nav a.active {
 .menu li:hover > .submenu{
     display: block;
 }
+
 
 /* home page in why choose section css */
 

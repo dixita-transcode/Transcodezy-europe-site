@@ -19,7 +19,7 @@
         <h2 class="text-white text-[32px] font-medium">
           Collaborate with Transcodezy
         </h2>
-        <form class="space-y-6 relative z-10 py-5 lg:py-10">
+        <form class="space-y-6 relative z-10 py-3 lg:py-6">
           <!-- Row 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
@@ -86,19 +86,11 @@
             </div>
           </div>
         </form>
-        <div class="mt-3 w-fit px-6 py-3 bg-primary paragraph text-[#FFFFFF66] rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
-                <a href="#" >Send Message</a>
+        <div class="mt-3 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
+            <a href="#" >Send Message</a>
         </div>
+      </div>  
     </div>
   </div>
 </section>
 
-<script>
-  document
-    .getElementById("contactForm")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
-      alert("Message sent!");
-      this.reset();
-    });
-</script>

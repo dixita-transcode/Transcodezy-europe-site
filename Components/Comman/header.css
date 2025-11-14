@@ -80,6 +80,14 @@
   transform: scaleX(1);   
 }
 
+.mob-menu_item_switcher i {
+  color: #fff; /* make icon white */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mob-menu_item_switcher i.rotate-180 {
+  transform: rotate(180deg);
+}
 
 
 
