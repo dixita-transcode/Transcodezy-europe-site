@@ -32,7 +32,7 @@
         <div>
           <button
             id="viewAllBtn"
-            class="flex justify-center gap-2 bg-primary py-3 px-6 rounded-3xl text-white paragraph group hover:bg-[#007ED1] transition"
+            class="flex justify-center gap-2 bg-primary py-3 px-6 rounded-3xl text-white paragraph group "
           >
             View All
             <span
@@ -406,7 +406,7 @@
     expanded = !expanded;
     extraCards.forEach((card) => card.classList.toggle("hidden", !expanded));
     viewAllBtn.innerHTML = expanded
-      ? 'View Less <span><i class="fa-solid fa-arrow-up"></i></span>'
+      ? 'View Less <span><i class="fa-solid fa-arrow-right"></i></span>'
       : 'View All <span><i class="fa-solid fa-arrow-right"></i></span>';
   });
 
