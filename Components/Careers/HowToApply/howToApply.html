@@ -27,7 +27,7 @@
         </div>
         <div>
           <div
-            class="relative z-0 bg-[#0F1A24] w-full max-w-3xl p-5 lg:p-10 rounded-[24px] min-h-[580px] w-full xl:w-[817px] shadow-lg"
+            class="relative z-0 bg-accent w-full max-w-3xl p-5 lg:p-10 rounded-[24px] min-h-[580px] w-full xl:w-[817px] shadow-lg"
           >
             <h2 class="text-white text-[24px] font-medium">
               Apply Now – Start Your Journey at Transcodezy
@@ -59,11 +59,20 @@
 
                 <!-- Position Applied Dropdown -->
                 <div class="relative w-full xl:max-w-[335px]">
-                <select
+                  <select
+                  id="customSelect"
                   class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
                 >
-                  <option class="text-accent paragraph p-3" value="" disabled selected hidden>Position Applied</option>
-                  <option class="text-accent paragraph p-3">Software Developer</option>
+                  <option
+                    class="text-accent paragraph p-3"
+                    value=""
+                    disabled
+                    selected
+                    hidden
+                  >
+                    Position Applied
+                  </option>
+                  <option class="text-accent paragraph px-3">Software Developer</option>
                   <option class="text-accent paragraph p-3">Cloud Engineer</option>
                   <option class="text-accent paragraph p-3">UI/UX Designer</option>
                   <option class="text-accent paragraph p-3">AI Engineer</option>
@@ -71,13 +80,14 @@
                   <option class="text-accent paragraph p-3">Other</option>
                 </select>
 
-                <!-- Icon inside select -->
-                <div
-                  class="pointer-events-none absolute inset-y-0 right-3 flex items-center"
+                  <!-- Icon inside select -->
+                   <span
+                  id="arrowIcon"
+                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
                 >
                   <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
+                </span>
                 </div>
-              </div>
               </div>
 
               <!-- Row 3 -->
@@ -106,31 +116,73 @@
 
               <!-- Row 4 -->
               <div class="relative w-full xl:max-w-[335px]">
-                <select
+                
+                 <select
+                  id="customSelect1"
                   class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
                 >
-                  <option class="text-accent paragraph py-1" value="" disabled selected hidden>Work Type</option>
-                  <option class="text-accent paragraph py-1">Remote</option>
-                  <option class="text-accent paragraph py-1">On-site</option>
-                  <option class="text-accent paragraph py-1">Hybrid</option>
+                  <option
+                    class="text-accent paragraph p-3"
+                    value=""
+                    disabled
+                    selected
+                    hidden
+                  >
+                    Work Type
+                  </option>
+                  <option class="text-accent paragraph px-3">Remote</option>
+                  <option class="text-accent paragraph p-3">On-site</option>
+                  <option class="text-accent paragraph p-3">Hybrid</option>
                 </select>
 
-                <!-- Icon inside select -->
-                <div
-                  class="pointer-events-none absolute inset-y-0 right-3 flex items-center"
+                  <!-- Icon inside select -->
+                   <span
+                  id="arrowIcon1"
+                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
                 >
                   <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-                </div>
+                </span>
               </div>
-              </form>
-              <!-- Submit Button -->
-              <div class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
-                <a href="#" >Submit Application</a>
-              </div>
-            
+            </form>
+            <!-- Submit Button -->
+            <div
+              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+            >
+              <a href="#">Submit Application</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const select = document.getElementById("customSelect");
+  const arrow = document.getElementById("arrowIcon");
+
+  // Rotate icon when select is opened
+  select.addEventListener("click", () => {
+    arrow.classList.toggle("rotate-180");
+  });
+
+  // When value selected → text color becomes normal
+  select.addEventListener("change", () => {
+    select.classList.remove("text-accent");
+    select.classList.add("text-accent");
+  });
+
+  const select1 = document.getElementById("customSelect1");
+  const arrow1 = document.getElementById("arrowIcon1");
+
+  // Rotate icon when select is opened
+  select1.addEventListener("click", () => {
+    arrow1.classList.toggle("rotate-180");
+  });
+
+  // When value selected → text color becomes normal
+  select1.addEventListener("change", () => {
+    select1.classList.remove("text-accent");
+    select1.classList.add("text-accent");
+  });
+</script>

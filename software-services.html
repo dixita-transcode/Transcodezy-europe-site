@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services Transcodezy</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="/Assets/Css/style.css" />
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Assets/Css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-<link rel="stylesheet" href="Componets/Comman/header.css" />
-</head>
+    <link rel="stylesheet" href="Componets/Comman/header.css" />
+  </head>
 
-<body>
+  <body>
     <!-- ================= MAIN WRAPPER ================= -->
     <div class="main_wrapper">
-        <div w3-include-html="/Components/Comman/header.html"></div>
-        <div w3-include-html="/Components/Services/Hero/hero.html"></div>
-        <div w3-include-html="/Components/Services/OurServices/ourService.html"></div>
-        <div w3-include-html="/Components/Services/Blogs&Insights/blogs.html"></div>
-        <div w3-include-html="/Components/Services/WhyChooseUs/whyChooseUs.html"></div>
-        <div w3-include-html="/Components/Services/FAQ/faq.html"></div>
-        <div w3-include-html="/Components/Services/GetInTouch/getInTouch.html"></div>
-        <div w3-include-html="/Components/Comman/footer.html"></div>
+      <div w3-include-html="/Components/Comman/header.html"></div>
+      <div w3-include-html="/Components/Services/Hero/hero.html"></div>
+      <div
+        w3-include-html="/Components/Services/OurServices/ourService.html"
+      ></div>
+      <div
+        w3-include-html="/Components/Services/Blogs&Insights/blogs.html"
+      ></div>
+      <div
+        w3-include-html="/Components/Services/WhyChooseUs/whyChooseUs.html"
+      ></div>
+      <div w3-include-html="/Components/Services/FAQ/faq.html"></div>
+      <div
+        w3-include-html="/Components/Services/GetInTouch/getInTouch.html"
+      ></div>
+      <div w3-include-html="/Components/Comman/footer.html"></div>
     </div>
 
     <!-- ================= JAVASCRIPT ================= -->
@@ -39,51 +54,51 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        // ✅ Include HTML Function
-        function includeHTML() {
-            var z, i, elmnt, file, xhttp;
-            z = document.getElementsByTagName("*");
-            for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                    xhttp = new XMLHttpRequest();
-                    xhttp.onreadystatechange = function () {
-                        if (this.readyState == 4) {
-                            if (this.status == 200) {
-                                elmnt.innerHTML = this.responseText;
-                                executeScripts(elmnt);
-                                // ✅ Initialize navbar only after header loads
-                                if (file.includes("header.html")) {
-                                    initNavbar();
-                                }
-                            }
-                            if (this.status == 404) {
-                                elmnt.innerHTML = "Page not found.";
-                            }
-                            elmnt.removeAttribute("w3-include-html");
-                            includeHTML(); // recursive call
-                        }
-                    };
-                    xhttp.open("GET", file, true);
-                    xhttp.send();
-                    return;
+      // ✅ Include HTML Function
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                  executeScripts(elmnt);
+                  // ✅ Initialize navbar only after header loads
+                  if (file.includes("header.html")) {
+                    initNavbar();
+                  }
                 }
-            }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML(); // recursive call
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            return;
+          }
         }
+      }
 
-        // ✅ Execute Scripts Inside Included HTML
-        function executeScripts(container) {
-            var scripts = container.getElementsByTagName("script");
-            for (var i = 0; i < scripts.length; i++) {
-                var script = document.createElement("script");
-                script.text = scripts[i].text;
-                container.appendChild(script).parentNode.removeChild(script);
-            }
+      // ✅ Execute Scripts Inside Included HTML
+      function executeScripts(container) {
+        var scripts = container.getElementsByTagName("script");
+        for (var i = 0; i < scripts.length; i++) {
+          var script = document.createElement("script");
+          script.text = scripts[i].text;
+          container.appendChild(script).parentNode.removeChild(script);
         }
+      }
 
-        // ✅ Navbar Behavior
-    function initNavbar() {
+      // ✅ Navbar Behavior
+      function initNavbar() {
         const menuIcon = document.getElementById("menu-icon");
         const menuImg = document.getElementById("menu-toggle-icon");
         const mobMenu = document.querySelector(".mob-menu");
@@ -92,79 +107,93 @@
 
         // Toggle mobile menu open/close
         menuIcon.addEventListener("click", () => {
-            mobMenu.classList.toggle("active");
-            menuIcon.classList.toggle("open");
+          mobMenu.classList.toggle("active");
+          menuIcon.classList.toggle("open");
 
-            menuImg.src = menuIcon.classList.contains("open")
-                ? "../../Assets/Images/close.svg"
-                : "../../Assets/Images/menu.svg";
+          menuImg.src = menuIcon.classList.contains("open")
+            ? "../../Assets/Images/close.svg"
+            : "../../Assets/Images/menu.svg";
         });
 
         // Toggle submenus — only when arrow is clicked
-        document.querySelectorAll(".mob-menu_item_switcher").forEach((arrow) => {
-            const linkWrapper = arrow.closest(".mob-menu_item_link");
-            const submenu = linkWrapper.nextElementSibling;
-            const arrowImg = arrow.querySelector("img");
+        const submenuToggles = document.querySelectorAll(".mob-menu_item_link");
+        submenuToggles.forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const parentItem = toggle.closest(".mob-menu_item ");
+            const submenu = parentItem.querySelector(".mob-submenu");
+            const icon = toggle.querySelector("i");
 
-            arrow.addEventListener("click", (e) => {
-                e.preventDefault();
-                e.stopPropagation();
+            // Close all first
+            document
+              .querySelectorAll(".mob-submenu")
+              .forEach((s) => s.classList.add("hidden"));
+            document
+              .querySelectorAll(".mob-menu_item_switcher i")
+              .forEach((i) => i.classList.remove("rotate-180"));
 
-                document.querySelectorAll(".mob-submenu").forEach((sub) => {
-                    if (sub !== submenu) sub.classList.add("hidden");
-                });
-                document
-                    .querySelectorAll(".mob-menu_item_switcher img")
-                    .forEach((img) => {
-                        if (img !== arrowImg) img.classList.remove("rotate-180");
-                    });
-
-                submenu.classList.toggle("hidden");
-                arrowImg.classList.toggle("rotate-180");
-            });
+            // Toggle this one
+            if (submenu.classList.contains("hidden")) {
+              submenu.classList.remove("hidden");
+              icon.classList.add("rotate-180");
+            } else {
+              submenu.classList.add("hidden");
+              icon.classList.remove("rotate-180");
+            }
+          });
         });
 
         // Highlight active link
-        const currentPath = window.location.pathname;
-        document.querySelectorAll("nav a").forEach((link) => {
-            const href = link.getAttribute("href");
-            if (href && currentPath.includes(href.split("/").pop())) {
-                link.classList.add("active");
+        const currentPath = window.location.pathname.toLowerCase();
+        const allLinks = document.querySelectorAll("nav li a");
+
+        allLinks.forEach((link) => {
+          const href = link.getAttribute("href");
+          if (!href) return;
+
+          const pageName = href.split("/").pop().toLowerCase();
+
+          // Direct match for exact page
+          if (currentPath.includes(pageName) && pageName !== "") {
+            link.classList.add("active");
+            // Highlight parent main menu link (if submenu)
+            const parentGroup = link.closest(".group");
+            if (parentGroup) {
+              const mainLink = parentGroup.querySelector(":scope > a");
+              if (mainLink) mainLink.classList.add("active");
             }
+          }
         });
 
         // Smooth scroll for anchor links
         setTimeout(() => {
-            const links = document.querySelectorAll(
-                'a[href*="software-company.html#"], a[href^="#"]'
-            );
-            links.forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    const href = this.getAttribute("href");
-                    const hashIndex = href.indexOf("#");
-                    if (hashIndex === -1) return;
+          const links = document.querySelectorAll(
+            'a[href*="software-company.html#"], a[href^="#"]'
+          );
+          links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+              const href = this.getAttribute("href");
+              const hashIndex = href.indexOf("#");
+              if (hashIndex === -1) return;
 
-                    const targetId = href.substring(hashIndex + 1);
-                    const target = document.getElementById(targetId);
+              const targetId = href.substring(hashIndex + 1);
+              const target = document.getElementById(targetId);
 
-                    if (target) {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top: target.offsetTop - 100,
-                            behavior: "smooth",
-                        });
-                    }
+              if (target) {
+                e.preventDefault();
+                window.scrollTo({
+                  top: target.offsetTop - 100,
+                  behavior: "smooth",
                 });
+              }
             });
+          });
         }, 500);
-    }
+      }
 
-
-        // ✅ Run includeHTML on load
-        includeHTML();
+      // ✅ Run includeHTML on load
+      includeHTML();
     </script>
 
     <script src="Assets/Js/custom.js"></script>
-</body>
-
+  </body>
 </html>
