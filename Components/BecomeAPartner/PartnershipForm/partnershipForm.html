@@ -1,16 +1,23 @@
 <div class="bg-[#FFFFFF] py-[50px] lg:py-[70px] xl:py-[90px] 2xl:py-[100px]">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-       <div class="flex flex-col lg:flex-row gap-[40px] lg:gap-[80px] z-10">
-      <div class="w-full max-w-[720px]">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col xl:flex-row gap-[40px] xl:gap-[80px] z-10">
+      <div class="w-full xl:max-w-[720px]">
         <img
           src="../../../Assets/Images/BecomeAPartner/partnership_form_img.jpg"
           alt="Automation"
           class="w-full h-full xl:min-h-[652px] object-cover rounded-3xl"
         />
       </div>
-      <div class="w-full bg-[#132028]  p-5 lg:p-10 rounded-[24px] h-auto xl:min-h-[652px] w-full xl:max-w-[720px] shadow-lg">
-         <h2 class="text-[32px] font-medium text-white">Collaborate. Innovate. Scale — Globally.</h2>
-         <p class="paragraph text-[#FFFFFF] opacity-60">Transcodezy is ready to co-create intelligent, scalable, and impactful technology solutions with you.</p>
+      <div
+        class="w-full bg-[#132028] p-5 lg:p-10 rounded-[24px] h-auto xl:min-h-[652px] w-full xl:max-w-[720px] shadow-lg"
+      >
+        <h2 class="text-[32px] font-medium text-white">
+          Collaborate. Innovate. Scale — Globally.
+        </h2>
+        <p class="paragraph text-[#FFFFFF] opacity-60">
+          Transcodezy is ready to co-create intelligent, scalable, and impactful
+          technology solutions with you.
+        </p>
         <form class="space-y-6 py-4 lg:py-8">
           <!-- Row 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -46,109 +53,103 @@
           <!-- Row 3 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- About your project -->
-              <div class="relative w-full xl:max-w-[335px]">
-                <select
-                  id="customSelect"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <option
-                    class="text-accent paragraph p-3"
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                  >
-                    Partnership Type
-                  </option>
-                  <option class="text-accent paragraph px-3">Technology Partner</option>
-                  <option class="text-accent paragraph p-3">Channel Partner</option>
-                  <option class="text-accent paragraph p-3">Strategic Partner</option>
-                  <option class="text-accent paragraph p-3">Implementation Partner</option>
-            </select>
+            <div class="relative">
+              <div class="select-menu">
+                <div class="select-btn">
+                  <span class="sBtn-text">Partnership Type</span>
+                  <i
+                    class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon"
+                  ></i>
+                </div>
 
-                  <!-- Icon inside select -->
-              <span
-                  id="arrowIcon"
-                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
+                <ul
+                  class="options w-full border border-[#1320281F]"
                 >
-                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-              </span>
-              </div>
-
-              <div class="relative w-full xl:max-w-[335px]">
-                <select
-                  id="customSelect1"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <option
-                    class="text-accent paragraph p-3"
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                  >
-                    Your Industry
-                  </option>
-                  <option class="text-accent paragraph px-3">FinTech</option>
-                  <option class="text-accent paragraph p-3">Healthcare</option>
-                  <option class="text-accent paragraph p-3">Education</option>
-                  <option class="text-accent paragraph p-3">Manufacturing</option>
-                  <option class="text-accent paragraph p-3">Retail & E-commerce</option>
-                  <option class="text-accent paragraph p-3">Other</option>
-                </select>
-
-                  <!-- Icon inside select -->
-                <span
-                  id="arrowIcon1"
-                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
-                >
-                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-                </span>
+                  <li class="option">Technology Partner</li>
+                  <li class="option">Channel Partner</li>
+                  <li class="option">Strategic Partner</li>
+                  <li class="option">Implementation Partner</li>
+                </ul>
               </div>
             </div>
-            <!-- row-4 -->
-            <div class="w-full">
-                <textarea
-                  placeholder="Tell us about your partnership goals..."
-                  class="w-full bg-[#FFFFFF14] paragraph text-[#FFFFFF66] rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
-                ></textarea>
-            </div>  
-            
+
+            <div class="relative">
+              <div class="select-menu1">
+                <div class="select-btn1">
+                  <span class="sBtn-text">Your Industry</span>
+                  <i
+                    class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon1"
+                  ></i>
+                </div>
+
+                <ul
+                  class="options1 w-full border border-[#1320281F]"
+                >
+                  <li class="option1">FinTech</li>
+                  <li class="option1">Healthcare</li>
+                  <li class="option1">Education</li>
+                  <li class="option1">Manufacturing</li>
+                  <li class="option1">Retail & E-commerce</li>
+                  <li class="option1">Other</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- row-4 -->
+          <div class="w-full">
+            <textarea
+              placeholder="Tell us about your partnership goals..."
+              class="w-full bg-[#FFFFFF14] paragraph text-[#FFFFFF66] rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
+            ></textarea>
+          </div>
         </form>
-        <div class="mt-1 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
-                <a href="#" >Apply to Join</a>
+        <div
+          class="mt-1 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+        >
+          <a href="#">Apply to Join</a>
         </div>
       </div>
     </div>
-    </div>
+  </div>
 </div>
 
 <script>
-  const select = document.getElementById("customSelect");
-  const arrow = document.getElementById("arrowIcon");
+  const menu = document.querySelector(".select-menu"),
+    btn = menu.querySelector(".select-btn"),
+    text = menu.querySelector(".sBtn-text");
+  icon = menu.querySelector(".dropdown-icon"); // <-- icon
+  btn.onclick = () => {
+    menu.classList.toggle("active");
+    // rotate icon
+    icon.classList.toggle("rotate-icon");
+  };
+  menu.querySelectorAll(".option").forEach(
+    (o) =>
+      (o.onclick = () => {
+        text.textContent = o.textContent;
+        menu.classList.remove("active");
+      })
+  );
 
-  // Rotate icon when select is opened
-  select.addEventListener("click", () => {
-    arrow.classList.toggle("rotate-180");
-  });
+  const menu1 = document.querySelector(".select-menu1"),
+    btn1 = menu1.querySelector(".select-btn1"),
+    text1 = menu1.querySelector(".sBtn-text"),
+    icon1 = menu1.querySelector(".dropdown-icon1"); // <-- icon
 
-  // When value selected → text color becomes normal
-  select.addEventListener("change", () => {
-    select.classList.remove("text-accent");
-    select.classList.add("text-accent");
-  });
+  btn1.onclick = () => {
+    menu1.classList.toggle("active1");
 
-  const select1 = document.getElementById("customSelect1");
-  const arrow1 = document.getElementById("arrowIcon1");
+    // rotate icon
+    icon1.classList.toggle("rotate-icon");
+  };
 
-  // Rotate icon when select is opened
-  select1.addEventListener("click", () => {
-    arrow1.classList.toggle("rotate-180");
-  });
+  menu1.querySelectorAll(".option1").forEach((o) => {
+    o.onclick = () => {
+      text1.textContent = o.textContent;
+      menu1.classList.remove("active1");
 
-  // When value selected → text color becomes normal
-  select1.addEventListener("change", () => {
-    select1.classList.remove("text-accent");
-    select1.classList.add("text-accent");
+      // remove rotation when closing
+      icon1.classList.remove("rotate-icon1");
+    };
   });
 </script>

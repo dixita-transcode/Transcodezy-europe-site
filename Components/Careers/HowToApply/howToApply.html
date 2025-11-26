@@ -6,7 +6,7 @@
     class="bg-[#FFFFFF] h-auto py-[50px] lg:py-[80px] xl:py-[100px] 2xl:py-[140px]"
   >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row gap-[40px] w-full">
+      <div class="flex flex-col xl:flex-row gap-[40px] w-full">
         <div class="">
           <h5
             class="paragraph text-accent bg-[#FFFFFF0A] border border-accent w-fit py-3 px-6 rounded-[40px] text-center z-10"
@@ -25,10 +25,10 @@
             </p>
           </div>
         </div>
-        <div>
-          <div
-            class="relative z-0 bg-accent w-full max-w-3xl p-5 lg:p-10 rounded-[24px] min-h-[580px] w-full xl:w-[817px] shadow-lg"
-          >
+        <div
+          class="bg-accent p-5 lg:p-10 rounded-[24px] min-h-[580px] w-full xl:max-w-[817px] shadow-lg"
+        >
+          <div class=" ">
             <h2 class="text-white text-[24px] font-medium">
               Apply Now – Start Your Journey at Transcodezy
             </h2>
@@ -58,44 +58,33 @@
                 />
 
                 <!-- Position Applied Dropdown -->
-                <div class="relative w-full xl:max-w-[335px]">
-                  <select
-                  id="customSelect"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <option
-                    class="text-accent paragraph p-3"
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                  >
-                    Position Applied
-                  </option>
-                  <option class="text-accent paragraph px-3">Software Developer</option>
-                  <option class="text-accent paragraph p-3">Cloud Engineer</option>
-                  <option class="text-accent paragraph p-3">UI/UX Designer</option>
-                  <option class="text-accent paragraph p-3">AI Engineer</option>
-                  <option class="text-accent paragraph p-3">Intern</option>
-                  <option class="text-accent paragraph p-3">Other</option>
-                </select>
+                <div class="relative w-full">
+                  <div class="select-menu1">
+                    <div class="select-btn1">
+                      <span class="sBtn-text">Position Applied</span>
+                      <i
+                        class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon1"
+                      ></i>
+                    </div>
 
-                  <!-- Icon inside select -->
-                   <span
-                  id="arrowIcon"
-                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
-                >
-                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-                </span>
+                    <ul
+                      class="options1 w-full border border-[#1320281F]"
+                    >
+                      <li class="option1">Software Developer</li>
+                      <li class="option1">Cloud Engineer</li>
+                      <li class="option1">UI/UX Designer</li>
+                      <li class="option1">AI Engineer</li>
+                      <li class="option1">Intern</li>
+                      <li class="option1">Other</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
               <!-- Row 3 -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <!-- Resume Upload -->
-                <label
-                  class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3 z-10"
-                >
+                <label class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3">
                   <p class="text-md text-[#FFFFFF66] text-start mb-2">
                     Upload Resume/CV
                   </p>
@@ -110,43 +99,35 @@
                 <!-- Message -->
                 <textarea
                   placeholder="Message..."
-                  class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+                  class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary"
                 ></textarea>
               </div>
 
               <!-- Row 4 -->
-              <div class="relative w-full xl:max-w-[335px]">
-                
-                 <select
-                  id="customSelect1"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <option
-                    class="text-accent paragraph p-3"
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                  >
-                    Work Type
-                  </option>
-                  <option class="text-accent paragraph px-3">Remote</option>
-                  <option class="text-accent paragraph p-3">On-site</option>
-                  <option class="text-accent paragraph p-3">Hybrid</option>
-                </select>
+              <div
+                class="relative w-full  xl:max-w-[357px]"
+              >
+                <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text">Work Type</span>
+                    <i
+                      class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon"
+                    ></i>
+                  </div>
 
-                  <!-- Icon inside select -->
-                   <span
-                  id="arrowIcon1"
-                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
-                >
-                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-                </span>
+                  <ul
+                    class="options w-full border border-[#1320281F]"
+                  >
+                    <li class="option">Remote</li>
+                    <li class="option">On-site</li>
+                    <li class="option">Hybrid</li>
+                  </ul>
+                </div>
               </div>
             </form>
             <!-- Submit Button -->
             <div
-              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden "
             >
               <a href="#">Submit Application</a>
             </div>
@@ -158,31 +139,42 @@
 </section>
 
 <script>
-  const select = document.getElementById("customSelect");
-  const arrow = document.getElementById("arrowIcon");
+  const menu = document.querySelector(".select-menu"),
+    btn = menu.querySelector(".select-btn"),
+    text = menu.querySelector(".sBtn-text");
+  icon = menu.querySelector(".dropdown-icon"); // <-- icon
+  btn.onclick = () => {
+    menu.classList.toggle("active");
+    // rotate icon
+    icon.classList.toggle("rotate-icon");
+  };
+  menu.querySelectorAll(".option").forEach(
+    (o) =>
+      (o.onclick = () => {
+        text.textContent = o.textContent;
+        menu.classList.remove("active");
+      })
+  );
 
-  // Rotate icon when select is opened
-  select.addEventListener("click", () => {
-    arrow.classList.toggle("rotate-180");
-  });
+  const menu1 = document.querySelector(".select-menu1"),
+    btn1 = menu1.querySelector(".select-btn1"),
+    text1 = menu1.querySelector(".sBtn-text"),
+    icon1 = menu1.querySelector(".dropdown-icon1"); // <-- icon
 
-  // When value selected → text color becomes normal
-  select.addEventListener("change", () => {
-    select.classList.remove("text-accent");
-    select.classList.add("text-accent");
-  });
+  btn1.onclick = () => {
+    menu1.classList.toggle("active1");
 
-  const select1 = document.getElementById("customSelect1");
-  const arrow1 = document.getElementById("arrowIcon1");
+    // rotate icon
+    icon1.classList.toggle("rotate-icon");
+  };
 
-  // Rotate icon when select is opened
-  select1.addEventListener("click", () => {
-    arrow1.classList.toggle("rotate-180");
-  });
+  menu1.querySelectorAll(".option1").forEach((o) => {
+    o.onclick = () => {
+      text1.textContent = o.textContent;
+      menu1.classList.remove("active1");
 
-  // When value selected → text color becomes normal
-  select1.addEventListener("change", () => {
-    select1.classList.remove("text-accent");
-    select1.classList.add("text-accent");
+      // remove rotation when closing
+      icon1.classList.remove("rotate-icon1");
+    };
   });
 </script>

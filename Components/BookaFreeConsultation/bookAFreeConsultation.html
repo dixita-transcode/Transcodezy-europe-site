@@ -56,32 +56,23 @@
             />
           </div>
           <div class="relative w-full">
-            <select
-                  id="customSelect1"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] appearance-none border-none py-4 px-3 pr-10 rounded-xl leading-tight w-full focus:outline-none focus:ring-2 focus:ring-primary"
-                >
-                  <option
-                    class="text-accent paragraph p-3"
-                    value=""
-                    disabled
-                    selected
-                    hidden
-                  >
-                    How did you hear about us?
-                  </option>
-                  <option class="text-accent paragraph px-3">Google</option>
-                  <option class="text-accent paragraph p-3">LinkedIn</option>
-                  <option class="text-accent paragraph p-3">Referral</option>
-                  <option class="text-accent paragraph p-3">Other</option>
-            </select>
+            <div class="select-menu">
+                  <div class="select-btn">
+                    <span class="sBtn-text">How did you hear about us?</span>
+                    <i
+                      class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon"
+                    ></i>
+                  </div>
 
-                  <!-- Icon inside select -->
-              <span
-                  id="arrowIcon1"
-                  class="pointer-events-none absolute right-3 top-4 transform transition-transform duration-200 text-gray-600"
-                >
-                  <i class="fa fa-chevron-down text-[#FFFFFF66]"></i>
-              </span>
+                  <ul
+                    class="options w-full border border-[#1320281F]"
+                  >
+                    <li class="option">Google</li>
+                    <li class="option">LinkedIn</li>
+                    <li class="option">Referral</li>
+                    <li class="option">Other</li>
+                  </ul>
+            </div>
           </div>
           <textarea
             placeholder="Tell us more about your project..."
@@ -109,18 +100,21 @@
 </div>
 
 <script>
-  const select1 = document.getElementById("customSelect1");
-  const arrow1 = document.getElementById("arrowIcon1");
-
-  // Rotate icon when select is opened
-  select1.addEventListener("click", () => {
-    arrow1.classList.toggle("rotate-180");
-  });
-
-  // When value selected → text color becomes normal
-  select1.addEventListener("change", () => {
-    select1.classList.remove("text-accent");
-    select1.classList.add("text-accent");
-  });
+ const menu = document.querySelector(".select-menu"),
+    btn = menu.querySelector(".select-btn"),
+    text = menu.querySelector(".sBtn-text");
+  icon = menu.querySelector(".dropdown-icon"); // <-- icon
+  btn.onclick = () => {
+    menu.classList.toggle("active");
+    // rotate icon
+    icon.classList.toggle("rotate-icon");
+  };
+  menu.querySelectorAll(".option").forEach(
+    (o) =>
+      (o.onclick = () => {
+        text.textContent = o.textContent;
+        menu.classList.remove("active");
+      })
+  );
 </script>
 <!-- book free consultation end -->
