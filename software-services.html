@@ -116,7 +116,7 @@
         });
 
         // Toggle submenus — only when arrow is clicked
-        const submenuToggles = document.querySelectorAll(".mob-menu_item_link");
+        const submenuToggles = document.querySelectorAll(".mob-menu_item");
         submenuToggles.forEach((toggle) => {
           toggle.addEventListener("click", () => {
             const parentItem = toggle.closest(".mob-menu_item ");
@@ -141,7 +141,6 @@
             }
           });
         });
-
         // Highlight active link
         const currentPath = window.location.pathname.toLowerCase();
         const allLinks = document.querySelectorAll("nav li a");

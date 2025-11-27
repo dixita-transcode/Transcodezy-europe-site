@@ -7,7 +7,7 @@
   >
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col xl:flex-row gap-[40px] w-full">
-        <div class="">
+        <div class="w-full xl:max-w-[817px]">
           <h5
             class="paragraph text-accent bg-[#FFFFFF0A] border border-accent w-fit py-3 px-6 rounded-[40px] text-center z-10"
           >
@@ -33,7 +33,7 @@
               Apply Now – Start Your Journey at Transcodezy
             </h2>
 
-            <form class="space-y-6 relative z-10 py-5 lg:py-10">
+            <form class="space-y-6 py-5 lg:py-10">
               <!-- Row 1 -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input
@@ -58,24 +58,71 @@
                 />
 
                 <!-- Position Applied Dropdown -->
-                <div class="relative w-full">
-                  <div class="select-menu1">
-                    <div class="select-btn1">
-                      <span class="sBtn-text">Position Applied</span>
-                      <i
-                        class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon1"
-                      ></i>
-                    </div>
+                <div class="w-full xl:max-w-[295px] relative z-0">
+                  <select id="select" class="hidden">
+                    <option value="" disabled selected>Position Applied</option>
+                    <option>Software Developer</option>
+                    <option>Cloud Engineer</option>
+                    <option>UI/UX Designer</option>
+                    <option>AI Engineer</option>
+                    <option>Intern</option>
+                    <option>Other</option>
+                  </select>
+
+                  <!-- Custom Dropdown -->
+                  <div
+                    id="dropdownBtn"
+                    class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after z-0"
+                    tabindex="0"
+                  >
+                    <span id="selectedText">Position Applied</span>
 
                     <ul
-                      class="options1 w-full border border-[#1320281F]"
+                      id="dropdownList"
+                      class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top "
                     >
-                      <li class="option1">Software Developer</li>
-                      <li class="option1">Cloud Engineer</li>
-                      <li class="option1">UI/UX Designer</li>
-                      <li class="option1">AI Engineer</li>
-                      <li class="option1">Intern</li>
-                      <li class="option1">Other</li>
+                      <li
+                        class="paragraph text-secondary p-3 cursor-pointer"
+                        data-value=""
+                      >
+                        Position Applied
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="Software Developer"
+                      >
+                        Software Developer
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="Cloud Engineer"
+                      >
+                        Cloud Engineer
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="UI/UX Designer"
+                      >
+                        UI/UX Designer
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="AI Engineer"
+                      >
+                        AI Engineer
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="Intern"
+                      >
+                        Intern
+                      </li>
+                      <li
+                        class="paragraph text-accent p-3 cursor-pointer"
+                        data-value="Other"
+                      >
+                        Other
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -104,30 +151,57 @@
               </div>
 
               <!-- Row 4 -->
-              <div
-                class="relative w-full  xl:max-w-[357px]"
-              >
-                <div class="select-menu">
-                  <div class="select-btn">
-                    <span class="sBtn-text">Work Type</span>
-                    <i
-                      class="fa fa-chevron-down text-[#FFFFFF66] dropdown-icon"
-                    ></i>
-                  </div>
+              <div class="w-full lg:max-w-[295px] relative">
+                <!-- Hidden original select -->
+                <select id="select1" class="hidden">
+                  <option value="" disabled selected>Work Type</option>
+                  <option>Remote</option>
+                  <option>On-site</option>
+                  <option>Hybrid</option>
+                </select>
+
+                <!-- Custom Dropdown -->
+                <div
+                  id="dropdownBtn1"
+                  class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after1 z-0"
+                >
+                  <span id="selectedText1">Work Type</span>
 
                   <ul
-                    class="options w-full border border-[#1320281F]"
+                    id="dropdownList1"
+                    class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top z-10"
                   >
-                    <li class="option">Remote</li>
-                    <li class="option">On-site</li>
-                    <li class="option">Hybrid</li>
+                    <li
+                      class="paragraph text-secondary p-3 cursor-pointer"
+                      data-value=""
+                    >
+                      Work Type
+                    </li>
+                    <li
+                      class="paragraph text-accent p-3 cursor-pointer"
+                      data-value="Remote"
+                    >
+                      Remote
+                    </li>
+                    <li
+                      class="paragraph text-accent p-3 cursor-pointer"
+                      data-value="On-site"
+                    >
+                      On-site
+                    </li>
+                    <li
+                      class="paragraph text-accent p-3 cursor-pointer"
+                      data-value="Hybrid"
+                    >
+                      Hybrid
+                    </li>
                   </ul>
                 </div>
               </div>
             </form>
             <!-- Submit Button -->
             <div
-              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden "
+              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
             >
               <a href="#">Submit Application</a>
             </div>
@@ -139,42 +213,82 @@
 </section>
 
 <script>
-  const menu = document.querySelector(".select-menu"),
-    btn = menu.querySelector(".select-btn"),
-    text = menu.querySelector(".sBtn-text");
-  icon = menu.querySelector(".dropdown-icon"); // <-- icon
-  btn.onclick = () => {
-    menu.classList.toggle("active");
-    // rotate icon
-    icon.classList.toggle("rotate-icon");
-  };
-  menu.querySelectorAll(".option").forEach(
-    (o) =>
-      (o.onclick = () => {
-        text.textContent = o.textContent;
-        menu.classList.remove("active");
-      })
-  );
+const dropdownBtn = document.getElementById("dropdownBtn");
+const dropdownList = document.getElementById("dropdownList");
+const selectedText = document.getElementById("selectedText");
+const select = document.getElementById("select");
 
-  const menu1 = document.querySelector(".select-menu1"),
-    btn1 = menu1.querySelector(".select-btn1"),
-    text1 = menu1.querySelector(".sBtn-text"),
-    icon1 = menu1.querySelector(".dropdown-icon1"); // <-- icon
+// Toggle dropdown
+dropdownBtn.addEventListener("click", () => {
+  dropdownList.classList.toggle("opacity-100");
+  dropdownList.classList.toggle("scale-100");
+  dropdownList.classList.toggle("pointer-events-none");
 
-  btn1.onclick = () => {
-    menu1.classList.toggle("active1");
+  dropdownBtn.classList.toggle("active");
+});
 
-    // rotate icon
-    icon1.classList.toggle("rotate-icon");
-  };
+// Select option
+document.querySelectorAll("#dropdownList li").forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
 
-  menu1.querySelectorAll(".option1").forEach((o) => {
-    o.onclick = () => {
-      text1.textContent = o.textContent;
-      menu1.classList.remove("active1");
+    selectedText.innerText = item.innerText;
+    select.value = item.dataset.value;
 
-      // remove rotation when closing
-      icon1.classList.remove("rotate-icon1");
-    };
+    dropdownList.classList.remove("opacity-100", "scale-100");
+    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
+
+    dropdownBtn.classList.remove("active");
   });
+});
+
+// Click outside close
+document.addEventListener("click", (e) => {
+  if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
+    dropdownList.classList.remove("opacity-100", "scale-100");
+    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
+    dropdownBtn.classList.remove("active");
+  }
+});
+
+
+
+const dropdownBtn1 = document.getElementById("dropdownBtn1");
+const dropdownList1 = document.getElementById("dropdownList1");
+const selectedText1 = document.getElementById("selectedText1");
+const select1 = document.getElementById("select");
+
+// Toggle dropdown
+dropdownBtn1.addEventListener("click", () => {
+  dropdownList1.classList.toggle("opacity-100");
+  dropdownList1.classList.toggle("scale-100");
+  dropdownList1.classList.toggle("pointer-events-none");
+
+  dropdownBtn1.classList.toggle("active");
+});
+
+// Select option
+document.querySelectorAll("#dropdownList1 li").forEach((item) => {
+  item.addEventListener("click", (e) => {
+    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
+
+    selectedText1.innerText = item.innerText;
+    select1.value = item.dataset.value;
+
+    dropdownList1.classList.remove("opacity-100", "scale-100");
+    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
+
+    dropdownBtn1.classList.remove("active");
+  });
+});
+
+// Click outside close
+document.addEventListener("click", (e) => {
+  if (!dropdownBtn1.contains(e.target) && !dropdownList1.contains(e.target)) {
+    dropdownList1.classList.remove("opacity-100", "scale-100");
+    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
+    dropdownBtn1.classList.remove("active");
+  }
+});
+
 </script>

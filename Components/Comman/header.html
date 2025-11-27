@@ -1,20 +1,20 @@
 <!-- header section start -->
 <nav class="bg-accent py-[12px] fixed top-0 left-0 right-0 z-50">
-  <div class="container mx-auto px-8 ">
-    <div class="flex justify-between items-center">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center ">
       <div class="">
         <a href="/index.html" >
         <img
           src="../../Assets/Images/logo.svg"
           alt="logo"
-          class="h-[72px] w-[72px]"
+          class="h-full md:h-[72px] w-full md:w-[72px]"
         />
         </a>
       </div>
       <div class="menu hidden lg:block">
-        <ul class="menu-items hidden md:flex justify-center items-center gap-5">
+        <ul class="menu-items hidden lg:flex items-center gap-5 xl:gap-8">
           <li class="group"><a href="software-services.html"
-              class="relative z-50 paragraph text-white uppercase">Service</a>
+              class="relative z-50 text-[18px] text-white uppercase">Service</a>
             <div
               class="submenu bg-white absolute inset-x-0 left-0 right-0 mt-7 shadow-lg -z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-50 transition-all duration-300 w-full">
               <div class="container mx-auto py-4 px-8">
@@ -78,7 +78,7 @@
           </li>
 
           <li class="group"><a href="software-industries.html"
-              class="relative z-50 paragraph text-white uppercase inline-block transition-all 0.25s ease-in-out">Industries</a>
+              class="relative z-50 text-[18px] text-white uppercase inline-block transition-all 0.25s ease-in-out">Industries</a>
             <div
               class="submenu bg-white absolute inset-x-0 left-0 right-0 mt-7 shadow-lg -z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-50 transition-all duration-300 w-full">
               <div class="container mx-auto py-4 px-8">
@@ -151,7 +151,7 @@
           </li>
 
           <li class="group">
-            <a href="software-careers.html" class="relative z-50 paragraph text-white uppercase inline-block transition-all 0.25s ease-in-out">Careers</a>
+            <a href="software-careers.html" class="relative z-50 text-[18px] text-white uppercase inline-block transition-all 0.25s ease-in-out">Careers</a>
             <div
               class="submenu bg-white absolute inset-x-0 left-0 right-0 mt-7 shadow-lg -z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-50 transition-all duration-300 w-full">
               <div class="container mx-auto py-4 px-8">
@@ -181,7 +181,7 @@
 
           <li class="group">
             <a href="software-company.html"
-              class="relative z-50 paragraph text-white uppercase inline-block transition-all 0.25s ease-in-out ">Company</a>
+              class="relative z-50 text-[18px] text-white uppercase inline-block transition-all 0.25s ease-in-out ">Company</a>
             <div
               class="submenu bg-white absolute inset-x-0 left-0 right-0 mt-7 shadow-lg -z-[100] opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:z-50 transition-all duration-300 w-full">
               <div class="container mx-auto py-4 px-8">
@@ -259,10 +259,10 @@
               </div>
             </div>
           </li>
-          <li><a href="insights_and_blogs.html" class=" paragraph text-white uppercase inline-block transition-all 0.25s ease-in-out">Insights & Blogs</a></li>
+          <li><a href="insights_and_blogs.html" class=" text-[18px] text-white uppercase inline-block transition-all 0.25s ease-in-out">Insights & Blogs</a></li>
         </ul>
       </div>
-        <div class="hidden lg:block hover:scale-110 duration-500 cursor-pointer">
+        <div class="hidden lg:block hover:scale-105 duration-500 cursor-pointer">
           <a href="contactUs.html" class="paragraph py-3 px-6 bg-primary font-medium text-white rounded-[40px]">
             <Span>Contact Us</Span>
           </a>
@@ -440,7 +440,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Smooth scroll for internal anchors
   const anchorLinks = document.querySelectorAll(
-    'a[href*="software-company.html#"], a[href^="#"]'
+    'a[href*="software-company.html#"], a[href^="#"]',
+    'a[href*="software-careers.html#"], a[href^="#"]'
   );
 
   anchorLinks.forEach((link) => {
