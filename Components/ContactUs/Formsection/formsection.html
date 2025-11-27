@@ -16,22 +16,24 @@
       <div
         class="relative z-0 bg-[#0F1A24] w-full max-w-3xl p-5 lg:p-10 rounded-[24px] min-h-[628px] w-full xl:w-[720px] shadow-lg"
       >
-        <h2 class="text-white text-[32px] font-medium">
-          Collaborate with Transcodezy
-        </h2>
-        <form class="space-y-6 relative z-10 py-3 lg:py-6">
+        <form id="contact-form" class="space-y-6 relative z-10">
+          <h2 class="text-white text-[32px] font-medium">
+            Collaborate with Transcodezy
+          </h2>
           <!-- Row 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
               type="text"
+              name="fullName"
               placeholder="Full Name"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Email Address"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
 
@@ -39,15 +41,17 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
               type="text"
+              name="companyName"
               placeholder="Company Name"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
 
             <!-- Position Applied Dropdown -->
             <input
-              type="tel"
+              type="text"
+              name="mobile"
               placeholder="Phone Number"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
 
@@ -55,42 +59,79 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- About your project -->
             <textarea
+              name="message"
               placeholder="About your project..."
               class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             ></textarea>
 
             <!-- Attachments (Optional) -->
-            <label class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3 z-10">
+            <label
+              for="resume"
+              class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3 z-10 block"
+            >
               <p class="text-md text-[#FFFFFF66] text-start mb-2">
                 Attachments (Optional)
               </p>
+
               <div
                 class="flex flex-col items-center justify-center w-full h-[70px] text-[#FFFFFF66] rounded-lg border-2 border-dashed border-gray-600 hover:border-primary transition"
               >
                 <i class="fa-solid fa-arrow-up-from-bracket text-2xl"></i>
+                <span id="file-name" class="text-xs mt-1"></span>
               </div>
-              <input id="resume" type="file" class="hidden" />
             </label>
+            <input id="resume" type="file" name="file" class="hidden" />
           </div>
-          <div class=" space-y-3">
+          <div class="space-y-3">
             <!-- Checkbox 1 -->
             <div class="form-group">
-              <input type="checkbox" id="html">
-              <label for="html" class="text-[#FFFFFF66]">I have read Privacy Notice</label>
+              <input type="checkbox" id="html" />
+              <label for="html" class="text-[#FFFFFF66]"
+                >I have read Privacy Notice</label
+              >
             </div>
 
             <!-- Checkbox 2 -->
             <div class="form-group">
-              <input type="checkbox" id="css">
-              <label for="css" class="text-[#FFFFFF66]">I agree to receive marketing materials about news, events, and proposals from Transcodezy </label>
+              <input type="checkbox" id="css" />
+              <label for="css" class="text-[#FFFFFF66]"
+                >I agree to receive marketing materials about news, events, and
+                proposals from Transcodezy
+              </label>
             </div>
           </div>
+          <button
+            class="mt-3 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+            type="submit"
+          >
+            Send Message
+          </button>
         </form>
-        <div class="mt-3 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden">
-            <a href="#" >Send Message</a>
-        </div>
-      </div>  
+      </div>
     </div>
   </div>
 </section>
 
+<script>
+  document.getElementById("resume").addEventListener("change", function () {
+    const fileName = this.files.length ? this.files[0].name : "";
+    document.getElementById("file-name").textContent = fileName;
+  });
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_6xp4mz5", "template_3mis4bf", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("Failed to send message. Please try again.");
+        });
+    });
+</script>
