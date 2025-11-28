@@ -29,37 +29,40 @@
           class="bg-accent p-5 lg:p-10 rounded-[24px] min-h-[580px] w-full xl:max-w-[817px] shadow-lg"
         >
           <div class=" ">
-            <h2 class="text-white text-[24px] font-medium">
-              Apply Now – Start Your Journey at Transcodezy
-            </h2>
+            <form id="apply-form" class="space-y-6">
+              <h2 class="text-white text-[24px] font-medium">
+                Apply Now – Start Your Journey at Transcodezy
+              </h2>
 
-            <form class="space-y-6 py-5 lg:py-10">
               <!-- Row 1 -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input
                   type="text"
+                  name="fullName"
                   placeholder="Full Name"
-                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
                 />
 
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
-                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
                 />
               </div>
 
               <!-- Row 2 -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input
-                  type="tel"
+                  type="text"
+                  name="phoneNumber"
                   placeholder="Phone Number"
-                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+                  class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
                 />
 
                 <!-- Position Applied Dropdown -->
                 <div class="w-full xl:max-w-[295px] relative z-0">
-                  <select id="select" class="hidden">
+                  <select id="select" name="positionApplied" class="hidden">
                     <option value="" disabled selected>Position Applied</option>
                     <option>Software Developer</option>
                     <option>Cloud Engineer</option>
@@ -79,7 +82,7 @@
 
                     <ul
                       id="dropdownList"
-                      class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top "
+                      class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top"
                     >
                       <li
                         class="paragraph text-secondary p-3 cursor-pointer"
@@ -131,29 +134,35 @@
               <!-- Row 3 -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <!-- Resume Upload -->
-                <label class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3">
-                  <p class="text-md text-[#FFFFFF66] text-start mb-2">
+                <label
+                  for="resume"
+                  class="rounded-xl cursor-pointer bg-[#FFFFFF14] p-3 z-10 block"
+                >
+                  <p class="paragraph text-[#FFFFFF66] text-start mb-2">
                     Upload Resume/CV
                   </p>
+
                   <div
                     class="flex flex-col items-center justify-center w-full h-[70px] text-[#FFFFFF66] rounded-lg border-2 border-dashed border-gray-600 hover:border-primary transition"
                   >
                     <i class="fa-solid fa-arrow-up-from-bracket text-2xl"></i>
+                    <span id="file-name" class="text-xs mt-1"></span>
                   </div>
-                  <input id="resume" type="file" class="hidden" />
                 </label>
+                <input id="resume" type="file" name="file" class="hidden" />
 
                 <!-- Message -->
                 <textarea
                   placeholder="Message..."
-                  class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary"
+                  name="message"
+                  class="w-full h-32 p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary"
                 ></textarea>
               </div>
 
               <!-- Row 4 -->
               <div class="w-full lg:max-w-[295px] relative">
                 <!-- Hidden original select -->
-                <select id="select1" class="hidden">
+                <select id="select1" name="workType" class="hidden">
                   <option value="" disabled selected>Work Type</option>
                   <option>Remote</option>
                   <option>On-site</option>
@@ -163,7 +172,7 @@
                 <!-- Custom Dropdown -->
                 <div
                   id="dropdownBtn1"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after1 z-0"
+                  class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after1 z-0 "
                 >
                   <span id="selectedText1">Work Type</span>
 
@@ -198,13 +207,14 @@
                   </ul>
                 </div>
               </div>
+              <!-- Submit Button -->
+              <button
+                class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+                type="submit"
+              >
+                Submit Application
+              </button>
             </form>
-            <!-- Submit Button -->
-            <div
-              class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
-            >
-              <a href="#">Submit Application</a>
-            </div>
           </div>
         </div>
       </div>
@@ -213,82 +223,124 @@
 </section>
 
 <script>
-const dropdownBtn = document.getElementById("dropdownBtn");
-const dropdownList = document.getElementById("dropdownList");
-const selectedText = document.getElementById("selectedText");
-const select = document.getElementById("select");
+  const dropdownBtn = document.getElementById("dropdownBtn");
+  const dropdownList = document.getElementById("dropdownList");
+  const selectedText = document.getElementById("selectedText");
+  const select = document.getElementById("select");
 
-// Toggle dropdown
-dropdownBtn.addEventListener("click", () => {
-  dropdownList.classList.toggle("opacity-100");
-  dropdownList.classList.toggle("scale-100");
-  dropdownList.classList.toggle("pointer-events-none");
+  // Toggle dropdown
+  dropdownBtn.addEventListener("click", () => {
+    dropdownList.classList.toggle("opacity-100");
+    dropdownList.classList.toggle("scale-100");
+    dropdownList.classList.toggle("pointer-events-none");
 
-  dropdownBtn.classList.toggle("active");
-});
-
-// Select option
-document.querySelectorAll("#dropdownList li").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
-
-    selectedText.innerText = item.innerText;
-    select.value = item.dataset.value;
-
-    dropdownList.classList.remove("opacity-100", "scale-100");
-    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
-
-    dropdownBtn.classList.remove("active");
+    dropdownBtn.classList.toggle("active");
   });
-});
 
-// Click outside close
-document.addEventListener("click", (e) => {
-  if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
-    dropdownList.classList.remove("opacity-100", "scale-100");
-    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
-    dropdownBtn.classList.remove("active");
-  }
-});
+  // Select option
+  document.querySelectorAll("#dropdownList li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent dropdownBtn click
 
+      selectedText.innerText = item.innerText;
+      select.value = item.dataset.value;
+      selectedText.classList.add("text-white");
 
+      dropdownList.classList.remove("opacity-100", "scale-100");
+      dropdownList.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
 
-const dropdownBtn1 = document.getElementById("dropdownBtn1");
-const dropdownList1 = document.getElementById("dropdownList1");
-const selectedText1 = document.getElementById("selectedText1");
-const select1 = document.getElementById("select");
-
-// Toggle dropdown
-dropdownBtn1.addEventListener("click", () => {
-  dropdownList1.classList.toggle("opacity-100");
-  dropdownList1.classList.toggle("scale-100");
-  dropdownList1.classList.toggle("pointer-events-none");
-
-  dropdownBtn1.classList.toggle("active");
-});
-
-// Select option
-document.querySelectorAll("#dropdownList1 li").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
-
-    selectedText1.innerText = item.innerText;
-    select1.value = item.dataset.value;
-
-    dropdownList1.classList.remove("opacity-100", "scale-100");
-    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
-
-    dropdownBtn1.classList.remove("active");
+      dropdownBtn.classList.remove("active");
+    });
   });
-});
 
-// Click outside close
-document.addEventListener("click", (e) => {
-  if (!dropdownBtn1.contains(e.target) && !dropdownList1.contains(e.target)) {
-    dropdownList1.classList.remove("opacity-100", "scale-100");
-    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
-    dropdownBtn1.classList.remove("active");
-  }
-});
+  // Click outside close
+  document.addEventListener("click", (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
+      dropdownList.classList.remove("opacity-100", "scale-100");
+      dropdownList.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+      dropdownBtn.classList.remove("active");
+    }
+  });
 
+  const dropdownBtn1 = document.getElementById("dropdownBtn1");
+  const dropdownList1 = document.getElementById("dropdownList1");
+  const selectedText1 = document.getElementById("selectedText1");
+  const select1 = document.getElementById("select1");
+
+  // Toggle dropdown
+  dropdownBtn1.addEventListener("click", () => {
+    dropdownList1.classList.toggle("opacity-100");
+    dropdownList1.classList.toggle("scale-100");
+    dropdownList1.classList.toggle("pointer-events-none");
+
+    dropdownBtn1.classList.toggle("active");
+  });
+
+  // Select option
+  document.querySelectorAll("#dropdownList1 li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent dropdownBtn click
+
+      selectedText1.innerText = item.innerText;
+      select1.value = item.dataset.value;
+      selectedText1.classList.add("text-white");
+
+      dropdownList1.classList.remove("opacity-100", "scale-100");
+      dropdownList1.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+
+      dropdownBtn1.classList.remove("active");
+    });
+  });
+
+  // Click outside close
+  document.addEventListener("click", (e) => {
+    if (!dropdownBtn1.contains(e.target) && !dropdownList1.contains(e.target)) {
+      dropdownList1.classList.remove("opacity-100", "scale-100");
+      dropdownList1.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+      dropdownBtn1.classList.remove("active");
+    }
+  });
+
+  // file upload js
+
+  document.getElementById("resume").addEventListener("change", function () {
+    const fileName = this.files.length ? this.files[0].name : "";
+    document.getElementById("file-name").textContent = fileName;
+  });
+
+  // email js javascript
+
+  emailjs.init("0QDi1d_Swwhp4yV3E");
+  document
+    .getElementById("apply-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_mlsvlya", "template_vrum0xu", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          document.getElementById("apply-form").reset();
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("Failed to send message. Please try again.");
+        });
+    });
 </script>

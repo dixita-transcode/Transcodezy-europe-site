@@ -14,14 +14,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
     />
-     
+
     <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="Componets/Comman/header.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("NobrhhFTx7cLHvBag"); // <<< replace with your EmailJS Public Key
+      })();
+    </script>
   </head>
   <body>
     <script>
@@ -72,12 +79,24 @@
     <div class="main_wrapper">
       <div w3-include-html="/Components/Comman/header.html"></div>
       <div w3-include-html="/Components/BecomeAPartner/Hero/hero.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/WhyOurPartner/whyOurPartner.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/GlobalWorkFlow/globalWorkFlow.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/GlobalPartnership/globalPartnership.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/PartnerBenefits/partnerBenefits.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/GlobalIndustries/globalIndustries.html"></div>
-      <div w3-include-html="/Components/BecomeAPartner/PartnershipForm/partnershipForm.html"></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/WhyOurPartner/whyOurPartner.html"
+      ></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/GlobalWorkFlow/globalWorkFlow.html"
+      ></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/GlobalPartnership/globalPartnership.html"
+      ></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/PartnerBenefits/partnerBenefits.html"
+      ></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/GlobalIndustries/globalIndustries.html"
+      ></div>
+      <div
+        w3-include-html="/Components/BecomeAPartner/PartnershipForm/partnershipForm.html"
+      ></div>
       <div w3-include-html="/Components/Comman/footer.html"></div>
     </div>
 
@@ -90,8 +109,5 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    
-
   </body>
 </html>

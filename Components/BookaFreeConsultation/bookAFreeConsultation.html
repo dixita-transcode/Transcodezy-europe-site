@@ -27,34 +27,38 @@
     <div class="flex flex-col lg:flex-row gap-[20px] lg:gap-[40px] w-full">
       <!-- Form Section -->
       <div class="w-full bg-[#132028] rounded-[24px] p-8 h-auto lg:h-[588px]">
+        <form id="book_a_free_consultation-form" class="space-y-4 md:space-y-6">
         <h2 class="text-[32px] font-medium text-white">Consult Your Project</h2>
-        <form class="space-y-4 md:space-y-6 py-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="text"
+              name="firstName"
               placeholder="First Name"
-              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
             <input
               type="text"
+              name="lastName"
               placeholder="Last Name"
-              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
               type="email"
+              name="email"
               placeholder="Email"
-              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
             <input
               type="text"
+              name="company"
               placeholder="Company"
-              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl paragraph bg-[#FFFFFF14] text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
           <div class="relative w-full">
-            <select id="select" class="hidden">
+            <select id="select" name="aboutus" class="hidden">
               <option value="" disabled selected>
                 How did you hear about us?
               </option>
@@ -83,25 +87,25 @@
                 </li>
                 <li
                   class="paragraph text-accent p-3 cursor-pointer"
-                  data-value="Remote"
+                  data-value="Google"
                 >
                   Google
                 </li>
                 <li
                   class="paragraph text-accent p-3 cursor-pointer"
-                  data-value="On-site"
+                  data-value="LinkedIn"
                 >
                   LinkedIn
                 </li>
                 <li
                   class="paragraph text-accent p-3 cursor-pointer"
-                  data-value="Hybrid"
+                  data-value="Referral"
                 >
                   Referral
                 </li>
                 <li
                   class="paragraph text-accent p-3 cursor-pointer"
-                  data-value="Hybrid"
+                  data-value="Other"
                 >
                   Other
                 </li>
@@ -110,14 +114,16 @@
           </div>
           <textarea
             placeholder="Tell us more about your project..."
-            class="w-full bg-[#FFFFFF14] paragraph text-[#FFFFFF66] rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
+            name="message"
+            class="w-full bg-[#FFFFFF14] paragraph text-white rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
           ></textarea>
           <!-- Submit Button -->
-          <div
+          <button
             class="mt-4 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+            type="submit"
           >
-            <a href="#">Submit</a>
-          </div>
+            Submit
+        </button>
         </form>
       </div>
 
@@ -151,10 +157,11 @@ dropdownBtn.addEventListener("click", () => {
 // Select option
 document.querySelectorAll("#dropdownList li").forEach((item) => {
   item.addEventListener("click", (e) => {
-    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
+    e.stopPropagation(); // Prevent dropdownBtn click
 
     selectedText.innerText = item.innerText;
     select.value = item.dataset.value;
+    selectedText.classList.add("text-white");
 
     dropdownList.classList.remove("opacity-100", "scale-100");
     dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
@@ -184,5 +191,23 @@ document.addEventListener("click", (e) => {
     // or use "/" if your homepage is the root
     // window.location.href = "/";
   });
+
+  emailjs.init("0QDi1d_Swwhp4yV3E"); 
+  document
+    .getElementById("book_a_free_consultation-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_mlsvlya", "template_fz9ebmv", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          document.getElementById("book_a_free_consultation-form").reset();
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("Failed to send message. Please try again.");
+        });
+    });
 </script>
 <!-- book free consultation end -->

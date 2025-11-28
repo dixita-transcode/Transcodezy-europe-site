@@ -5,32 +5,34 @@
         <img
           src="../../../Assets/Images/BecomeAPartner/partnership_form_img.jpg"
           alt="Automation"
-          class="w-full h-full xl:min-h-[652px] object-cover rounded-3xl"
+          class="w-full h-full xl:min-h-[652px] object-cover rounded-[24px]"
         />
       </div>
       <div
         class="w-full bg-[#132028] p-5 lg:p-10 rounded-[24px] h-auto xl:min-h-[652px] w-full xl:max-w-[720px] shadow-lg"
       >
-        <h2 class="text-[32px] font-medium text-white">
-          Collaborate. Innovate. Scale — Globally.
-        </h2>
-        <p class="paragraph text-[#FFFFFF] opacity-60">
-          Transcodezy is ready to co-create intelligent, scalable, and impactful
-          technology solutions with you.
-        </p>
-        <form class="space-y-6 py-4 lg:py-8">
+        <form id="partnership-form" class="space-y-6">
+          <h2 class="text-[32px] font-medium text-white">
+            Collaborate. Innovate. Scale — Globally.
+          </h2>
+          <p class="paragraph text-[#FFFFFF] opacity-60">
+            Transcodezy is ready to co-create intelligent, scalable, and
+            impactful technology solutions with you.
+          </p>
           <!-- Row 1 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
               type="text"
+              name="fullName"
               placeholder="Full Name"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
 
             <input
               type="email"
+              name="email"
               placeholder="Email Address"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
 
@@ -38,15 +40,17 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
               type="text"
+              name="company"
               placeholder="Company Name"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
 
             <!-- Position Applied Dropdown -->
             <input
-              type="tel"
+              type="text"
+              name="country"
               placeholder="Country"
-              class="w-full p-3 rounded-xl bg-[#FFFFFF14] text-[#FFFFFF66] placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
+              class="w-full p-3 rounded-xl bg-[#FFFFFF14] paragraph text-white placeholder-[#FFFFFF66] focus:outline-none focus:ring-2 focus:ring-primary z-10"
             />
           </div>
 
@@ -54,221 +58,258 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- About your project -->
             <div class="w-full xl:max-w-[357px] relative">
-                <select id="select" class="hidden">
-                  <option value="" disabled selected>Partnership Type</option>
-                  <option>Technology Partner</option>
-                  <option>Channel Partner</option>
-                  <option>Strategic Partner</option>
-                  <option>Implementation Partner</option>
-                </select>
+              <select id="select" name="partnership" class="hidden">
+                <option value="" disabled selected>Partnership Type</option>
+                <option>Technology Partner</option>
+                <option>Channel Partner</option>
+                <option>Strategic Partner</option>
+                <option>Implementation Partner</option>
+              </select>
 
-                <!-- Custom Dropdown -->
-                <div
-                  id="dropdownBtn"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after z-0"
+              <!-- Custom Dropdown -->
+              <div
+                id="dropdownBtn"
+                class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after z-0"
+              >
+                <span id="selectedText">Partnership Type</span>
+
+                <ul
+                  id="dropdownList"
+                  class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top z-10"
                 >
-                  <span id="selectedText">Partnership Type</span>
-
-                  <ul
-                    id="dropdownList"
-                    class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top z-10"
+                  <li
+                    class="paragraph text-secondary p-3 cursor-pointer disabled selected"
+                    data-value=""
                   >
-                    <li
-                      class="paragraph text-secondary p-3 cursor-pointer disabled selected"
-                      data-value=""
-                    >Partnership Type
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Remote"
-                    >
-                      Technology Partner
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="On-site"
-                    >
-                      Channel Partner
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Strategic Partner
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Implementation Partner
-                    </li>
-                  </ul>
-                </div>
-                </div>
-
-           <div class="w-full lg:max-w-[357px] relative">
-                <!-- Hidden original select -->
-                <select id="select1" class="hidden">
-                  <option value="" disabled selected>Your Industry</option>
-                  <option>FinTech</option>
-                  <option>Healthcare</option>
-                  <option>Education</option>
-                  <option>Manufacturing</option>
-                  <option>Retail & E-commerce</option>
-                  <option>Other</option>
-                </select>
-
-                <!-- Custom Dropdown -->
-                <div
-                  id="dropdownBtn1"
-                  class="bg-[#FFFFFF14] text-[#FFFFFF66]  rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after1 z-0"
-                >
-                  <span id="selectedText1">Your Industry</span>
-
-                  <ul
-                    id="dropdownList1"
-                    class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top z-10"
+                    Partnership Type
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Technology Partner"
                   >
-                    <li
-                      class="paragraph text-secondary p-3 cursor-pointer disabled selected"
-                      data-value=""
-                    >
-                      Your Industry
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Remote"
-                    >
-                     FinTech
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="On-site"
-                    >
-                      Healthcare
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Education
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Manufacturing
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Retail & E-commerce
-                    </li>
-                    <li
-                      class="paragraph text-accent p-3 cursor-pointer"
-                      data-value="Hybrid"
-                    >
-                      Other
-                    </li>
-                  </ul>
-                </div>
+                    Technology Partner
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Channel Partner"
+                  >
+                    Channel Partner
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Strategic Partner"
+                  >
+                    Strategic Partner
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Implementation Partner"
+                  >
+                    Implementation Partner
+                  </li>
+                </ul>
               </div>
+            </div>
+
+            <div class="w-full lg:max-w-[357px] relative">
+              <!-- Hidden original select -->
+              <select id="select1" name="industry" class="hidden">
+                <option value="" disabled selected>Your Industry</option>
+                <option>FinTech</option>
+                <option>Healthcare</option>
+                <option>Education</option>
+                <option>Manufacturing</option>
+                <option>Retail & E-commerce</option>
+                <option>Other</option>
+              </select>
+
+              <!-- Custom Dropdown -->
+              <div
+                id="dropdownBtn1"
+                class="bg-[#FFFFFF14] text-[#FFFFFF66] rounded-xl cursor-pointer paragraph px-4 py-3 relative text-left transition-all ease-in-out duration-200 arrow-after1 z-0"
+              >
+                <span id="selectedText1">Your Industry</span>
+
+                <ul
+                  id="dropdownList1"
+                  class="bg-white rounded-xl overflow-hidden border border-[#1320281F] absolute top-[110%] left-0 w-full scale-75 opacity-0 pointer-events-none transition-all duration-200 origin-top z-10"
+                >
+                  <li
+                    class="paragraph text-secondary p-3 cursor-pointer disabled selected"
+                    data-value=""
+                  >
+                    Your Industry
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Fintech"
+                  >
+                    FinTech
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Healthcare"
+                  >
+                    Healthcare
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Education"
+                  >
+                    Education
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Manufacturing"
+                  >
+                    Manufacturing
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Retail & E-commerce"
+                  >
+                    Retail & E-commerce
+                  </li>
+                  <li
+                    class="paragraph text-accent p-3 cursor-pointer"
+                    data-value="Other"
+                  >
+                    Other
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
           <!-- row-4 -->
           <div class="w-full">
             <textarea
               placeholder="Tell us about your partnership goals..."
-              class="w-full bg-[#FFFFFF14] paragraph text-[#FFFFFF66] rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
+              name="message"
+              class="w-full bg-[#FFFFFF14] paragraph text-white rounded-xl p-3 placeholder-[#FFFFFF66] h-32 focus:outline-none focus:ring-2 focus:ring-primary"
             ></textarea>
           </div>
+          <button
+            class="mt-1 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
+            type="submit"
+          >
+            Apply to Join
+          </button>
         </form>
-        <div
-          class="mt-1 w-fit px-6 py-3 bg-primary paragraph text-white rounded-[40px] hover:scale-110 duration-700 transition overflow-hidden"
-        >
-          <a href="#">Apply to Join</a>
-        </div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
+  const dropdownBtn = document.getElementById("dropdownBtn");
+  const dropdownList = document.getElementById("dropdownList");
+  const selectedText = document.getElementById("selectedText");
+  const select = document.getElementById("select");
 
-const dropdownBtn = document.getElementById("dropdownBtn");
-const dropdownList = document.getElementById("dropdownList");
-const selectedText = document.getElementById("selectedText");
-const select = document.getElementById("select");
+  // Toggle dropdown
+  dropdownBtn.addEventListener("click", () => {
+    dropdownList.classList.toggle("opacity-100");
+    dropdownList.classList.toggle("scale-100");
+    dropdownList.classList.toggle("pointer-events-none");
 
-// Toggle dropdown
-dropdownBtn.addEventListener("click", () => {
-  dropdownList.classList.toggle("opacity-100");
-  dropdownList.classList.toggle("scale-100");
-  dropdownList.classList.toggle("pointer-events-none");
-
-  dropdownBtn.classList.toggle("active");
-});
-
-// Select option
-document.querySelectorAll("#dropdownList li").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
-
-    selectedText.innerText = item.innerText;
-    select.value = item.dataset.value;
-
-    dropdownList.classList.remove("opacity-100", "scale-100");
-    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
-
-    dropdownBtn.classList.remove("active");
+    dropdownBtn.classList.toggle("active");
   });
-});
 
-// Click outside close
-document.addEventListener("click", (e) => {
-  if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
-    dropdownList.classList.remove("opacity-100", "scale-100");
-    dropdownList.classList.add("opacity-0", "scale-75", "pointer-events-none");
-    dropdownBtn.classList.remove("active");
-  }
-});
+  // Select option
+  document.querySelectorAll("#dropdownList li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent dropdownBtn click
 
-const dropdownBtn1 = document.getElementById("dropdownBtn1");
-const dropdownList1 = document.getElementById("dropdownList1");
-const selectedText1 = document.getElementById("selectedText1");
-const select1 = document.getElementById("select");
+      selectedText.innerText = item.innerText;
+      select.value = item.dataset.value;
+      selectedText.classList.add("text-white");
 
-// Toggle dropdown
-dropdownBtn1.addEventListener("click", () => {
-  dropdownList1.classList.toggle("opacity-100");
-  dropdownList1.classList.toggle("scale-100");
-  dropdownList1.classList.toggle("pointer-events-none");
+      dropdownList.classList.remove("opacity-100", "scale-100");
+      dropdownList.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
 
-  dropdownBtn1.classList.toggle("active");
-});
-
-// Select option
-document.querySelectorAll("#dropdownList1 li").forEach((item) => {
-  item.addEventListener("click", (e) => {
-    e.stopPropagation(); // 🔥 Prevent dropdownBtn click
-
-    selectedText1.innerText = item.innerText;
-    select1.value = item.dataset.value;
-
-    dropdownList1.classList.remove("opacity-100", "scale-100");
-    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
-
-    dropdownBtn1.classList.remove("active");
+      dropdownBtn.classList.remove("active");
+    });
   });
-});
 
-// Click outside close
-document.addEventListener("click", (e) => {
-  if (!dropdownBtn1.contains(e.target) && !dropdownList1.contains(e.target)) {
-    dropdownList1.classList.remove("opacity-100", "scale-100");
-    dropdownList1.classList.add("opacity-0", "scale-75", "pointer-events-none");
-    dropdownBtn1.classList.remove("active");
-  }
-});
+  // Click outside close
+  document.addEventListener("click", (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownList.contains(e.target)) {
+      dropdownList.classList.remove("opacity-100", "scale-100");
+      dropdownList.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+      dropdownBtn.classList.remove("active");
+    }
+  });
 
+  const dropdownBtn1 = document.getElementById("dropdownBtn1");
+  const dropdownList1 = document.getElementById("dropdownList1");
+  const selectedText1 = document.getElementById("selectedText1");
+  const select1 = document.getElementById("select1");
+
+  // Toggle dropdown
+  dropdownBtn1.addEventListener("click", () => {
+    dropdownList1.classList.toggle("opacity-100");
+    dropdownList1.classList.toggle("scale-100");
+    dropdownList1.classList.toggle("pointer-events-none");
+
+    dropdownBtn1.classList.toggle("active");
+  });
+
+  // Select option
+  document.querySelectorAll("#dropdownList1 li").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent dropdownBtn click
+
+      selectedText1.innerText = item.innerText;
+      select1.value = item.dataset.value;
+      selectedText1.classList.add("text-white");
+
+      dropdownList1.classList.remove("opacity-100", "scale-100");
+      dropdownList1.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+
+      dropdownBtn1.classList.remove("active");
+    });
+  });
+
+  // Click outside close
+  document.addEventListener("click", (e) => {
+    if (!dropdownBtn1.contains(e.target) && !dropdownList1.contains(e.target)) {
+      dropdownList1.classList.remove("opacity-100", "scale-100");
+      dropdownList1.classList.add(
+        "opacity-0",
+        "scale-75",
+        "pointer-events-none"
+      );
+      dropdownBtn1.classList.remove("active");
+    }
+  });
+
+  emailjs.init("NobrhhFTx7cLHvBag");
+  document
+    .getElementById("partnership-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      emailjs
+        .sendForm("service_6xp4mz5", "template_h5kl65n", this)
+        .then(() => {
+          alert("Message sent successfully!");
+          document.getElementById("partnership-form").reset();
+        })
+        .catch((err) => {
+          console.error("Error:", err);
+          alert("Failed to send message. Please try again.");
+        });
+    });
 </script>
