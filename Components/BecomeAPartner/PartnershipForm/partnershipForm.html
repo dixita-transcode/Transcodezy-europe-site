@@ -57,7 +57,7 @@
           <!-- Row 3 -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <!-- About your project -->
-            <div class="w-full xl:max-w-[357px] relative">
+            <div class="w-full xl:max-w-[357px] relative z-50">
               <select id="select" name="partnership" class="hidden">
                 <option value="" disabled selected>Partnership Type</option>
                 <option>Technology Partner</option>
@@ -111,7 +111,7 @@
               </div>
             </div>
 
-            <div class="w-full lg:max-w-[357px] relative">
+            <div class="w-full lg:max-w-[357px] relative z-10">
               <!-- Hidden original select -->
               <select id="select1" name="industry" class="hidden">
                 <option value="" disabled selected>Your Industry</option>
@@ -294,22 +294,47 @@
       dropdownBtn1.classList.remove("active");
     }
   });
+</script>
 
-  emailjs.init("NobrhhFTx7cLHvBag");
-  document
-    .getElementById("partnership-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
+<script>
+  emailjs.init("0QDi1d_Swwhp4yV3E");
 
-      emailjs
-        .sendForm("service_6xp4mz5", "template_h5kl65n", this)
-        .then(() => {
-          alert("Message sent successfully!");
-          document.getElementById("partnership-form").reset();
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          alert("Failed to send message. Please try again.");
-        });
-    });
+   toastr.options = {
+  "positionClass": "toast-top-right",
+  "closeButton": true,
+  "progressBar": true,
+  "timeOut": "3000"
+};
+
+document
+  .getElementById("partnership-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    const fullName = form.querySelector("[name='fullName']").value.trim();
+    const email = form.querySelector("[name='email']").value.trim();
+    const company = form.querySelector("[name='company']").value.trim();
+    const country = form.querySelector("[name='country']").value.trim();
+    const partnership = form.querySelector("[name='partnership']").value.trim();
+    const industry = form.querySelector("[name='industry']").value.trim();
+    const message = form.querySelector("[name='message']").value.trim();
+
+
+    if (!fullName || !email || !company || !country || !partnership || !industry || !message) {
+      toastr.error("Please fill all required fields!", "Error");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_mlsvlya", "template_vrum0xu", form)
+      .then(() => {
+        toastr.success("Message sent successfully!", "Success");
+        form.reset();
+      })
+      .catch(() => {
+        toastr.error("Failed to send message. Please try again.", "Error");
+      });
+  });
 </script>

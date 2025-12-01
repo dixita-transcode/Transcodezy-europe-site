@@ -15,7 +15,7 @@
 body{
     margin: 0;
     font-family: 'Outfit',sans-serif;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 }
 
 /* Base: mobile */
@@ -74,12 +74,12 @@ nav a.active {
   font-weight: 400;
 }
 
-/* .menu .menu-items li>a {
+.menu .menu-items li>a {
     position: relative;
     display: inline-block;
     max-width: 100%;
     z-index: 1;
-} */
+}
  
 
 .menu .menu-items li>a:hover {
@@ -147,7 +147,7 @@ nav a.active {
 
 .mob-menu_item_switcher i {
   color: #fff; /* make icon white */
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition:all 0.3s ease, color 0.3s ease;
 }
 
 .mob-menu_item_switcher i.rotate-180 {
@@ -196,8 +196,7 @@ nav a.active {
 /* contact page form in checkbox css */
 .form-group {
   display: block;
-  margin-bottom: 15px;
-  
+  margin-bottom: 15px; 
 }
 
 .form-group input {
@@ -234,7 +233,7 @@ nav a.active {
   content: '';
   display: block;
   position: absolute;
-  top: 2px;
+  top: 5px;
   left: 9px;
   width: 6px;
   height: 14px;

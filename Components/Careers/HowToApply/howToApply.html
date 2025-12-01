@@ -160,7 +160,7 @@
               </div>
 
               <!-- Row 4 -->
-              <div class="w-full lg:max-w-[295px] relative">
+              <div class="w-full lg:max-w-[295px] relative z-10">
                 <!-- Hidden original select -->
                 <select id="select1" name="workType" class="hidden">
                   <option value="" disabled selected>Work Type</option>
@@ -328,20 +328,44 @@
 
   emailjs.init("0QDi1d_Swwhp4yV3E");
 
-  document
-    .getElementById("apply-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
+  toastr.options = {
+  "positionClass": "toast-top-right",
+  "closeButton": true,
+  "progressBar": true,
+  "timeOut": "3000"
+};
 
-      emailjs
-        .sendForm("service_mlsvlya", "template_vrum0xu", this)
-        .then(() => {
-          alert("Message sent successfully!");
-          document.getElementById("apply-form").reset();
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          alert("Failed to send message. Please try again.");
-        });
-    });
+document
+  .getElementById("apply-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    const fullName = form.querySelector("[name='fullName']").value.trim();
+    const email = form.querySelector("[name='email']").value.trim();
+    const phoneNumber = form.querySelector("[name='phoneNumber']").value.trim();
+    const positionApplied = form.querySelector("[name='positionApplied']").value.trim();
+    const message = form.querySelector("[name='message']").value.trim();
+    const workType = form.querySelector("[name='workType']").value.trim();
+
+     // File (optional)
+    const fileInput = form.querySelector("[name='file']");
+    const file = fileInput.files[0];
+
+    if (!fullName || !email || !phoneNumber || !positionApplied || !message || !workType) {
+      toastr.error("Please fill all required fields!", "Error");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_mlsvlya", "template_vrum0xu", form)
+      .then(() => {
+        toastr.success("Message sent successfully!", "Success");
+        form.reset();
+      })
+      .catch(() => {
+        toastr.error("Failed to send message. Please try again.", "Error");
+      });
+  });
 </script>

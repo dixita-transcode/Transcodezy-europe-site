@@ -85,7 +85,7 @@
           <div class="space-y-3">
             <!-- Checkbox 1 -->
             <div class="form-group">
-              <input type="checkbox" id="html" />
+              <input type="checkbox" id="html"/>
               <label for="html" class="text-[#FFFFFF66] paragraph"
                 >I have read Privacy Notice</label
               >
@@ -116,21 +116,49 @@
     const fileName = this.files.length ? this.files[0].name : "";
     document.getElementById("file-name").textContent = fileName;
   });
+</script>
 
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
 
-      emailjs
-        .sendForm("service_mlsvlya", "template_vrum0xu", this)
-        .then(() => {
-          alert("Message sent successfully!");
-          document.getElementById("contact-form").reset();
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          alert("Failed to send message. Please try again.");
-        });
-    });
+<script>
+  emailjs.init("0QDi1d_Swwhp4yV3E");
+  toastr.options = {
+  "positionClass": "toast-top-right",
+  "closeButton": true,
+  "progressBar": true,
+  "timeOut": "3000"
+};
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    const fullName = form.querySelector("[name='fullName']").value.trim();
+    const email = form.querySelector("[name='email']").value.trim();
+    const companyName = form.querySelector("[name='companyName']").value.trim();
+    const phoneNumber = form.querySelector("[name='phoneNumber']").value.trim();
+    const message = form.querySelector("[name='message']").value.trim();
+
+     // File (optional)
+    const fileInput = form.querySelector("[name='file']");
+    const file = fileInput.files[0];
+
+    if (!fullName || !email || !companyName || !phoneNumber || !message) {
+      toastr.error("Please fill all required fields!", "Error");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_mlsvlya", "template_vrum0xu", form)
+      .then(() => {
+        toastr.success("Message sent successfully!", "Success");
+        form.reset();
+      })
+      .catch(() => {
+        toastr.error("Failed to send message. Please try again.", "Error");
+      });
+  });
+
 </script>

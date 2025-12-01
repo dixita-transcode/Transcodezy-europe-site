@@ -58,7 +58,7 @@
             />
           </div>
           <div class="relative w-full">
-            <select id="select" name="aboutus" class="hidden">
+            <select id="select" name="select" class="hidden">
               <option value="" disabled selected>
                 How did you hear about us?
               </option>
@@ -191,23 +191,47 @@ document.addEventListener("click", (e) => {
     // or use "/" if your homepage is the root
     // window.location.href = "/";
   });
+</script>
 
-  emailjs.init("0QDi1d_Swwhp4yV3E"); 
-  document
-    .getElementById("book_a_free_consultation-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
+<script>
 
-      emailjs
-        .sendForm("service_mlsvlya", "template_fz9ebmv", this)
-        .then(() => {
-          alert("Message sent successfully!");
-          document.getElementById("book_a_free_consultation-form").reset();
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          alert("Failed to send message. Please try again.");
-        });
-    });
+  emailjs.init("0QDi1d_Swwhp4yV3E");
+
+ toastr.options = {
+  "positionClass": "toast-top-right",
+  "closeButton": true,
+  "progressBar": true,
+  "timeOut": "3000"
+};
+
+document
+  .getElementById("book_a_free_consultation-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+
+    const firstName = form.querySelector("[name='firstName']").value.trim();
+    const lastName = form.querySelector("[name='lastName']").value.trim();
+    const email = form.querySelector("[name='email']").value.trim();
+    const company = form.querySelector("[name='company']").value.trim();
+    const select = form.querySelector("[name='select']").value.trim();
+    const message = form.querySelector("[name='message']").value.trim();
+
+    if (!firstName || !lastName || !email || !company || !select || !message) {
+      toastr.error("Please fill all required fields!", "Error");
+      return;
+    }
+
+    emailjs
+      .sendForm("service_mlsvlya", "template_vrum0xu", form)
+      .then(() => {
+        toastr.success("Message sent successfully!", "Success");
+        form.reset();
+      })
+      .catch(() => {
+        toastr.error("Failed to send message. Please try again.", "Error");
+      });
+  });
 </script>
 <!-- book free consultation end -->
