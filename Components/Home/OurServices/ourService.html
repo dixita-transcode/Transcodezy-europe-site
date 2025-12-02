@@ -52,7 +52,7 @@
     >
       <!-- 6 Cards -->
       <div
-        class="service-card bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-6 shadow-lg "
+        class="service-card bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-6 shadow-lg"
       >
         <img
           src="../../../Assets/Images/custom_software.jpg"
@@ -207,12 +207,12 @@
     <!-- Mobile Swiper -->
     <div class="block md:hidden relative z-10">
         <h2 class="text-[32px] font-medium text-accent pb-4">Our Core Services</h2>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper py-3">
         <div class="swiper-wrapper">
           <!-- Repeat all 6 slides -->
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/custom_software.jpg"
@@ -239,7 +239,7 @@
 
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/cloud_solution.jpg"
@@ -266,7 +266,7 @@
 
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/AI&ML.jpg"
@@ -293,7 +293,7 @@
 
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/blockchain_img.jpg"
@@ -320,7 +320,7 @@
 
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/uiux_img.jpg"
@@ -347,7 +347,7 @@
 
           <div class="swiper-slide">
             <div
-              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3 shadow-lg h-[380px]"
+              class="bg-white flex flex-col border border-[#1320281F] rounded-[24px] p-3  h-[380px]"
             >
               <img
                 src="../../../Assets/Images/digital_consulting.jpg"
@@ -406,10 +406,10 @@
     expanded = !expanded;
     extraCards.forEach((card) => card.classList.toggle("hidden", !expanded));
     viewAllBtn.innerHTML = expanded
-      ? 'View Less <span><i class="fa-solid fa-arrow-right"></i></span>'
-      : 'View All <span><i class="fa-solid fa-arrow-right"></i></span>';
+          ? 'View Less <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span>'
+          : 'View All <span class="transition-transform duration-500 ease-in-out group-hover:rotate-[50deg]"><i class="fa-solid fa-arrow-right"></i></span>';
   });
-
+  
   // Mobile Swiper Setup
   const swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
