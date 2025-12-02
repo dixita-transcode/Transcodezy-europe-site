@@ -158,7 +158,7 @@
             // Highlight parent main menu link (if submenu)
             const parentGroup = link.closest(".group");
             if (parentGroup) {
-              const mainLink = parentGroup.querySelector(":scope > a");
+              const mainLink = parentGroup.querySelector(" a");
               if (mainLink) mainLink.classList.add("active");
             }
           }
