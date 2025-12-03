@@ -2,14 +2,14 @@
 <div class="bg-[#0094EE0F] relative z-0 h-auto py-16 sm:py-20 lg:py-[100px]">
   
     <!-- Background Images -->
-    <div class="absolute inset-y-0 top-0 left-0 z-0">
+    <div class="absolute inset-y-0 top-0 left-0 z-10">
       <img
         src="../../../Assets/Images/mission_bg-1.png"
         alt="mission-background"
         class="h-full w-full object-cover"
       />
     </div>
-    <div class="absolute inset-y-0 top-0 right-0 z-0">
+    <div class="absolute inset-y-0 top-0 right-0 z-10">
       <img
         src="../../../Assets/Images/mission_bg-2.png"
         alt="mission-background-2"
@@ -32,7 +32,7 @@
         <div>
           <button
             id="viewAllBtn"
-            class="flex justify-center gap-2 bg-primary py-3 px-6 rounded-3xl text-white paragraph group "
+            class="group flex justify-center gap-2 bg-primary py-3 px-6 rounded-3xl text-white paragraph "
           >
             View All
             <span
@@ -158,7 +158,7 @@
       >
         <img
           src="../../../Assets/Images/uiux_img.jpg"
-          alt="uiux_img"
+          alt="UiUx_img"
           class="w-full h-[300px] object-cover rounded-2xl mb-2"
         />
        <h2 class="text-2xl font-medium text-accent">UI/UX & Product Design</h2>
@@ -376,7 +376,7 @@
         <!-- Swiper Buttons -->
         <div class="flex flex-row gap-6 pt-5 md:pt-0 z-10 relative">
           <button
-            id="ServicePrev"
+            id="ServicesPrev"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
             aria-label="Previous"
             title="Previous"
@@ -384,7 +384,7 @@
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <button
-            id="ServiceNext"
+            id="ServicesNext"
             class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
             aria-label="Next"
             title="Next"
@@ -415,13 +415,13 @@
     slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
-      nextEl: "#ServiceNext",
-      prevEl: "#ServicePrev",
+      nextEl: "#ServicesNext",
+      prevEl: "#ServicesPrev",
     },
     on: {
       slideChange: function () {
-        document.querySelector("#ServicePrev").disabled = this.isBeginning;
-        document.querySelector("#ServiceNext").disabled = this.isEnd;
+        document.querySelector("#ServicesPrev").disabled = this.isBeginning;
+        document.querySelector("#ServicesNext").disabled = this.isEnd;
       },
     },
   });
