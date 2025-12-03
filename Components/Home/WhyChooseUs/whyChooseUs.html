@@ -1,139 +1,192 @@
 <!-- Why choose Transcodezy section start -->
+
 <div class="bg-white py-[50px] lg:py-[80px] xl:py-[100px] 2xl:py-[140px]">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div>
+    <div class="pb-6">
       <h5
         class="paragraph text-accent bg-[#FFFFFF0A] border border-accent w-fit py-3 px-6 rounded-[40px] text-center z-10"
       >
         Why Choose Transcodezy
       </h5>
+    </div>
+    <!-- Desktop heading + buttons -->
+    <div class="flex justify-between items-center pb-6">
+      <h2 class="text-accent heading font-medium">
+        Why European Businesses <span class="block"> Choose Transcodezy </span>
+      </h2>
+      <div class="hidden md:flex flex-row gap-6 pt-4 md:pt-0">
+        <button
+          id="prevBtnDesktop"
+          class="w-[60px] h-[60px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+          aria-label="Previous"
+          title="Previous"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button
+          id="nextBtnDesktop"
+          class="w-[60px] h-[60px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
+          aria-label="Next"
+          title="Next"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
 
-      <!-- Desktop heading + buttons -->
-      <div class="flex justify-between items-center py-5">
-        <h2 class="text-accent heading font-medium">
-          Why European Businesses <span class="block">Choose Transcodezy</span>
-        </h2>
-
-        <!-- Desktop Buttons -->
-        <div class="hidden md:flex flex-row gap-6 pt-4 md:pt-0">
-          <button
-            id="prevBtnDesktop"
-            class="w-[60px] h-[60px] border border-[#132028] flex justify-center items-center rounded-full cursor-pointer"
+    <!-- Slider -->
+    <div class="overflow-hidden py-5">
+      <div id="slider" class="flex mx-auto transition-transform duration-700">
+        <!-- 5 Cards -->
+        <div class="w-full sm:w-1/2 lg:w-1/4  shrink-0 p-2 xl:p-4">
+          <div
+            class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0"
           >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
+            <img
+              src="../../../Assets/Images/proven_exp.png"
+              alt="proven-exp"
+              class="w-[60px] h-[60px]"
+            />
+            <div class="absolute inset-0 z-10">
+              <img
+                src="../../../Assets/Images/why_choose_cards-bg.png"
+                alt="bg"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="cards-content pt-8">
+              <h2 class="text-2xl font-medium text-accent">
+                Proven Experience
+              </h2>
+              <p class="text-secondary paragraph pt-2">
+                Over a decade of IT excellence in European markets
+              </p>
+            </div>
+          </div>
+        </div>
 
-          <button
-            id="nextBtnDesktop"
-            class="w-[60px] h-[60px] border border-[#132028] flex justify-center items-center rounded-full cursor-pointer"
+        <div class="w-full sm:w-1/2 lg:w-1/4  shrink-0 p-2 xl:p-4">
+          <div
+            class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0"
           >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+            <img
+              src="../../../Assets/Images/GDPR.png"
+              alt="GDPR"
+              class="w-[60px] h-[60px]"
+            />
+            <div class="absolute inset-0 z-10">
+              <img
+                src="../../../Assets/Images/why_choose_cards-bg.png"
+                alt="bg"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="cards-content pt-8">
+              <h2 class="text-2xl font-medium text-accent">
+                GDPR &amp; EU Compliance
+              </h2>
+              <p class="text-secondary paragraph pt-2">
+                Every solution aligned with European data laws
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 lg:w-1/4  shrink-0 p-2 xl:p-4">
+          <div
+            class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0"
+          >
+            <img
+              src="../../../Assets/Images/industry_knowledge.png"
+              alt="Industry"
+              class="w-[60px] h-[60px]"
+            />
+            <div class="absolute inset-0 z-10">
+              <img
+                src="../../../Assets/Images/why_choose_cards-bg.png"
+                alt="bg"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="cards-content pt-8">
+              <h2 class="text-2xl font-medium text-accent">
+                Industry Knowledge
+              </h2>
+              <p class="text-secondary paragraph pt-2">
+                FinTech, Healthcare, Manufacturing, E-commerce, and more
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 lg:w-1/4  shrink-0 p-2 xl:p-4">
+          <div
+            class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0"
+          >
+            <img
+              src="../../../Assets/Images/services.png"
+              alt="Services"
+              class="w-[60px] h-[60px]"
+            />
+            <div class="absolute inset-0 z-10">
+              <img
+                src="../../../Assets/Images/why_choose_cards-bg.png"
+                alt="bg"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="cards-content pt-8">
+              <h2 class="text-2xl font-medium text-accent">
+                End-to-End Services
+              </h2>
+              <p class="text-secondary paragraph pt-2">
+                From consulting to deployment & ongoing support
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full sm:w-1/2 lg:w-1/4 shrink-0 p-2 xl:p-4">
+          <div
+            class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0"
+          >
+            <img
+              src="../../../Assets/Images//local_understanding.png"
+              alt="Local"
+              class="w-[60px] h-[60px]"
+            />
+            <div class="absolute inset-0 z-10">
+              <img
+                src="../../../Assets/Images/why_choose_cards-bg.png"
+                alt="bg"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div class="cards-content pt-8">
+              <h2 class="text-2xl font-medium text-accent">
+                Local Understanding
+              </h2>
+              <p class="text-secondary paragraph pt-2">
+                Serving Businesses in UK, Germany, France, Netherlands, Spain &amp;
+                Balkans
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Swiper Slider -->
-    <div class="">
-      <div class="swiper whySwiper py-4 md:py-8">
-        <div class="swiper-wrapper">
-
-          <!-- CARD 1 -->
-          <div class="swiper-slide ">
-            <div class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0">
-              <img src="../../../Assets/Images/proven_exp.png" class="w-[60px] h-[60px]" />
-              <div class="absolute inset-0 z-10">
-                <img src="../../../Assets/Images/why_choose_cards-bg.png" class="h-full w-full object-cover" />
-              </div>
-              <div class="cards-content pt-8">
-                <h2 class="text-2xl font-medium text-accent">Proven Experience</h2>
-                <p class="text-secondary paragraph pt-2">
-                  Over a decade of IT excellence in European markets
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="swiper-slide ">
-            <div class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0">
-              <img src="../../../Assets/Images/GDPR.png" class="w-[60px] h-[60px]" />
-              <div class="absolute inset-0 z-10">
-                <img src="../../../Assets/Images/why_choose_cards-bg.png" class="h-full w-full object-cover" />
-              </div>
-              <div class="cards-content pt-8">
-                <h2 class="text-2xl font-medium text-accent">GDPR & EU Compliance</h2>
-                <p class="text-secondary paragraph pt-2">
-                  Every solution aligned with European data laws
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="swiper-slide ">
-            <div class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0">
-              <img src="../../../Assets/Images/industry_knowledge.png" class="w-[60px] h-[60px]" />
-              <div class="absolute inset-0 z-10">
-                <img src="../../../Assets/Images/why_choose_cards-bg.png" class="h-full w-full object-cover" />
-              </div>
-              <div class="cards-content pt-8">
-                <h2 class="text-2xl font-medium text-accent">Industry Knowledge</h2>
-                <p class="text-secondary paragraph pt-2">
-                  FinTech, Healthcare, Manufacturing, E-commerce, and more
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 4 -->
-          <div class="swiper-slide ">
-            <div class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0">
-              <img src="../../../Assets/Images/services.png" class="w-[60px] h-[60px]" />
-              <div class="absolute inset-0 z-10">
-                <img src="../../../Assets/Images/why_choose_cards-bg.png" class="h-full w-full object-cover" />
-              </div>
-              <div class="cards-content pt-8">
-                <h2 class="text-2xl font-medium text-accent">End-to-End Services</h2>
-                <p class="text-secondary paragraph pt-2">
-                  From consulting to deployment & ongoing support
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- CARD 5 -->
-          <div class="swiper-slide">
-            <div class="cards bg-white border border-[#1320283D] rounded-[24px] h-[240px] lg:h-[315px] xl:h-[302px] p-4 lg:p-8 relative z-0">
-              <img src="../../../Assets/Images/local_understanding.png" class="w-[60px] h-[60px]" />
-              <div class="absolute inset-0 z-10">
-                <img src="../../../Assets/Images/why_choose_cards-bg.png" class="h-full w-full object-cover" />
-              </div>
-              <div class="cards-content pt-8">
-                <h2 class="text-2xl font-medium text-accent">Local Understanding</h2>
-                <p class="text-secondary paragraph pt-2">
-                  Serving UK, Germany, France, Netherlands, Spain & Balkans
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Buttons -->
-    <div class="flex md:hidden justify-start gap-6">
+    <!-- Mobile buttons -->
+    <div class="flex md:hidden justify-start gap-6 pt-0 lg:pt-6">
       <button
         id="prevBtnMobile"
-        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full cursor-pointer"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
       >
         <i class="fa-solid fa-arrow-left"></i>
       </button>
-
       <button
         id="nextBtnMobile"
-        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full cursor-pointer"
+        class="w-[50px] h-[50px] border border-[#132028] flex justify-center items-center rounded-full disabled:opacity-50 cursor-pointer"
       >
         <i class="fa-solid fa-arrow-right"></i>
       </button>
@@ -141,44 +194,50 @@
   </div>
 </div>
 
-
 <script>
-  const swiper = new Swiper(".whySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 35,
-    speed: 700,
+  const slider = document.getElementById("slider");
+  const nextBtns = document.querySelectorAll("#nextBtnDesktop, #nextBtnMobile");
+  const prevBtns = document.querySelectorAll("#prevBtnDesktop, #prevBtnMobile");
 
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 4 },
-    },
+  let currentIndex = 0;
 
-    navigation: {
-      nextEl: "#nextBtnDesktop",
-      prevEl: "#prevBtnDesktop",
-    },
-  });
-
-  const nextMobile = document.getElementById("nextBtnMobile");
-  const prevMobile = document.getElementById("prevBtnMobile");
-
-  // Mobile button click
-  nextMobile.addEventListener("click", () => swiper.slideNext());
-  prevMobile.addEventListener("click", () => swiper.slidePrev());
-
-  // Function to update disabled state
-  function updateMobileButtons() {
-    prevMobile.disabled = swiper.isBeginning;
-    nextMobile.disabled = swiper.isEnd;
-
-    // Optional: faded look
-    prevMobile.style.opacity = swiper.isBeginning ? "0.4" : "1";
-    nextMobile.style.opacity = swiper.isEnd ? "0.4" : "1";
+  function getVisibleCount() {
+    if (window.innerWidth >= 1024) return 4;
+    if (window.innerWidth >= 640) return 2;
+    return 1;
   }
 
-  // Update on slide change
-  swiper.on("slideChange", updateMobileButtons);
+  function getMaxIndex() {
+    return 5 - getVisibleCount();
+  }
 
-  // Initial update
-  updateMobileButtons();
+  function updateSlider() {
+    const cardWidth = slider.querySelector("div").offsetWidth;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+    prevBtns.forEach(btn => btn.disabled = currentIndex === 0);
+    nextBtns.forEach(btn => btn.disabled = currentIndex >= getMaxIndex());
+  }
+
+  nextBtns.forEach(btn => btn.addEventListener("click", () => {
+    if (currentIndex < getMaxIndex()) {
+      currentIndex++;
+      updateSlider();
+    }
+  }));
+
+  prevBtns.forEach(btn => btn.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  }));
+
+  window.addEventListener("resize", () => {
+    if (currentIndex > getMaxIndex()) currentIndex = getMaxIndex();
+    updateSlider();
+  });
+
+  updateSlider();
+  
 </script>
