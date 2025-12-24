@@ -175,7 +175,8 @@
     const minusIcon = item.querySelector(".minus-icon");
 
     toggle.addEventListener("click", () => {
-      const isOpen = !content.classList.contains("max-h-0");
+      const isOpen =
+        content.style.maxHeight && content.style.maxHeight !== "0px";
 
       // Close all other accordions
       accordions.forEach((otherItem) => {
@@ -184,27 +185,21 @@
           const otherPlus = otherItem.querySelector(".plus-icon");
           const otherMinus = otherItem.querySelector(".minus-icon");
 
-          otherContent.classList.add("max-h-0");
-          otherContent.classList.remove("max-h-screen");
+          otherContent.style.maxHeight = "0px";
           otherItem.classList.remove("bg-[#0094EE05]");
-
           otherPlus.classList.remove("hidden");
           otherMinus.classList.add("hidden");
         }
       });
 
-      // Toggle the clicked accordion
+      // Toggle clicked accordion smoothly
       if (isOpen) {
-        // Close current
-        content.classList.add("max-h-0");
-        content.classList.remove("max-h-screen");
+        content.style.maxHeight = "0px";
         item.classList.remove("bg-[#0094EE05]");
         plusIcon.classList.remove("hidden");
         minusIcon.classList.add("hidden");
       } else {
-        // Open current
-        content.classList.remove("max-h-0");
-        content.classList.add("max-h-screen");
+        content.style.maxHeight = content.scrollHeight + "px";
         item.classList.add("bg-[#0094EE05]");
         plusIcon.classList.add("hidden");
         minusIcon.classList.remove("hidden");
@@ -212,5 +207,6 @@
     });
   });
 </script>
+
 
 
