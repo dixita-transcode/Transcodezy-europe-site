@@ -396,7 +396,7 @@ const blogs = {
       {
         img: "../../../Assets/Images/Insights&Blogs/custom_blog1.jpg",
         title:
-          "Why Custom Software Development Is Key for Digital Transformation in Europen",
+          "Why Custom Software Development Is Key for Digital Transformation in Europe",
         desc: "Discover how tailored software helps European SMEs and enterprises streamline operations and gain a competitive edge.",
         link: "blog_details.html?id=1&category=expertise",
       },
