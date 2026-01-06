@@ -1,52 +1,51 @@
+<div id="blog-detail" class="pt-28 pb-12"></div>
 
- <div id="blog-detail" class="pt-28 pb-12"></div>
+<!-- FAQ Section -->
+<div id="faq-section" class="pt-10 pb-20"></div>
 
-  <!-- FAQ Section -->
-  <div id="faq-section" class="pt-10 pb-20"></div>
+<!-- Import blog + faq data -->
+<script src="./blog_data.js"></script>
 
-  <!-- Import blog + faq data -->
-  <script src="./blog_data.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const category = params.get("category");
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const params = new URLSearchParams(window.location.search);
-      const id = params.get("id");
-      const category = params.get("category");
-      
-      const blogContainer = document.getElementById("blog-detail");
-      const faqSection = document.getElementById("faq-section");
+    const blogContainer = document.getElementById("blog-detail");
+    const faqSection = document.getElementById("faq-section");
 
-      // ✅ Show Blog Content
-      if (blogDetails[category] && blogDetails[category][id]) {
-        const blog = blogDetails[category][id];
-        blogContainer.innerHTML = `
+    // ✅ Show Blog Content
+    if (blogDetails[category] && blogDetails[category][id]) {
+      const blog = blogDetails[category][id];
+      blogContainer.innerHTML = `
           <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             ${blog.content}
           </div>
         `;
-      } else {
-        blogContainer.innerHTML = `
+    } else {
+      blogContainer.innerHTML = `
           <div class="text-center py-20 text-gray-600 text-xl">
             Blog not found.
           </div>
         `;
-      }
+    }
 
-      // ✅ Show FAQ Section (below blog)
-      let faqs = [];
-      if (faqData[category] && faqData[category][id]) {
-        faqs = faqData[category][id];
-      }
+    // ✅ Show FAQ Section (below blog)
+    let faqs = [];
+    if (faqData[category] && faqData[category][id]) {
+      faqs = faqData[category][id];
+    }
 
-      if (!faqs.length) {
-        faqSection.innerHTML = `
+    if (!faqs.length) {
+      faqSection.innerHTML = `
           <div class="text-center py-20 text-gray-600 text-xl">
             FAQs not found for this blog.
           </div>`;
-        return;
-      }
+      return;
+    }
 
-      faqSection.innerHTML = `
+    faqSection.innerHTML = `
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-6">
           <div class="grid grid-cols-1 lg:grid-cols-2">
           <div class="text-start mb-8">
@@ -54,42 +53,69 @@
             <h1 class="heading text-accent font-medium py-6">Frequently Asked Questions</h1>
           </div>
           <div class="accordion space-y-1">
-            ${faqs.map((faq, index) => `
-              <div class="accordion-item border-b border-[#1320281F] ">
-                <button class="accordion-toggle w-full flex justify-between items-center p-2 text-left text-[#132028] font-medium ">
-                  <span class="text-lg md:text-xl lg:text-2xl text-accent font-medium">${faq.question}</span>
-                  <span class="plus-minus font-bold text-2xl">+</span>
-                </button>
-                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out ">
-                  <p class="p-1 lg:p-2 paragraph text-secondary font-normal">${faq.answer}</p>
-                </div>
+            ${faqs
+              .map(
+                (faq, index) => `
+              <div class="accordion-item border-b border-[#1320281F] transition-colors">
+                <button
+                  class="accordion-toggle w-full flex justify-between items-center py-3 px-2 text-left text-gray-800 font-medium focus:outline-none">
+                    <span class="text-lg md:text-xl lg:text-2xl text-accent font-medium">${faq.question}</span>
+                <span class="relative w-5 h-5 flex items-center justify-center">
+                  <i class="fa-solid fa-plus absolute plus-icon"></i>
+                  <i class="fa-solid fa-minus absolute minus-icon hidden"></i>
+                </span>
+              </button>
+              <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 text-gray-600">
+                <p class="p-1 lg:p-2 paragraph text-secondary font-normal">${faq.answer}</p>
               </div>
-            `).join("")}
+            </div>
+            `
+              )
+              .join("")}
           </div>
           </div>
         </div>
       `;
 
-      // Accordion Toggle Logic
-      const toggles = document.querySelectorAll(".accordion-toggle");
-      toggles.forEach(toggle => {
-        toggle.addEventListener("click", () => {
-          const content = toggle.nextElementSibling;
-          const plusMinus = toggle.querySelector(".plus-minus");
-          const allContents = document.querySelectorAll(".accordion-content");
-          const allIcons = document.querySelectorAll(".plus-minus");
+    const accordions = document.querySelectorAll(".accordion-item");
 
-          allContents.forEach(c => c.style.maxHeight = "0px");
-          allIcons.forEach(pm => pm.textContent = "+");
+    accordions.forEach((item) => {
+      const toggle = item.querySelector(".accordion-toggle");
+      const content = item.querySelector(".accordion-content");
+      const plusIcon = item.querySelector(".plus-icon");
+      const minusIcon = item.querySelector(".minus-icon");
 
-          if (content.style.maxHeight === "0px" || !content.style.maxHeight) {
-            content.style.maxHeight = content.scrollHeight + "px";
-            plusMinus.textContent = "−";
-          } else {
-            content.style.maxHeight = "0px";
-            plusMinus.textContent = "+";
+      toggle.addEventListener("click", () => {
+        const isOpen =
+          content.style.maxHeight && content.style.maxHeight !== "0px";
+
+        // Close all other accordions
+        accordions.forEach((otherItem) => {
+          if (otherItem !== item) {
+            const otherContent = otherItem.querySelector(".accordion-content");
+            const otherPlus = otherItem.querySelector(".plus-icon");
+            const otherMinus = otherItem.querySelector(".minus-icon");
+
+            otherContent.style.maxHeight = "0px";
+            otherItem.classList.remove("bg-[#0094EE05]");
+            otherPlus.classList.remove("hidden");
+            otherMinus.classList.add("hidden");
           }
         });
+
+        // Toggle clicked accordion smoothly
+        if (isOpen) {
+          content.style.maxHeight = "0px";
+          item.classList.remove("bg-[#0094EE05]");
+          plusIcon.classList.remove("hidden");
+          minusIcon.classList.add("hidden");
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          item.classList.add("bg-[#0094EE05]");
+          plusIcon.classList.add("hidden");
+          minusIcon.classList.remove("hidden");
+        }
       });
     });
-  </script>
+  });
+</script>
