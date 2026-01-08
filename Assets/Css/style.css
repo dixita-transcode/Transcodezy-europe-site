@@ -211,6 +211,8 @@ nav a.active {
 
 .form-group label {
   position: relative;
+  display: flex;
+  align-items:start;
   cursor: pointer;
   text-align: start;
 }
